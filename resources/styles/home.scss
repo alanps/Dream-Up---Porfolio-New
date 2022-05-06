@@ -1,0 +1,216 @@
+section.daumaolhada {
+	background-color: #2d2d2d;
+	padding: 1.5em 0.5em;
+	margin: 1em 0;
+	flex: 1;
+
+	.setas-slider {
+		margin: 0;
+		margin-left: auto;
+		display: block;
+
+		@media screen and (max-width: $small-screen) {
+			margin-top: 5px;
+		}
+	}
+
+	i.fa-arrow-left,
+	i.fa-arrow-right {
+		background: #fff;
+		font-size: 2.8em;
+		padding: 0.1em 0.2em;
+		cursor: pointer;
+
+		@media screen and (max-width: $small-screen) {
+			background: #2d2d2d;
+			color: #fff;
+		}
+	}
+
+	@media screen and (max-width: $small-screen) {
+		background-color: #fff !important;
+		padding: 0 !important;
+
+		.d-flex {
+			flex-direction: column;
+		}
+	}
+}
+
+.saibamais-content {
+	background-color: #2d2d2d;
+	margin: 0.3em 0;
+	color: #fff;
+	padding: 2.5em;
+	font-size: 12px;
+	max-width: 66.66%;
+
+	@media screen and (max-width: $medium-screen) {
+		max-width: 100%;
+	}
+}
+
+section.infos {
+	.col {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.row {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	@media screen and (min-width: $medium-screen) {
+		margin-bottom: 4px;
+	}
+
+	.blocos {
+		background-color: #2d2d2d;
+		color: #fff;
+		padding: 8px 0;
+		height: 265px;
+		position: relative;
+
+		@media screen and (max-width: $small-screen) {
+			margin-bottom: 3px;
+		}
+
+		&.bloco-emprego {
+			padding: 1em 2em;
+
+			.linha1 {
+				font-size: 14px;
+
+				span {
+					color: #57de4b;
+				}
+			}
+
+			img {
+				width: 100%;
+				margin: 0.3em 0;
+				height: 170px;
+				object-fit: cover;
+			}
+
+			.linha3 {
+				font-size: 11px;
+			}
+
+			@media screen and (max-width: $medium-screen) {
+				.linha3 {
+					font-size: 9px;
+				}
+			}
+
+			.linha4 {
+				font-size: 11px;
+				color: #57de4b;
+			}
+
+			@media screen and (max-width: $medium-screen) {
+				.linha4 {
+					font-size: 9px;
+				}
+			}
+		}
+
+		.bloco-eu {
+			background-color: #f0f0f0;
+			border-radius: 30px;
+			height: 100%;
+			margin: 0 6px;
+			position: relative;
+			text-align: center;
+
+			.linha1 {
+				position: relative;
+
+				img {
+					left: calc(50% - 125px);
+					position: absolute;
+					top: 5px;
+					width: 135px;
+					height: auto;
+
+					@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+						left: calc(50% - 95px);
+					}
+				}
+
+				span {
+					color: #000;
+					font-family: coiny, cursive;
+					font-size: 12px;
+					left: calc(50% - 120px);
+					line-height: 15px;
+					position: absolute;
+					text-align: center;
+					text-transform: uppercase;
+					top: 29px;
+					width: 114px;
+					z-index: 100;
+
+					@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+						left: calc(50% - 90px);
+					}
+				}
+			}
+
+			.linha2 {
+				height: 100%;
+				position: relative;
+
+				img {
+					bottom: 0;
+					margin-right: 15px;
+					position: absolute;
+					width: 280px;
+					left: 49%;
+					transform: translateX(-50%);
+					height: auto;
+				}
+			}
+		}
+
+		.bloco-curriculum {
+			background-color: #f0f0f0;
+			border-radius: 30px;
+			height: 100%;
+			margin: 0 6px;
+			position: relative;
+			text-align: center;
+
+			.linha1 {
+				font-family: coiny, cursive;
+				color: #000;
+				text-transform: uppercase;
+				top: 25px;
+				position: relative;
+			}
+
+			.linha2 {
+				bottom: 0;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+
+				@media screen and (max-width: $medium-screen) {
+					max-width: 200px;
+				}
+
+				img {
+					height: 200px;
+					width: 250px;
+					object-fit: cover;
+					object-position: top;
+
+					@media screen and (max-width: $medium-screen) {
+						max-width: 200px;
+					}
+				}
+			}
+		}
+	}
+}

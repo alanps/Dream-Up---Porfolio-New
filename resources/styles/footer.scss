@@ -1,0 +1,50 @@
+footer {
+	display: flex;
+
+	@media screen and (max-width: $medium-screen) {
+		margin-top: 15px;
+	}
+
+	.contato {
+		background-color: #f0f0f0;
+		display: flex;
+		flex-direction: column;
+		font-size: 13px;
+		padding: 1em 2.3em;
+		width: 30em;
+		flex: 0 0 30em;
+
+		@media screen and (max-width: $medium-screen) {
+			flex: 1;
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+
+		a {
+			display: flex;
+			margin: 2px 0;
+
+			span {
+				margin-left: 5px;
+				font-family: "VT323", monospace !important;
+			}
+
+			i {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.copyright {
+		place-self: flex-end;
+		font-size: 10px;
+		text-align: right;
+		flex: 1;
+
+		@media screen and (max-width: $medium-screen) {
+			text-align: center !important;
+			width: 100%;
+			margin: 25px 0 15px;
+		}
+	}
+}
