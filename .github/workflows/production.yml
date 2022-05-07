@@ -19,6 +19,8 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
 
       - name: Executando composer install para dependências do Wordpress
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
         uses: php-actions/composer@v5
         with:
           php_version: 7.4
