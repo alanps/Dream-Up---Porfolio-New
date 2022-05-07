@@ -1,9 +1,6 @@
 footer {
 	display: flex;
-
-	@media screen and (max-width: $medium-screen) {
-		margin-top: 15px;
-	}
+	margin-top: 15px;
 
 	.contato {
 		background-color: #f0f0f0;
