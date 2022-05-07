@@ -15,6 +15,15 @@ use function Roots\bundle;
  */
 add_action('wp_enqueue_scripts', function () {
     bundle('app')->enqueue();
+
+    if(is_404()){
+        bundle('error404')->enqueue();
+    }
+
+    if(is_page('contato')){
+        bundle('contato')->enqueue();
+        wp_enqueue_script( 'mask', '/wp-content/themes/dreamup/resources/scripts/libs/jquery.mask.js', ['jquery'], '1.0.0', true );
+    }
 }, 100);
 
 /**
@@ -23,6 +32,7 @@ add_action('wp_enqueue_scripts', function () {
  * @return void
  */
 add_action('after_setup_theme', function () {
+
     /**
      * Enable features from the Soil plugin if activated.
      * @link https://roots.io/plugins/soil/

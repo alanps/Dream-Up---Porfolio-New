@@ -1,0 +1,144 @@
+@import "vars";
+
+footer {
+	display: none;
+}
+
+.copyright {
+	font-size: 10px;
+	text-align: center;
+	flex: 1;
+	margin: 35px 0 25px;
+
+	@media screen and (max-width: $medium-screen) {
+		width: 100%;
+	}
+
+	@media screen and (max-width: $small-screen-medium) {
+		margin: 50px 0 35px !important;
+	}
+}
+
+section.contato.d-block {
+	background-color: #383838;
+	padding: 80px 35px;
+
+	@media screen and (max-width: $small-screen-medium) {
+		background: #fff;
+		padding: 0;
+
+		.section-title {
+			background-color: #383838 !important;
+			color: #fff !important;
+		}
+	}
+
+	@media screen and (max-width: $small-screen-medium) {
+		.d-flex {
+			flex-direction: column;
+		}
+	}
+
+	.left {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		img {
+			position: absolute;
+			max-width: 650px;
+			top: 12em;
+			pointer-events: none;
+		}
+
+		@media screen and (max-width: $small-screen-large) and (min-width: $small-screen-medium) {
+			img {
+				max-width: 550px !important;
+			}
+		}
+
+		@media screen and (max-width: $small-screen-medium) {
+			img {
+				position: relative !important;
+				top: -3em !important;
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+		}
+
+		footer {
+			display: block !important;
+			flex: 0 0 100%;
+			max-width: 100%;
+			margin: 5px 0;
+
+			.contato {
+				width: 100% !important;
+				flex: 0 0 100% !important;
+			}
+
+			.copyright {
+				display: none !important;
+			}
+		}
+	}
+
+	.right {
+		padding: 2em 2.5em 5em;
+		flex: 1;
+		max-width: 60%;
+		background: #fff;
+		margin: 0 0 0 auto;
+		margin-left: 70px;
+		text-align: right;
+
+		@media screen and (max-width: $small-screen-medium) {
+			max-width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+
+		.titulo {
+			font-size: 20px;
+			text-align: right;
+			margin-bottom: 35px;
+		}
+
+		form {
+			* {
+				font-size: 14px;
+				text-transform: uppercase;
+				font-family: Chivo, sans-serif !important;
+			}
+
+			.form-control {
+				background: #f4f4f4;
+				border: 0;
+				text-align: right;
+				font-size: 13px !important;
+				height: 45px;
+				border-radius: 0 !important;
+
+				&.textarea {
+					height: 200px;
+				}
+			}
+
+			button.enviar {
+				background: #fff;
+				box-shadow: 0 3px 4px #00000040;
+				border: 0;
+				width: 135px;
+				height: 60px;
+				font-family: Comfortaa, cursive !important;
+				text-transform: capitalize !important;
+				font-size: 18px !important;
+			}
+
+			p.hf-message {
+				margin: 10px 0;
+			}
+		}
+	}
+}

@@ -25,7 +25,7 @@
 		}
 
 		@media screen and (max-width: $small-screen) {
-			max-width: 90%;
+			max-width: 95%;
 			height: initial;
 			max-height: 90%;
 		}
@@ -43,6 +43,7 @@
 			position: absolute;
 			transform: translateY(-50%);
 			padding: 1em;
+			background: rgb(0 0 0 / 10%);
 
 			&.seta-direita {
 				right: 10px;
@@ -159,7 +160,7 @@ ul.carrousel {
 				}
 
 				span.categoria-nome {
-					width: 15em;
+					max-width: 15em;
 					display: block;
 					position: relative;
 					top: 50%;

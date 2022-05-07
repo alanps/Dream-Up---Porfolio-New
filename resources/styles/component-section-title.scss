@@ -20,6 +20,11 @@
 		}
 	}
 
+	&.contato {
+		flex: 0 0 100% !important;
+		max-width: 100%;
+	}
+
 	h2 {
 		font-family: coiny, cursive;
 		font-size: 25px;

@@ -1,5 +1,23 @@
 html {
-	margin: 10px 0 !important;
+	@media screen and (min-width: $medium-bg-screen) {
+		background-image: url("~/resources/images/bg.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-color: black;
+		margin: 0 !important;
+		min-height: 100% !important;
+		background-attachment: fixed;
+		height: 100% !important;
+
+		div#app {
+			padding: 30px 0;
+		}
+	}
+
+	body {
+		background: transparent;
+	}
 
 	* {
 		font-family: Comfortaa, cursive;
@@ -22,5 +40,11 @@ html {
 	.main {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.container-fluid {
+		background: #fff;
+		padding-top: 12px;
+		padding-bottom: 12px;
 	}
 }

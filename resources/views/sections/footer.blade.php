@@ -1,4 +1,4 @@
-  <div class="row">
+  <div class="row bottom">
     <div class="col col-12">
 
       <footer class="content-info flex-column flex-lg-row">
@@ -8,7 +8,7 @@
             <i class="fa-solid fa-square-envelope"></i>
             <span class="meuemail">alanps2012@gmail.com</span>
           </a>
-          <a class="whatsapp" href="tel:(11) 96903-4802" target="_blank">
+          <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5511969034802" target="_blank">
             <i class="fa-brands fa-whatsapp-square"></i>
             <span class="meuwhatsapp">(11) 96903-4802</span>
           </a>

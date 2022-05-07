@@ -1,15 +1,13 @@
+/* Libs */
 @import "bootstrap";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/brands";
-@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Comfortaa:wght@300;400;500;600;700&family=VT323&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&family=Coiny&family=Comfortaa:wght@300;400;500;600;700&family=VT323&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-$extra-small-screen: 300px;
-$small-screen: 565px;
-$medium-screen: 1020px;
-$medium-menu-screen: 1090px;
-
+/* My Styles */
+@import "vars";
 @import "global";
 @import "header";
 @import "footer";

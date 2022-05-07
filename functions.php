@@ -78,6 +78,7 @@ collect(['setup', 'filters'])
 
 add_theme_support('sage');
 
+
 /**
  * Traz os posts do carrousel baseado na categoria.
  */

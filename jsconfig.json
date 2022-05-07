@@ -7,7 +7,9 @@
     "moduleResolution": "node",
     "paths": {
       "@scripts/app": ["./resources/scripts/*"],
-      "@styles/app": ["./resources/styles/*"]
+      "@styles/app": ["./resources/styles/*"],
+      "@styles/error404": ["./resources/styles/*"],
+      "@styles/contato": ["./resources/styles/*"]
     }
   },
   "exclude": ["./public", "./node_modules"]
