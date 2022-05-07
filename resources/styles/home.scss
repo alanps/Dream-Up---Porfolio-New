@@ -1,4 +1,5 @@
 section.daumaolhada {
+	order: 0;
 	background-color: #2d2d2d;
 	padding: 1.5em 0.5em;
 	margin: 1em 0;
@@ -37,20 +38,26 @@ section.daumaolhada {
 	}
 }
 
-.saibamais-content {
-	background-color: #2d2d2d;
-	margin: 0.3em 0;
-	color: #fff;
-	padding: 2.5em;
-	font-size: 12px;
-	max-width: 66.66%;
+section.saibamais {
+	order: 2;
 
-	@media screen and (max-width: $medium-screen) {
-		max-width: 100%;
+	.saibamais-content {
+		background-color: #2d2d2d;
+		margin: 0.3em 0;
+		color: #fff;
+		padding: 2.5em;
+		font-size: 12px;
+		max-width: 66.66%;
+
+		@media screen and (max-width: $medium-screen) {
+			max-width: 100%;
+		}
 	}
 }
 
 section.infos {
+	order: 1;
+
 	.col {
 		padding-left: 1.9px;
 		padding-right: 1.9px;
@@ -72,12 +79,23 @@ section.infos {
 		height: 265px;
 		position: relative;
 
-		@media screen and (max-width: $small-screen) {
+		@media screen and (max-width: $small-screen-large) {
 			margin-bottom: 3px;
 		}
 
 		&.bloco-emprego {
-			padding: 1em 2em;
+			padding: 0.6em 2em 1em;
+			background-attachment: fixed;
+			background-color: #f0f0f0;
+			background-image: url("~/resources/images/studio-bg.webp");
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: 7px solid #2d2d2d;
+
+			@media screen and (max-width: $medium-screen) {
+				background-attachment: scroll;
+			}
 
 			.linha1 {
 				font-size: 14px;
@@ -118,11 +136,23 @@ section.infos {
 
 		.bloco-eu {
 			background-color: #f0f0f0;
-			border-radius: 30px;
 			height: 100%;
 			margin: 0 6px;
 			position: relative;
 			text-align: center;
+			background-attachment: fixed;
+			background-image: url("~/resources/images/alan-bg.jpg");
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: 600px;
+
+			@media screen and (max-width: $medium-screen) {
+				background-size: cover !important;
+			}
+
+			@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+				background-size: contain !important;
+			}
 
 			.linha1 {
 				position: relative;
@@ -133,6 +163,7 @@ section.infos {
 					top: 5px;
 					width: 135px;
 					height: auto;
+					filter: grayscale(1) drop-shadow(0 2px 10px black) opacity(0.99);
 
 					@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
 						left: calc(50% - 95px);
@@ -164,6 +195,7 @@ section.infos {
 
 				img {
 					bottom: 0;
+					filter: grayscale(0.3) drop-shadow(0 2px 1.5px black) opacity(0.99);
 					margin-right: 15px;
 					position: absolute;
 					width: 280px;
@@ -176,11 +208,14 @@ section.infos {
 
 		.bloco-curriculum {
 			background-color: #f0f0f0;
-			border-radius: 30px;
 			height: 100%;
 			margin: 0 6px;
 			position: relative;
 			text-align: center;
+			background-size: cover;
+			background-image: url("~/resources/images/curriculum-bg.jpg");
+			background-position: top;
+			background-repeat: no-repeat;
 
 			.linha1 {
 				font-family: coiny, cursive;
