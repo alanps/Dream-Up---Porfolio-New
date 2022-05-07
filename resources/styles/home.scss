@@ -57,6 +57,7 @@ section.saibamais {
 
 section.infos {
 	order: 1;
+	margin-bottom: 20px;
 
 	.col {
 		padding-left: 1.9px;
@@ -66,10 +67,6 @@ section.infos {
 	.row {
 		padding-left: 10px;
 		padding-right: 10px;
-	}
-
-	@media screen and (min-width: $medium-screen) {
-		margin-bottom: 4.5px;
 	}
 
 	.blocos {
@@ -150,7 +147,7 @@ section.infos {
 				background-size: cover !important;
 			}
 
-			@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+			@media screen and (min-width: $small-screen-medium) and (max-width: $medium-screen) {
 				background-size: contain !important;
 			}
 
@@ -163,7 +160,7 @@ section.infos {
 					top: 5px;
 					width: 135px;
 					height: auto;
-					filter: grayscale(1) drop-shadow(0 2px 10px black) opacity(0.99);
+					filter: grayscale(0.5) drop-shadow(0 2px 10px black) opacity(0.99);
 
 					@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
 						left: calc(50% - 95px);
