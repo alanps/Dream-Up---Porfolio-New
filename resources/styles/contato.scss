@@ -50,6 +50,7 @@ section.contato.d-block {
 			max-width: 650px;
 			top: 12em;
 			pointer-events: none;
+			height: auto;
 		}
 
 		@media screen and (max-width: $small-screen-large) and (min-width: $small-screen-medium) {
