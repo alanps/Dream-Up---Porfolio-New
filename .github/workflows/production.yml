@@ -2,7 +2,7 @@ name: Ambiente de produção - agenciadreamup.com.br
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   release:
