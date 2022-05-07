@@ -14,7 +14,7 @@
         <div>
           @include('sections.footer')
 
-        <img src="<?php echo get_home_url(); ?>/wp-content/themes/dreamup/resources/images/contato.png">
+        <img width="650" height="650" src="<?php echo get_home_url(); ?>/wp-content/themes/dreamup/resources/images/contato.png">
       </div>
 
       <div class="right">
