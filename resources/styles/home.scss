@@ -148,10 +148,6 @@ section.infos {
 				background-attachment: scroll;
 			}
 
-			@media screen and (min-width: $small-screen-medium) and (max-width: $medium-screen) {
-				background-size: contain !important;
-			}
-
 			.linha1 {
 				position: relative;
 
