@@ -29,9 +29,9 @@ jobs:
           args: -o --ignore-platform-reqs -d ./
 
       - name: Setup do NodeJS para o tema
-        uses: actions/setup-node@v3.1.1
+        uses: actions/setup-node@v2
         with:
-          node-version: '12'
+          node-version: '16'
 
       - name: Executando yarn install
         run: yarn
