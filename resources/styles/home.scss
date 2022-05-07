@@ -149,6 +149,7 @@ section.infos {
 
 			@media screen and (min-width: $small-screen-medium) and (max-width: $medium-screen) {
 				background-size: contain !important;
+				background-attachment: scroll;
 			}
 
 			.linha1 {
