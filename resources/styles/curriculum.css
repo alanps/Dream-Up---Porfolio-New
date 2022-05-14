@@ -1,0 +1,934 @@
+html {
+	background-color: #0E0E0E;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body#curriculum {
+	width: 46.9em;
+	margin: 2em auto;
+	background-color: #fff;
+	padding: 2em;
+}
+
+#curriculum section.corpo {
+	display: flex;
+}
+
+#curriculum .titulo h2 {
+	font-size: 1.5em;
+	font-family: "ModeSeven";
+	font-weight: normal!important;
+	margin: 0 1em .2em;
+}
+
+#curriculum .titulo.pequeno {
+	font-family: "Century Gothic";
+	text-transform: uppercase;
+	font-size: .65em;
+	top: 1em;
+	left: 1em;
+	position: absolute;
+}
+
+#curriculum section.base_esquerda {
+	flex: 0 0 70%;
+}
+
+#curriculum section.base_esquerda ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#curriculum section.base_esquerda li {
+	margin: .3em 0;
+	display: flex;
+}
+
+#curriculum .base_esquerda section#base_animacao {
+	height: 20.73em;
+	background-color: #000;
+	border: 2px solid #000;
+	background-image: url("../images/alan4.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: relative;
+}
+
+#curriculum .base_esquerda section#base_animacao span.legenda_animacao_parte1 {
+	display: none;
+}
+
+#curriculum .base_esquerda section#base_animacao span.legenda_animacao_parte2 {
+	display: none;
+	font-size: .85em;
+}
+
+#curriculum .base_esquerda section#base_animacao span.legenda_animacao_parte3 {
+	display: none;
+}
+
+#curriculum .base_esquerda section#base_animacao .legenda_animacao {
+	color: #00ff24;
+	font-family: "ModeSeven";
+	font-size: .8em;
+	text-align: center;
+	margin: 1em 0;
+}
+
+#curriculum .base_esquerda section#base_animacao .repetir_video {
+	position: absolute;
+	bottom: .4em;
+	color: #e4cd2b;
+	font-size: .7em;
+	text-transform: uppercase;
+	width: 5em;
+	text-align: center;
+	right: 1.1em;
+	font-family: "ModeSeven";
+	z-index: 1000;
+	display: none;
+	cursor: pointer;
+}
+
+#curriculum .base_esquerda section#base_animacao .perfil.nome {
+	background-color: #fff;
+	width: 21em;
+	height: 1.5em;
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: .9em;
+	z-index: 1000;
+}
+
+#curriculum .base_esquerda section#base_animacao .perfil.nome .texto {
+	font-size: 1.5em;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	font-weight: 700;
+	font-family: "Century Gothic";
+}
+
+#curriculum .base_esquerda section#perfil_skills .perfil_titulo.skills {
+	font-family: "ModeSeven";
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #464445;
+	width: 14em;
+	padding: 1.2em 0em .2em .7em;
+}
+
+#curriculum .base_esquerda section#perfil_skills {
+	margin: .4em 0;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo {
+	background-color: #3E3226;
+	width: 5em;
+	color: #fff;
+	padding: .9em .7em;
+	text-align: right;
+	font-family: "Century Gothic";
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso {
+	flex: 1;
+	background-color: #464445;
+	margin-left: .3em;
+	padding: .5em;
+	height: 2em;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .fundobranco {
+	background-color: #fff;
+	height: 75%;
+	display: flex;
+	padding: .3em;
+	position: relative;
+	justify-content: space-between;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .porcentagem {
+	font-family: 'ModeSeven';
+	color: #6B5641;
+	flex: 1;
+	text-align: right;
+	margin: .35em .3em;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem {
+	background-color: #6B5641;
+	margin: 0;
+}
+
+#curriculum .base_esquerda .perfil_skills #html .barraprogresso .porcentagem {
+	z-index: 10;
+	left: .5em;
+	position: absolute;
+	color: #fff;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.html {
+	flex: 0 0 100%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.css {
+	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.sass {
+	flex: 0 0 70%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.jquery {
+	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.react {
+	flex: 0 0 60%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.wordpress {
+	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.javascript {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.php {
+	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.mysql {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.git {
+	flex: 0 0 70%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.mongodb {
+	flex: 0 0 70%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.dynamodb {
+	flex: 0 0 60%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.openapi {
+	flex: 0 0 60%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.jira {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.aws {
+	flex: 0 0 60%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.cpanel {
+	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.ssh {
+	flex: 0 0 80%;
+}
+
+.barra_porcentagem.docker {
+	flex: 0 0 70%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.todoist {
+	flex: 0 0 50%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.trello {
+	flex: 0 0 70%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.composer {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.npm {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.gulp {
+	flex: 0 0 70%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.laravelmix {
+	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.todoist {
+	flex: 0 0 70%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.laravel {
+	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.cakephp {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.symfonyphp {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barra_porcentagem.bootstrap {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barra_porcentagem.nodejs {
+	flex: 0 0 80%;
+}
+
+#curriculum .base_esquerda .historico_titulo.historico {
+	font-family: "ModeSeven";
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #464445;
+	width: 14em;
+	padding: 1.2em 0em .2em .7em;
+	margin: 0 0 0 auto;
+}
+
+#curriculum .base_esquerda section#historicos {
+	margin: .4em 0;
+}
+
+#curriculum .base_esquerda section#historicos .historicos .historico {
+	background-color: #000;
+	color: #fff;
+	padding: 0.7em 1.5em 0.5em;
+	height: 1.6em;
+	font-family: 'Century Gothic';
+	position: relative;
+}
+
+#curriculum .base_esquerda section#historicos span.titulo.titulo_2i9 {
+}
+
+#curriculum .base_esquerda section#historicos span.titulo.titulo_studiovisual {
+}
+
+#curriculum .base_esquerda section#historicos span.titulo.titulo_beholder {
+}
+
+#curriculum .base_esquerda section#historicos span.titulo.titulo_deevo {
+}
+
+#curriculum .base_esquerda section#historicos span.data.data_2i9 {
+	margin-left: 1em;
+	line-height: 2.4em;
+}
+
+#curriculum .base_esquerda section#historicos span.data.data_studiovisual {
+	margin-left: 1em;
+	line-height: 2.4em;
+}
+
+#curriculum .base_esquerda section#historicos span.data.data_beholder {
+	margin-left: 1em;
+	line-height: 2.5em;
+}
+
+#curriculum .base_esquerda section#historicos span.titulo {
+	font-size: 1.1em;
+	position: relative;
+	font-weight: 700;
+}
+
+#curriculum .base_esquerda section#historicos span.data {
+	font-size: .7em;
+}
+
+#curriculum .base_esquerda section#historicos span.data.data_deevo {
+	margin-left: 1em;
+	line-height: 2.5em;
+}
+
+#curriculum .base_esquerda section#historicos span.funcao {
+	font-size: .7em;
+	display: block;
+	position: absolute;
+}
+
+#curriculum .base_esquerda section#historicos span.funcao.funcao_deevo {
+	right: 12.8em;
+	top: 1.6em;
+}
+
+#curriculum .base_esquerda section#historicos span.funcao.funcao_2i9 {
+	right: 15.3em;
+	top: 1.65em;
+}
+
+#curriculum .base_esquerda section#historicos span.funcao.funcao_studiovisual {
+	right: 9em;
+	top: 1.65em;
+}
+
+#curriculum .base_esquerda section#historicos span.funcao.funcao_deevo2 {
+	display: block;
+	position: absolute;
+	top: 2.2em;
+	right: 2.2em;
+	font-size: .7em;
+}
+
+#curriculum .base_esquerda section#historicos span.separacao {
+	margin: -.2em .5em;
+	line-height: 1.9em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_nodejs {
+	background-color: #675340;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_wordpress {
+	background-color: #675340;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_php {
+	background-color: #675340;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_mysql {
+	background-color: #8e7257;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_git {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_mongodb {
+	background-color: #8e7257;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_dynamodb {
+	background-color: #8e7257;
+	font-size: .9em;
+	padding: 1.1em 1.1em .5em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_jira {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_trello {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_openapi {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_ssh {
+	background-color: #c3a88d;
+	font-size: 1em;
+	width: 5.1em;
+	padding: .9em .5em .7em .8em;
+}
+
+.titulo.titulo_docker {
+	background-color: #c3a88d!important;
+	font-size: 1em;
+	width: 5.1em;
+	padding: .9em .5em .7em .8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_cpanel {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_npm {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_gulp {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_laravelmix {
+	background-color: #c3a88d;
+	font-size: .85em;
+	width: 5.8em;
+	padding: 1.1em .9em 1.1em .8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_sass {
+	font-size: .85em;
+	width: 5.8em;
+	padding: 1.1em .9em 1.1em .8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_composer {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_todoist {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_aws {
+	background-color: #c3a88d;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_laravel {
+	background-color: #675340;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_cakephp {
+	background-color: #675340;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_symfonyphp {
+	background-color: #675340;
+	font-size: .85em;
+	width: 5.8em;
+	padding: 1.1em .9em 1.1em .8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_javascript {
+    font-size: .85em;
+    width: 5.8em;
+    padding: 1.1em 0.9em 1.1em 0.8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_wordpress {
+    font-size: .85em;
+    width: 5.8em;
+    padding: 1.1em 0.9em 1.1em 0.8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_symfonyphp {
+    font-size: .8em;
+    width: 6.28em;
+    padding: 1.1em 0.9em 1.1em 0.8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_dynamodb {
+    font-size: .85em;
+    width: 5.8em;
+    padding: 1.1em 0.9em 1.1em 0.8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_composer {
+    font-size: .85em;
+    width: 5.8em;
+    padding: 1.1em 0.9em 1.1em 0.8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_openapi {
+	font-size: .6em;
+	width: 9.3em;
+	padding: 1.9em .7em;
+}
+
+#curriculum .base_esquerda section#historicos #beholder span.funcao {
+	right: 12.9em;
+	top: 1.6em;
+}
+
+#curriculum .base_esquerda div#animation_container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 525.5px!important;
+	height: 331px!important;
+	background-color: initial!important;
+	z-index: 500;
+}
+
+#curriculum .base_esquerda div#animation_container>* {
+	width: 525px!important;
+	height: 331px!important;
+	background-color: initial!important;
+}
+
+#curriculum section.base_direita {
+	flex: 0 0 28.5%;
+	padding: 0 1em;
+}
+
+#curriculum section.base_direita .titulo.grande {
+	font-family: "ModeSeven";
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #464445;
+	width: 12.7em;
+	padding: 1.2em 0em .2em .7em;
+	margin: .3em 0;
+}
+
+#curriculum section.base_direita .titulo.cargo {
+	font-family: "ModeSeven";
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #464445;
+	width: 12.7em;
+	padding: 1.2em 0em .2em .7em;
+	margin: .3em 0;
+}
+
+#curriculum section.base_direita .cargo_titulo {
+	font-size: 1.5em;
+}
+
+#curriculum section.base_direita .cargo_subtitulo {
+	font-size: .7em;
+}
+
+#curriculum section.base_direita .titulo.cargo {
+	padding: .5em 0em .5em .7em;
+	margin: 0;
+}
+
+#curriculum section.base_direita .item {
+	font-family: "ModeSeven";
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000;
+	width: 13em;
+	padding: 1.74em .2em .95em .2em;
+	margin: .3em 0;
+	position: relative;
+}
+
+#curriculum section.base_direita .item .texto {
+	text-align: center;
+	font-family: "Century Gothic";
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+#curriculum section.base_direita .item.email .texto {
+	text-transform: lowercase;
+}
+
+#curriculum section.base_direita .item.skype .texto {
+	text-transform: lowercase;
+}
+
+#curriculum section.base_direita .item.cursando .texto {
+	text-transform: initial;
+}
+
+#curriculum section.base_direita .portfolio .titulo.grande {
+	background-color: #2170B3!important;
+}
+
+#curriculum section.base_direita .portfolio_link {
+	background-color: #174D7B;
+	color: #fff;
+	width: 18.8em;
+	padding: 1.59em .2em 1.4em .2em;
+	margin: .3em 0;
+	position: relative;
+	font-size: .7em;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: 'Century Gothic';
+}
+
+#curriculum section.base_direita span.icon {
+	background-image: url("../images/d-up.jpg");
+	width: 1em;
+	height: .9em;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	top: .1em;
+}
+
+#curriculum section.base_direita .item.skype {
+	display: none;
+}
+
+#curriculum section.base_direita .item.linkedin .texto {
+	font-size: 0.6em!important;
+	text-transform: lowercase;
+	margin-left: -.5em;
+}
+
+#curriculum section.base_direita span.icon_linkedin {
+	background-image: url("../images/linkedin.png");
+	width: .7em;
+	height: .7em;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	top: .1em;
+}
+
+#curriculum section.base_direita .item a {
+	text-align: center;
+	display: block;
+}
+
+#curriculum .corpo.carregando {
+	opacity: 0;
+	pointer-events: none;
+}
+
+#curriculum .corpo.carregando~.loader {
+	display: block;
+}
+
+#curriculum .naodisponivel {
+	display: none;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-family: "Century Gothic";
+	width: 90%;
+	font-size: 1.5em;
+}
+
+#curriculum.desabilitado>.naodisponivel {
+	display: block!important;
+}
+
+#curriculum.desabilitado>.carregando {
+	display: none!important;
+}
+
+.smartphone #curriculum {
+	width: 100%;
+	margin: 0;
+	height: 100%;
+	padding: 0;
+}
+
+.smartphone #curriculum {
+	width: auto;
+	margin: 1em;
+	height: 100%;
+	padding: 1.5em;
+}
+
+.smartphone #curriculum section.corpo {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.smartphone #curriculum .base_esquerda section#base_animacao {
+	height: 0;
+	padding-top: 66.64%;
+	margin-top: .2em;
+}
+
+.smartphone #curriculum .base_esquerda section#base_animacao .perfil.nome {
+	width: 80%;
+	height: 0;
+	bottom: .5em;
+	padding-top: 10%;
+}
+
+.smartphone #curriculum .base_esquerda section#base_animacao .perfil.nome .texto {
+	font-size: 4vw;
+	font-weight: 700;
+}
+
+.smartphone #curriculum .titulo.pequeno {
+	font-size: .5em;
+	top: .8em;
+	font-size: .6em;
+}
+
+.smartphone #curriculum section.base_direita .titulo {
+	width: calc(100% - 0.5em);
+}
+
+.smartphone #curriculum section.base_direita .item {
+	width: calc(100% - 1.7em);
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.smartphone #curriculum section.base_direita {
+	padding: 0;
+}
+
+.smartphone #curriculum section.base_direita .portfolio_link {
+	width: calc(100%);
+	font-size: 3.4vw;
+	padding: 1em .13em;
+}
+
+.smartphone #curriculum .titulo h2 {
+	margin: 0 .4em .5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .barraprogresso .porcentagem {
+	z-index: 10;
+	position: absolute;
+	right: .5em;
+	color: #fff;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem {
+	margin-right: 0;
+	margin-left: auto;
+	position: relative;
+}
+
+.smartphone #curriculum .base_esquerda section#perfil_skills .perfil_titulo.skills {
+	width: calc(100% - 0.5em);
+	font-size: .9em;
+}
+
+.smartphone #curriculum .base_esquerda .historico_titulo.historico {
+	width: calc(100% - 0.5em);
+	font-size: .9em;
+}
+
+.smartphone #curriculum section.base_esquerda ul {
+	width: calc(100% + 0.2em);
+}
+
+.smartphone #curriculum .base_esquerda section#historicos .historicos .historico {
+	padding: .7em .7em;
+	height: 5.5vw;
+}
+
+.smartphone #curriculum .base_esquerda section#historicos span.titulo {
+	font-size: 2.7vw;
+	font-weight: 700;
+	top: 0.4em;
+}
+
+.smartphone #curriculum .base_esquerda section#historicos span.data {
+	font-size: 2vw;
+	line-height: 1em;
+	margin-top: 1em;
+	position: relative;
+	margin-left: .8em;
+	min-width: fit-content;
+	display: block;
+}
+
+.smartphone #curriculum .base_esquerda section#historicos span.funcao {
+	font-size: 2vw;
+	position: relative;
+	right: 0!important;
+	top: 0.8em!important;
+}
+
+.smartphone #curriculum .base_esquerda section#historicos span.separacao {
+	line-height: 6vw;
+	font-size: .8em;
+	position: relative;
+	display: block;
+	margin: -0.15em .3em;
+}
+
+.smartphone #curriculum .base_esquerda section#historicos span.funcao.funcao_2i9 {
+}
+
+.smartphone #curriculum .base_esquerda section#historicos span.funcao.funcao_studiovisual {
+}
+
+.smartphone #curriculum .base_esquerda section#historicos #beholder span.funcao {
+}
+
+.smartphone #curriculum .base_esquerda section#historicos span.funcao.funcao_deevo {
+}
+
+.smartphone #curriculum section.base_direita .item .texto {
+	font-size: 1em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo {
+	font-size: .8em;
+	padding: 1.4em .7em 0;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_dynamodb {
+	font-size: .63em;
+	padding: 1.6em 1.17em .5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_openapi {
+	font-size: 7.6px;
+	padding: 2.6em .7em 0;
+}
+
+.smartphone #curriculum section.base_direita .item.linkedin .texto {
+	font-size: 3.4vw!important;
+}
+
+.smartphone #curriculum section.base_direita span.icon_linkedin {
+	width: 3.2vw;
+	height: 3.2vw;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_symfonyphp {
+	font-size: 0.664em;
+	padding: 1.5em 0.75em 1.5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_sass {
+	font-size: .7em;
+	padding: 1.5em .7em 1.5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_laravelmix {
+	font-size: .7em;
+	padding: 1.5em .75em 1.5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_ssh {
+	padding: 1.3em 0.55em 1.3em 0.95em;
+	font-size: 12.4px;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_docker {
+	padding: 1.3em .65em 1.3em .75em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_javascript {
+    font-size: .71em;
+    padding: 1.5em 0.7em 1.5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_wordpress {
+    font-size: .71em;
+    padding: 1.5em 0.7em 1.5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_composer {
+    font-size: .71em;
+    padding: 1.5em 0.7em 1.5em;
+}
+
+.tablet body#curriculum {
+    font-size: 13.9px;
+}
+

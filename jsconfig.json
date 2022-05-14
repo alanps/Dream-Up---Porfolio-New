@@ -10,7 +10,7 @@
       "@styles/geral": ["./resources/styles/geral.scss"],
       "@styles/error404": ["./resources/styles/error404.scss"],
       "@styles/contato": ["./resources/styles/contato.scss"],
-      "@scripts/contato": ["./resources/scripts/contato.js"],
+      "@scripts/contato": ["./resources/scripts/contato.js"]
     }
   },
   "exclude": ["./public", "./node_modules"]

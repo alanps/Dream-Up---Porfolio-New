@@ -13,7 +13,7 @@ module.exports = async (app) => {
     .entry({
       geral: ['@scripts/geral', '@styles/geral'],
       error404: ['@styles/error404'],
-      contato: ['@scripts/contato', '@styles/contato'],
+      contato: ['@scripts/contato', '@styles/contato']
     })
 
     /**

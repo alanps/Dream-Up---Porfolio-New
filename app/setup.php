@@ -14,15 +14,23 @@ use function Roots\bundle;
  * @return void
  */
 add_action('wp_enqueue_scripts', function () {
-    bundle('geral')->enqueue();
+    if(!is_page('curriculum')){
+        bundle('geral')->enqueue();
 
-    if(is_404()){
-        bundle('error404')->enqueue();
+        if(is_404()){
+            bundle('error404')->enqueue();
+        }
+
+        if(is_page('contato')){
+            wp_enqueue_script( 'mask', '/wp-content/themes/dreamup/resources/scripts/libs/jquery.mask.js', ['jquery'], '1.0.0', true );
+            bundle('contato')->enqueue();
+        }
     }
 
-    if(is_page('contato')){
-        wp_enqueue_script( 'mask', '/wp-content/themes/dreamup/resources/scripts/libs/jquery.mask.js', ['jquery'], '1.0.0', true );
-        bundle('contato')->enqueue();
+    if(is_page('curriculum')){
+        wp_enqueue_script( 'curriculum', '/wp-content/themes/dreamup/resources/scripts/curriculum.js', ['jquery'], '1.0.0', true );
+        wp_enqueue_style( 'curriculum_stylesheet', '/wp-content/themes/dreamup/resources/fonts/stylesheet.css' );
+        wp_enqueue_style( 'curriculum', '/wp-content/themes/dreamup/resources/styles/curriculum.css' );
     }
 }, 100);
 
