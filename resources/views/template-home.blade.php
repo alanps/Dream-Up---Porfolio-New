@@ -39,7 +39,7 @@
       <div class="col col-12 col-md-4">
         <div class="blocos bloco-emprego d-flex flex-column">
           <div class="linha1">STATUS: <span>Empregado</span></div>
-          <div class="linha2"><a href="https://studiovisual.com.br" target="_blank"><img height="326" widht="170" src="<?php echo get_home_url(); ?>/wp-content/uploads/2022/04/studiovisual-1.png"></a></div>
+          <div class="linha2"><a href="https://studiovisual.com.br" target="_blank"><img src="@asset('/images/studiovisual.png')"></a></div>
           <div class="linha3">Desde Junho de 2021 na <a href="https://studiovisual.com.br" target="_blank">Studio Visual</a></div>
           <div class="linha4">(<?php echo calc_diff_date('2021-06-21', date('Y-m-d')); ?>)</div>
         </div>
@@ -47,8 +47,8 @@
       <div class="col col-12 col-md-4">
         <div class="blocos">
           <div class="bloco-eu">
-            <div class="linha1"><img  height="135" widht="102"src="<?php echo get_home_url(); ?>/wp-content/uploads/2022/04/balao.png"><span>Esse é meu portfólio!</span></div>
-            <div class="linha2"><img  height="280" widht="205"src="<?php echo get_home_url(); ?>/wp-content/uploads/2022/04/eu.png"></div>
+            <div class="linha1"><img src="@asset('/images/balao.png')"><span>Esse é meu portfólio!</span></div>
+            <div class="linha2"><img src="@asset('/images/eu.png')"></div>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <div class="bloco-curriculum">
               <div class="linha1">Meu Curriculum</div>
               <div class="linha2">
-                <a href="https://agenciadreamup.com.br/aps" target="_blank"><img height="250" widht="200" src="<?php echo get_home_url(); ?>/wp-content/uploads/2022/04/curriculum.png"></a>
+                <a href="https://agenciadreamup.com.br/aps" target="_blank"><img src="@asset('/images/curriculum.png')"></a>
               </div>
           </div>
         </div>

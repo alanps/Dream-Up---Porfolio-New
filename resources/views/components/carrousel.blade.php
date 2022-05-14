@@ -11,7 +11,7 @@
 					@foreach(get_carrousel_posts_artes($category->cat_ID) as $key => $post)
 						<a href="#" class="lightbox">
 							<div class="box">
-								<img height="344" widht="332" src="{{ get_the_post_thumbnail_url($post) }}" data-key="{{$key}}">
+								<img src="{{ get_the_post_thumbnail_url($post) }}" data-key="{{$key}}">
 							</div>
 						</a>
 					@endforeach
@@ -27,7 +27,7 @@
 		<li class="slide-site-apps slide slide{{$key}} {{($key==0) ? 'active' : ''}}">
 			<div class="post-thumbs-container">
 				<div class="post-thumb">
-					<img height="344" widht="344" src="{{ get_the_post_thumbnail_url($post) }}">
+					<img src="{{ get_the_post_thumbnail_url($post) }}">
 				</div>
 			</div>
 			<div class="post">
@@ -70,7 +70,7 @@
 		<li class="slide-site-apps slide slide{{$key}} {{($key==0) ? 'active' : ''}}">
 			<div class="post-thumbs-container">
 				<div class="post-thumb">
-					<img height="344" widht="344" src="{{ get_the_post_thumbnail_url($post) }}">
+					<img src="{{ get_the_post_thumbnail_url($post) }}">
 				</div>
 			</div>
 			<div class="post">

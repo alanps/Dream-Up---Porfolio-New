@@ -11,9 +11,9 @@ module.exports = async (app) => {
      * Paths are relative to your resources directory
      */
     .entry({
-      app: ['@scripts/app', '@styles/app'],
+      geral: ['@scripts/geral', '@styles/geral'],
       error404: ['@styles/error404'],
-      contato: ['@styles/contato'],
+      contato: ['@scripts/contato', '@styles/contato'],
     })
 
     /**
@@ -38,5 +38,5 @@ module.exports = async (app) => {
     /**
      * Development URL to be used in the browser.
      */
-    .serve('http://0.0.0.0:3000');
+    .serve('http://localhost');
 };

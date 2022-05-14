@@ -14,15 +14,15 @@ use function Roots\bundle;
  * @return void
  */
 add_action('wp_enqueue_scripts', function () {
-    bundle('app')->enqueue();
+    bundle('geral')->enqueue();
 
     if(is_404()){
         bundle('error404')->enqueue();
     }
 
     if(is_page('contato')){
-        bundle('contato')->enqueue();
         wp_enqueue_script( 'mask', '/wp-content/themes/dreamup/resources/scripts/libs/jquery.mask.js', ['jquery'], '1.0.0', true );
+        bundle('contato')->enqueue();
     }
 }, 100);
 

@@ -6,10 +6,11 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "paths": {
-      "@scripts/app": ["./resources/scripts/*"],
-      "@styles/app": ["./resources/styles/*"],
-      "@styles/error404": ["./resources/styles/*"],
-      "@styles/contato": ["./resources/styles/*"]
+      "@scripts/geral": ["./resources/scripts/geral.js"],
+      "@styles/geral": ["./resources/styles/geral.scss"],
+      "@styles/error404": ["./resources/styles/error404.scss"],
+      "@styles/contato": ["./resources/styles/contato.scss"],
+      "@scripts/contato": ["./resources/scripts/contato.js"],
     }
   },
   "exclude": ["./public", "./node_modules"]
