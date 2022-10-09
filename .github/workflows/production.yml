@@ -44,7 +44,7 @@ jobs:
         with:
           switches: --no-perms -O --exclude=.git/ --exclude=.env --delete -Prltvz
           path: ./
-          remote_path: /data/wwwroot/agenciadreamup.com.br/public/wp-content/themes/dreamup
+          remote_path: /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup
           remote_host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
           remote_port: 22
           remote_user: ${{ secrets.SSH_DEV_DEPLOY_USER }}
