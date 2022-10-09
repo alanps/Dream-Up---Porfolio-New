@@ -42,7 +42,7 @@ jobs:
       - name: Copiando arquivos dos plugins para ambiente de testes
         uses: burnett01/rsync-deployments@4.1
         with:
-          switches: --no-perms --inplace -O --exclude=.git/ --exclude=.env --delete -Prltvz
+          switches: --no-perms -avz --no-o --no-g -O --exclude=.git/ --exclude=.env --delete -Prltvz
           path: ./
           remote_path: /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup
           remote_host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
