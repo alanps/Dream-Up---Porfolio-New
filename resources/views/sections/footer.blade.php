@@ -17,7 +17,7 @@
             <span class="meulinkedin">linkedin.com/in/alanpardinisantana</span>
           </a>
           <a class="facebook" href="https://web.facebook.com/alanps2012" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-facebook"></i>
             <span class="meufacebook">web.facebook.com/alanps2012</span>
           </a>
         </div>
