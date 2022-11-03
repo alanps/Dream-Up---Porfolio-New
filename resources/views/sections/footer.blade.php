@@ -18,7 +18,7 @@
           </a>
           <a class="facebook" href="https://web.facebook.com/alanps2012" target="_blank">
             <i class="fa-brands fa-facebook-square"></i>
-            <span class="meufacebook">web.facebook.com/alanps2012</span>
+            <span class="meufacebook">facebook.com/alanps2012</span>
           </a>
         </div>
 
