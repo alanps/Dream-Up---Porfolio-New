@@ -140,11 +140,12 @@ function get_artes()
 function get_carrousel_posts_sites()
 {
     $args = array(
-        'orderby'          => 'date',
-        'order'            => 'ASC',
+        'meta_key'         => 'sites_e_apps_group_entrada_empresa',
+        'orderby'          => 'meta_value_num date',
+        'order'            => 'DESC',
         'post_type'        => 'sites',
         'posts_per_page  ' => -1,
-        'nopaging'         => true
+        'nopaging'         => true,
     );
 
     $posts = get_posts($args);
@@ -170,3 +171,4 @@ function get_carrousel_posts_apps()
 
     return $posts;
 }
+
