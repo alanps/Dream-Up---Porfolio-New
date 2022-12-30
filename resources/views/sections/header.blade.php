@@ -1,4 +1,4 @@
-<div class="container-xl container-fluid">
+<div class="container-xxl container-fluid">
   <div class="row">
     <div class="col col-12">
 
