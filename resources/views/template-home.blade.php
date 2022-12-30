@@ -38,10 +38,10 @@
     <div class="row flex-column flex-md-row">
       <div class="col col-12 col-md-4">
         <div class="blocos bloco-emprego d-flex flex-column">
-          <div class="linha1">STATUS: <span>Desempregado</span></div>
+          <div class="linha1">STATUS: <span>Desempregado</span></div><!--
           <div class="linha2"><a href="https://studiovisual.com.br" target="_blank"><img src="@asset('/images/studiovisual.png')"></a></div>
           <div class="linha3">Até Outubro de 2022 na <a href="https://studiovisual.com.br" target="_blank">Studio Visual</a></div>
-          <div class="linha4">(<?php echo calc_diff_date('2021-06-21', '2022-10-30'); ?>)</div>
+          <div class="linha4">(<?php echo calc_diff_date('2021-06-21', '2022-10-30'); ?>)</div>-->
         </div>
       </div>
       <div class="col col-12 col-md-4">
