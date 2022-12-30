@@ -146,7 +146,7 @@ section.infos {
 
 			@media screen and (max-width: $medium-menu-screen) {
 				background-size: cover !important;
-				background-attachment: scroll;
+				background-attachment: fixed;
 			}
 
 			.linha1 {
