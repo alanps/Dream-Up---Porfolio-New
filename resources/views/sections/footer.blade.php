@@ -16,10 +16,6 @@
             <i class="fa-brands fa-linkedin"></i>
             <span class="meulinkedin">linkedin.com/in/alanpardinisantana</span>
           </a>
-          <a class="facebook" href="https://web.facebook.com/alanps2012" target="_blank">
-            <i class="fa-brands fa-facebook-square"></i>
-            <span class="meufacebook">facebook.com/alanps2012</span>
-          </a>
         </div>
 
         <div class="copyright">São Paulo, <?php echo date_i18n(get_option('date_format')); ?> - Todos os direitos reservados</div>

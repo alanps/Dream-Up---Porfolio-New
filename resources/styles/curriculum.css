@@ -179,6 +179,10 @@ body#curriculum {
 	color: #fff;
 }
 
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.figma {
+	flex: 0 0 70%;
+}
+
 #curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.html {
 	flex: 0 0 100%;
 }
@@ -201,6 +205,10 @@ body#curriculum {
 
 #curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.wordpress {
 	flex: 0 0 90%;
+}
+
+#curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.sage {
+	flex: 0 0 80%;
 }
 
 #curriculum .base_esquerda .perfil_skills .barraprogresso .barra_porcentagem.javascript {
@@ -381,7 +389,7 @@ body#curriculum {
 }
 
 #curriculum .base_esquerda section#historicos span.funcao.funcao_studiovisual {
-	right: 9em;
+	right: 8em;
 	top: 1.65em;
 }
 
@@ -398,11 +406,19 @@ body#curriculum {
 	line-height: 1.9em;
 }
 
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_figma {
+	background-color: #1a1510;
+}
+
 #curriculum .base_esquerda .perfil_skills .titulo.titulo_nodejs {
 	background-color: #675340;
 }
 
 #curriculum .base_esquerda .perfil_skills .titulo.titulo_wordpress {
+	background-color: #675340;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_sage {
 	background-color: #675340;
 }
 
@@ -516,6 +532,9 @@ body#curriculum {
     font-size: .85em;
     width: 5.8em;
     padding: 1.1em 0.9em 1.1em 0.8em;
+}
+
+#curriculum .base_esquerda .perfil_skills .titulo.titulo_sage{
 }
 
 #curriculum .base_esquerda .perfil_skills .titulo.titulo_symfonyphp {
@@ -921,6 +940,9 @@ body#curriculum {
 .smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_wordpress {
     font-size: .71em;
     padding: 1.5em 0.7em 1.5em;
+}
+
+.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_sage {
 }
 
 .smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_composer {

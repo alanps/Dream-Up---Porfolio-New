@@ -59,6 +59,16 @@
 				<ul class="perfil_skills">
 
 					<!-- Perfil Skill -->
+					<li class="perfil_skill design" id="figma">
+						<div class="titulo titulo_figma">Figma</div>
+						<div class="barraprogresso">
+							<div class="fundobranco">
+								<div class="porcentagem">70%</div>
+								<div class="barra_porcentagem figma"></div>
+							</div>
+						</div>
+					</li>
+					<!-- Perfil Skill -->
 					<li class="perfil_skill frontend" id="html">
 						<div class="titulo titulo_html">HTML</div>
 						<div class="barraprogresso">
@@ -145,6 +155,16 @@
 							<div class="fundobranco">
 								<div class="porcentagem">90%</div>
 								<div class="barra_porcentagem wordpress"></div>
+							</div>
+						</div>
+					</li>
+					<!-- Perfil Skill -->
+					<li class="perfil_skill backend" id="sage">
+						<div class="titulo titulo_sage">Sage</div>
+						<div class="barraprogresso">
+							<div class="fundobranco">
+								<div class="porcentagem">80%</div>
+								<div class="barra_porcentagem sage"></div>
 							</div>
 						</div>
 					</li>
@@ -366,7 +386,7 @@
 					<!-- Histórico -->
 					<li class="historico" id="studiovisual">
 						<span class="titulo titulo_studiovisual">Studio Visual</span>
-						<span class="data data_studiovisual">de 06/2021 - até agora</span>
+						<span class="data data_studiovisual">de 06/2021 - até 10/2022</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_studiovisual">desenvolvedor full stack</span>
 					</li>
@@ -419,7 +439,7 @@
 
 				<div class="item idade">
 					<div class="titulo pequeno">Idade:</div>
-					<div class="texto">33 Anos</div>
+					<div class="texto">35 Anos</div>
 				</div>
 
 				<div class="item nascido">
@@ -446,7 +466,12 @@
 
 				<div class="item cursando">
 					<div class="titulo pequeno">Pós-Graduação (cursando):</div>
-					<div class="texto">Desenvolvimento em Tecnologias Digitais</div>
+					<div class="texto">Projetos de Aplicativos Móveis Multiplataforma</div>
+				</div>
+
+				<div class="item cursando">
+					<div class="titulo pequeno">MBA (cursando):</div>
+					<div class="texto">Big Data e Inteligência Competitiva</div>
 				</div>
 			</div>
 
