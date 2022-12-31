@@ -81,7 +81,7 @@ ul.carrousel {
 			.thumbs-container {
 				border-top: 5px solid black;
 				border-bottom: 5px solid black;
-				border-radius: 10px;
+				border-radius: 5px;
 				flex: 1;
 				max-width: 46em;
 				min-width: 46em;
@@ -182,11 +182,11 @@ ul.carrousel {
 				border-top: 10px solid black;
 				border-bottom: 10px solid black;
 				border-radius: 10px;
-				flex: 0 0 250px;
+				flex: 0 0 270px;
 
 				@media screen and (max-width: $medium-screen) {
 					flex: 1;
-					max-width: 250px;
+					max-width: 270px;
 				}
 
 				@media screen and (max-width: $small-screen) {
@@ -200,8 +200,12 @@ ul.carrousel {
 				.post-thumb {
 					display: flex;
 					flex-direction: row;
-					padding: 1em 1.5em;
+
+					/* padding: 1em 1.5em; */
 					background-color: #fff;
+
+					/* max-height: 270px; */
+					height: 100%;
 
 					@media screen and (max-width: $small-screen) {
 						background-color: #fff !important;
@@ -214,11 +218,11 @@ ul.carrousel {
 					}
 
 					img {
-						width: 200px;
-						height: 200px;
-						object-fit: cover;
-						border-radius: 10px;
+						/* border-radius: 10px; */
+						height: 100%;
 						margin: 0 auto;
+						object-fit: fill;
+						width: 100%;
 
 						@media screen and (max-width: $small-screen) {
 							width: 100%;
@@ -226,7 +230,7 @@ ul.carrousel {
 						}
 
 						@media screen and (max-width: $medium-screen) {
-							border-radius: 10px;
+							/* border-radius: 10px; */
 							height: 100%;
 							margin: 0 auto;
 							object-fit: cover;
@@ -242,7 +246,7 @@ ul.carrousel {
 				font-size: 14px;
 				font-weight: 200;
 				padding: 0 20px;
-				margin: 5px 0;
+				margin: 10px 0;
 				flex: 1;
 				max-width: 30em;
 
@@ -292,7 +296,7 @@ ul.carrousel {
 				flex: 1;
 				font-size: 14px;
 				font-weight: 200;
-				margin: 5px 0;
+				margin: 10px 0;
 				padding: 0 40px;
 
 				@media screen and (max-width: $medium-screen) {
