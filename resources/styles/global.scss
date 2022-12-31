@@ -8,12 +8,16 @@ html {
 	min-height: 100% !important;
 	background-attachment: fixed;
 	height: 100% !important;
+	width: 100%;
+	overflow: hidden;
 
 	div#app {
 		padding: 30px 0;
 	}
 
 	body {
+		overflow-y: scroll;
+		height: 100% !important;
 		background: transparent;
 	}
 
@@ -51,4 +55,20 @@ html {
 			padding: 50px 0 !important;
 		}
 	}
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #fff;
 }
