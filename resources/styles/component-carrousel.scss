@@ -312,7 +312,7 @@ ul.carrousel {
 
 				.infos-container {
 					margin: 0 auto;
-					padding: 40px 0;
+					padding: 35px 0;
 					text-align: left !important;
 					width: 100% !important;
 					max-width: 100%;
@@ -331,8 +331,14 @@ ul.carrousel {
 					}
 
 					.info-cargo {
-						margin: 15px 0;
+						margin: 0 0 15px;
 						display: block;
+					}
+
+					.info-site {
+						~.info-cargo {
+							margin: 15px 0 !important;
+						}
 					}
 
 					@media screen and (max-width: $small-screen) {
