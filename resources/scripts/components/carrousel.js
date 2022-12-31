@@ -20,6 +20,10 @@ export default {
 					el.find(".slide" + slide_first).removeClass("active");
 					slide_first = slide_first + 1;
 					slide_visible = slide_visible + 1;
+					if(jQuery('html').width() <= 565){
+						var section = jQuery("#main .sobrincadeira, #main .siteseempregos, #main .aplicativos");
+	    			jQuery('body').animate({scrollTop: section[0].offsetTop-30},'slow');
+	    		}
 				}
 			});
 
@@ -29,8 +33,13 @@ export default {
 					slide_visible = slide_visible - 1;
 					el.find(".slide" + slide_visible).removeClass("active");
 					el.find(".slide" + slide_first).addClass("active");
+					if(jQuery('html').width() <= 565){
+						var section = jQuery("#main .sobrincadeira, #main .siteseempregos, #main .aplicativos");
+	    			jQuery('body').animate({scrollTop: section[0].offsetTop-30},'slow');
+	    		}
 				}
 			});
+
 
 
       //////////////////////////////////////////////
