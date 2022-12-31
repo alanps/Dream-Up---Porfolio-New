@@ -119,7 +119,7 @@ ul.carrousel {
 						width: 125px;
 						height: 125px;
 						object-fit: cover;
-						border-radius: 10px;
+						border-radius: 5px;
 						margin-right: 10px;
 						cursor: pointer;
 
@@ -208,8 +208,8 @@ ul.carrousel {
 					height: 100%;
 
 					@media screen and (max-width: $small-screen) {
+						/* padding: 1.5em 0.8em; */
 						background-color: #fff !important;
-						padding: 1.5em 0.8em;
 					}
 
 					@media screen and (max-width: $medium-screen) {
