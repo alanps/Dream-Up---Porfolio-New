@@ -14,10 +14,12 @@ footer {
 
 	@media screen and (max-width: $medium-screen) {
 		width: 100%;
+		max-width: 100%;
 	}
 
 	@media screen and (max-width: $small-screen-medium) {
 		margin: 50px auto 35px !important;
+		max-width: 100%;
 	}
 }
 
