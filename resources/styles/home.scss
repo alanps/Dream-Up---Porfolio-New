@@ -90,7 +90,7 @@ section.infos {
 			background-position: bottom;
 			background-repeat: no-repeat;
 			background-size: cover;
-			border: 7px solid #2d2d2d;
+			border: 8px solid #f0f0f0;
 
 			@media screen and (max-width: $medium-screen) {
 				/* background-attachment: scroll; */
@@ -137,7 +137,7 @@ section.infos {
 		.bloco-eu {
 			background-color: #f0f0f0;
 			height: 100%;
-			margin: 0 6px;
+			margin: 0 8px;
 			position: relative;
 			text-align: center;
 			background-attachment: fixed;
@@ -148,7 +148,7 @@ section.infos {
 
 			@media screen and (max-width: $medium-menu-screen) {
 				background-size: cover !important;
-				background-attachment: fixed;
+				background-attachment: scroll;
 			}
 
 			.linha1 {
@@ -206,7 +206,7 @@ section.infos {
 		.bloco-curriculum {
 			background-color: #f0f0f0;
 			height: 100%;
-			margin: 0 6px;
+			margin: 0 8px;
 			position: relative;
 			text-align: center;
 			background-size: cover;
