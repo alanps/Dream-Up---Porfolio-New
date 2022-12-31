@@ -12,7 +12,7 @@ section.daumaolhada {
 
 		@media screen and (max-width: $small-screen) {
 			margin-top: 5px;
-			padding: 10px;
+			padding: 5px 10px;
 		}
 	}
 
@@ -157,7 +157,6 @@ section.infos {
 					top: 5px;
 					width: 135px;
 					height: auto;
-					filter: grayscale(0.5) drop-shadow(0 2px 10px black) opacity(0.99);
 
 					@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
 						left: calc(50% - 95px);
@@ -188,7 +187,6 @@ section.infos {
 				position: relative;
 
 				img {
-					filter: grayscale(0.3) drop-shadow(0 2px 1.5px black) opacity(0.99);
 					margin-right: 15px;
 					position: absolute;
 					width: 280px;
