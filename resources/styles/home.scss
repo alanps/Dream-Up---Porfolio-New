@@ -83,7 +83,7 @@ section.infos {
 		&.bloco-emprego {
 			padding: 0.6em 2em 1em;
 
-			/* background-attachment: fixed; */
+			background-attachment: fixed;
 			background-color: #f0f0f0;
 			background-image: url("~/resources/images/studio-bg.webp");
 			background-position: bottom;
@@ -92,7 +92,7 @@ section.infos {
 			border: 7px solid #2d2d2d;
 
 			@media screen and (max-width: $medium-screen) {
-				/* background-attachment: scroll; */
+				background-attachment: scroll;
 			}
 
 			.linha1 {
