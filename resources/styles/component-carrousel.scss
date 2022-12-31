@@ -94,10 +94,10 @@ ul.carrousel {
 				@media screen and (max-width: $small-screen) {
 					order: 2;
 					max-width: calc(100% - 20px);
-					margin: 0 auto;
 					background-color: black !important;
 					width: 100%;
 					min-width: auto;
+					margin: 10px auto;
 				}
 
 				.thumbs {

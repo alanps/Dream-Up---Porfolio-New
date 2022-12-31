@@ -18,7 +18,6 @@ footer {
 
 	@media screen and (max-width: $small-screen-medium) {
 		margin: 50px auto 35px !important;
-		background: transparent;
 	}
 }
 
@@ -29,7 +28,7 @@ section.contato.d-block {
 
 	@media screen and (max-width: $small-screen-medium) {
 		background: #fff;
-		padding: 0;
+		padding: 0.75rem 0.75rem 4rem;
 
 		.section-title {
 			background-color: #383838 !important;
