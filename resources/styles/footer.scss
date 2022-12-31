@@ -44,8 +44,8 @@ footer {
 		place-self: flex-end;
 		font-size: 10px;
 		text-align: right;
-		flex: 1;
-		padding: 0 10px;
+		padding: 2px 7px 0;
+		background: #f0f0f0;
 
 		@media screen and (max-width: $medium-screen) {
 			text-align: center !important;
