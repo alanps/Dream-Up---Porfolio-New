@@ -7,11 +7,11 @@ footer {
 .copyright {
 	background: #f0f0f0;
 	font-size: 10px;
-	margin: 35px auto 25px;
 	padding: 2px 7px 0;
-	text-align: center;
-	max-width: 100%;
-	width: 100%;
+	place-self: flex-end;
+	text-align: right;
+	margin-bottom: 80px;
+	margin-top: 15px;
 
 	@media screen and (max-width: $medium-screen) {
 		width: 100%;
@@ -19,8 +19,10 @@ footer {
 	}
 
 	@media screen and (max-width: $small-screen-medium) {
-		margin: 50px auto 35px !important;
 		max-width: 100%;
+		margin: 25px auto 15px;
+		text-align: center !important;
+		width: 100%;
 	}
 }
 

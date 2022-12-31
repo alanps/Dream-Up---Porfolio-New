@@ -79,9 +79,10 @@ ul.carrousel {
 			}
 
 			.thumbs-container {
-				border-top: 5px solid black;
-				border-bottom: 5px solid black;
-				border-radius: 5px;
+				/* border-radius: 5px; */
+				border-bottom: 8px solid #383838;
+				border-left: 8px solid #383838;
+				border-top: 8px solid #383838;
 				flex: 1;
 				max-width: 46em;
 				min-width: 46em;
@@ -98,6 +99,7 @@ ul.carrousel {
 					width: 100%;
 					min-width: auto;
 					margin: 10px auto;
+					border-right: 6px solid #383838;
 				}
 
 				.thumbs {
@@ -119,7 +121,7 @@ ul.carrousel {
 						width: 125px;
 						height: 125px;
 						object-fit: cover;
-						border-radius: 5px;
+						border-radius: 3px;
 						margin-right: 10px;
 						cursor: pointer;
 
@@ -137,13 +139,13 @@ ul.carrousel {
 			}
 
 			.categoria {
+				/* margin: 5px 0; */
 				background-color: #383838;
 				color: #f0f0f0;
 				font-size: 14px;
 				font-weight: 200;
 				text-transform: uppercase;
 				padding: 0 20px;
-				margin: 5px 0;
 				flex: 1;
 
 				@media screen and (max-width: $medium-screen) {
@@ -179,10 +181,12 @@ ul.carrousel {
 			}
 
 			.post-thumbs-container {
-				border-top: 10px solid black;
-				border-bottom: 10px solid black;
-				border-radius: 10px;
-				flex: 0 0 270px;
+				/* border-radius: 10px; */
+				border-bottom: 8px solid #383838;
+				border-top: 8px solid #383838;
+				border-left: 8px solid #383838;
+				flex: 0 0 250px;
+				margin: 10px 0;
 
 				@media screen and (max-width: $medium-screen) {
 					flex: 1;
@@ -190,11 +194,12 @@ ul.carrousel {
 				}
 
 				@media screen and (max-width: $small-screen) {
-					order: 2;
+					background-color: #000 !important;
+					margin: 15px auto 0;
 					max-width: calc(100% - 20px);
-					margin: 0 auto;
-					background-color: black !important;
+					order: 2;
 					width: 100%;
+					border-right: 8px solid #383838;
 				}
 
 				.post-thumb {
