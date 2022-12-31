@@ -59,6 +59,17 @@ export default {
       	var lightbox_slide_first = 0;
       	var lightbox_slide_total = $(".lightbox-div .lightbox-img").length-1;
       	var lightbox_slide_active = $(".lightbox-div .lightbox-img.active").data('id');
+			$(document).on("keyup", "body", function(e) {
+				if ($(".lightbox-div").length > 0) {
+					if (e.keyCode == 37) {
+						$(".lightbox-div .seta-esquerda").trigger('click');
+					}
+					if (e.keyCode == 39) {
+						$(".lightbox-div .seta-direita").trigger('click');
+					}
+				}
+			});
+
 				if (lightbox_slide_active < lightbox_slide_total) {
         	var lightbox_slide_active_new = lightbox_slide_active+1;
 					$(".lightbox-div .lightbox-img[data-id='" + lightbox_slide_active_new + "']").addClass("active");
