@@ -10,7 +10,8 @@ footer {
 	margin: 35px auto 25px;
 	padding: 2px 7px 0;
 	text-align: center;
-	max-width: fit-content;
+	max-width: 100%;
+	width: 100%;
 
 	@media screen and (max-width: $medium-screen) {
 		width: 100%;
