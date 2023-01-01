@@ -92,7 +92,7 @@ body#curriculum {
 	right: 1.1em;
 	font-family: "ModeSeven";
 	z-index: 1000;
-	display: none;
+	/* display: none; */
 	cursor: pointer;
 }
 
@@ -797,7 +797,7 @@ body#curriculum {
 
 .smartphone #curriculum section.base_direita .portfolio_link {
 	width: calc(100%);
-	font-size: 3.4vw;
+	font-size: 1em;
 	padding: 1em .13em;
 }
 
@@ -900,7 +900,7 @@ body#curriculum {
 }
 
 .smartphone #curriculum section.base_direita .item.linkedin .texto {
-	font-size: 3.4vw!important;
+	font-size: 1em !important;
 }
 
 .smartphone #curriculum section.base_direita span.icon_linkedin {
@@ -954,3 +954,10 @@ body#curriculum {
     font-size: 13.9px;
 }
 
+.smartphone #curriculum .base_esquerda section#base_animacao .repetir_video {
+	display: none;
+}
+
+.tablet #curriculum .base_esquerda section#base_animacao .repetir_video {
+	display: block;
+}

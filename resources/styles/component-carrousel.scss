@@ -58,7 +58,7 @@
 
 ul.carrousel {
 	padding: 0 !important;
-	margin: 15px 0 0;
+	margin: 20px 0 0;
 
 	@media screen and (max-width: $small-screen) {
 		background-color: #2d2d2d;
@@ -79,13 +79,13 @@ ul.carrousel {
 			}
 
 			.thumbs-container {
-				/* border-radius: 5px; */
 				border-bottom: 8px solid #383838;
 				border-left: 8px solid #383838;
 				border-top: 8px solid #383838;
 				flex: 1;
 				max-width: 46em;
 				min-width: 46em;
+				margin: 10px 0;
 
 				@media screen and (max-width: $medium-screen) {
 					max-width: auto;
@@ -139,7 +139,7 @@ ul.carrousel {
 			}
 
 			.categoria {
-				/* margin: 5px 0; */
+				margin: 10px 0;
 				background-color: #383838;
 				color: #f0f0f0;
 				font-size: 14px;
