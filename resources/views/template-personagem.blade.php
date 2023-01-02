@@ -4,20 +4,20 @@
 
 
 <script type="text/javascript">
-$(document).ready(function() {
-  $(".fancybox-button").fancybox({
+jQuery(document).ready(function() {
+  jQuery(".fancybox-button").fancybox({
     playSpeed     : 500,
     prevEffect    : 'none',
     nextEffect    : 'none',
     closeBtn    : false,
     loop      : false,
     afterShow: function() {
-        $(".fancybox-title").wrapInner('<div />').show();
+        jQuery(".fancybox-title").wrapInner('<div />').show();
         
-        $(".fancybox-wrap").hover(function() {
-            $(".fancybox-title").show();
+        jQuery(".fancybox-wrap").hover(function() {
+            jQuery(".fancybox-title").show();
         }, function() {
-            $(".fancybox-title").hide();
+            jQuery(".fancybox-title").hide();
         });
     },
     helpers : {
@@ -33,8 +33,8 @@ $(document).ready(function() {
 
 
 <script type="text/javascript">
-$(document).ready(function() {
-  $(".fancybox-button2").fancybox({
+jQuery(document).ready(function() {
+  jQuery(".fancybox-button2").fancybox({
     playSpeed     : 500,
     prevEffect    : 'none',
     nextEffect    : 'none',
@@ -834,9 +834,9 @@ while ($row = mysqli_fetch_array($query))
 ?>
 
 <script>
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
 
-$('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
+jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
     position: 'right',
   color: '#ff0000',
     height: '250px',
@@ -930,9 +930,9 @@ while ($row = mysqli_fetch_array($query))
 ?>
 
 <script>
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
 
-$('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
+jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
     position: 'right',
   color: '#ff0000',
     height: '250px',
@@ -1017,9 +1017,9 @@ $totalres = mysqli_num_rows($query);
 
 ?>
 <script>
-$(document).ready(function() {
-$.post( "@asset('/views/artes4.php')", { pagina: 1 }, function( data ) {
-  $( ".artes4" ).html( data );
+jQuery(document).ready(function() {
+jQuery.post( "@asset('/views/artes4.php')", { pagina: 1 }, function( data ) {
+  jQuery( ".artes4" ).html( data );
 });
 });
 
@@ -1031,9 +1031,9 @@ var b = 1;
 var inicio = 1;
 var limite = 25;
 
-$(window).scroll(function() {
+jQuery(window).scroll(function() {
   var total = b;
-  if( $(window).scrollTop() >= $(document).height() - screen.height )
+  if( jQuery(window).scrollTop() >= jQuery(document).height() - screen.height )
   {
     inicio = inicio + 25;
     limite = limite + 25;
@@ -1041,13 +1041,13 @@ $(window).scroll(function() {
     b++;
     if( i <= <?php echo $totalres; ?> )
     {
-    $.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
-      $( ".artes4" ).append( data );
+    jQuery.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
+      jQuery( ".artes4" ).append( data );
     });
     }
     else 
     {
-      $('.load').html('');
+      jQuery('.load').html('');
     }
   }
 
@@ -1056,14 +1056,14 @@ $(window).scroll(function() {
 
 
 <script>
-$(document).ready(function() {
+jQuery(document).ready(function() {
 var i = 0;
 var b = 1;
 var inicio = 1;
 var limite = 25;
 var total;
 
-$(".load").click(function() {
+jQuery(".load").click(function() {
     total = b;
     inicio = inicio + 25;
     limite = limite + 25;
@@ -1071,13 +1071,13 @@ $(".load").click(function() {
     b++;
     if( i <= <?php echo $totalres; ?> )
     {
-    $.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
-      $( ".artes4" ).append( data );
+    jQuery.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
+      jQuery( ".artes4" ).append( data );
     });
     }
     else 
     {
-      $('.load').html('');
+      jQuery('.load').html('');
     }
 
 });
@@ -1859,9 +1859,9 @@ while ($row = mysqli_fetch_array($query))
 ?>
 
 <script>
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
 
-$('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
+jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
     position: 'right',
   color: '#ff0000',
     height: '250px',

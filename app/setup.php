@@ -55,11 +55,11 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script( 'jquery.mousewheel-3.0.6.pack', '/wp-content/themes/dreamup/resources/scripts/libs/source/jquery.mousewheel-3.0.6.pack.js', ['jquery'], '1.0.0', true );
         wp_enqueue_style( 'jquery.fancybox', '/wp-content/themes/dreamup/resources/scripts/libs/source/jquery.fancybox.css' );
         wp_enqueue_script( 'jquery.fancybox.pack', '/wp-content/themes/dreamup/resources/scripts/libs/source/jquery.fancybox.pack.js', ['jquery'], '2.1.5', true );
-        wp_enqueue_style( 'jquery.fancybox-buttons', '/wp-content/themes/dreamup/resources/scripts/libs/source/source/helpers/jquery.fancybox-buttons.css' );
-        wp_enqueue_script( 'jquery.fancybox-buttons', '/wp-content/themes/dreamup/resources/scripts/libs/source/source/helpers/jquery.fancybox-buttons.js', ['jquery'], '1.0.5', true );
-        wp_enqueue_script( 'jquery.fancybox-media', '/wp-content/themes/dreamup/resources/scripts/libs/source/source/helpers/jquery.fancybox-media.js', ['jquery'], '1.0.6', true );
-        wp_enqueue_style( 'jquery.fancybox-thumbs', '/wp-content/themes/dreamup/resources/scripts/libs/source/source/helpers/jquery.fancybox-thumbs.css' );
-        wp_enqueue_script( 'jquery.fancybox-thumbs', '/wp-content/themes/dreamup/resources/scripts/libs/source/source/helpers/jquery.fancybox-thumbs.js', ['jquery'], '1.0.7', true );
+        wp_enqueue_style( 'jquery.fancybox-buttons', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-buttons.css' );
+        wp_enqueue_script( 'jquery.fancybox-buttons', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-buttons.js', ['jquery'], '1.0.5', true );
+        wp_enqueue_script( 'jquery.fancybox-media', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-media.js', ['jquery'], '1.0.6', true );
+        wp_enqueue_style( 'jquery.fancybox-thumbs', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-thumbs.css' );
+        wp_enqueue_script( 'jquery.fancybox-thumbs', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-thumbs.js', ['jquery'], '1.0.7', true );
         bundle('global_bundle')->enqueue();
     }
 }, 100);
