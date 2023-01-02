@@ -17,7 +17,7 @@ jQuery('body').on("scroll", function(){
 	var offset = jQuery('body').scrollTop();
 	var header = jQuery('header').height();
 
-    if(jQuery('html').width() >= 300 && jQuery('html').width() <= 565){
+    if(jQuery('html').width() <= 565){
         jQuery('.bloco-eu').css('background-position' , 'center '+(((offset - header)/2.5 )-50)+'px');
         jQuery('.bloco-curriculum').css('background-position' , 'center '+(((offset - header)/10 )+50)+'px');
     } else if(jQuery('html').width() >= 768 && jQuery('html').width() <= 1024){
