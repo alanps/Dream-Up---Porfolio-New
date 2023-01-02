@@ -254,6 +254,7 @@ ul.carrousel {
 				margin: 10px 0;
 				flex: 1;
 				max-width: 30em;
+				word-break: break-word;
 
 				@media screen and (max-width: $medium-screen) {
 					max-width: 30em;

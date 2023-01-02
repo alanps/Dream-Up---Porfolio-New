@@ -328,6 +328,8 @@ body#curriculum {
 	height: 1.6em;
 	font-family: 'Century Gothic';
 	position: relative;
+	display: grid;
+	grid-template-columns: max-content max-content max-content auto;
 }
 
 #curriculum .base_esquerda section#historicos span.titulo.titulo_2i9 {
@@ -343,18 +345,12 @@ body#curriculum {
 }
 
 #curriculum .base_esquerda section#historicos span.data.data_2i9 {
-	margin-left: 1em;
-	line-height: 2.4em;
 }
 
 #curriculum .base_esquerda section#historicos span.data.data_studiovisual {
-	margin-left: 1em;
-	line-height: 2.4em;
 }
 
 #curriculum .base_esquerda section#historicos span.data.data_beholder {
-	margin-left: 1em;
-	line-height: 2.5em;
 }
 
 #curriculum .base_esquerda section#historicos span.titulo {
@@ -365,40 +361,30 @@ body#curriculum {
 
 #curriculum .base_esquerda section#historicos span.data {
 	font-size: .7em;
+	margin-left: 1em;
+	line-height: 2.4em;
 }
 
 #curriculum .base_esquerda section#historicos span.data.data_deevo {
-	margin-left: 1em;
-	line-height: 2.5em;
 }
 
 #curriculum .base_esquerda section#historicos span.funcao {
 	font-size: .7em;
 	display: block;
-	position: absolute;
+	position: relative;
+	line-height: 2.4em;
 }
 
 #curriculum .base_esquerda section#historicos span.funcao.funcao_deevo {
-	right: 12.8em;
-	top: 1.6em;
 }
 
 #curriculum .base_esquerda section#historicos span.funcao.funcao_2i9 {
-	right: 15.3em;
-	top: 1.65em;
 }
 
 #curriculum .base_esquerda section#historicos span.funcao.funcao_studiovisual {
-	right: 8em;
-	top: 1.65em;
 }
 
 #curriculum .base_esquerda section#historicos span.funcao.funcao_deevo2 {
-	display: block;
-	position: absolute;
-	top: 2.2em;
-	right: 2.2em;
-	font-size: .7em;
 }
 
 #curriculum .base_esquerda section#historicos span.separacao {
@@ -562,8 +548,6 @@ body#curriculum {
 }
 
 #curriculum .base_esquerda section#historicos #beholder span.funcao {
-	right: 12.9em;
-	top: 1.6em;
 }
 
 #curriculum .base_esquerda div#animation_container {
@@ -670,7 +654,7 @@ body#curriculum {
 #curriculum section.base_direita span.icon {
 	background-image: url("../images/d-up.jpg");
 	width: 1em;
-	height: .9em;
+	height: 1em;
 	position: relative;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -690,8 +674,8 @@ body#curriculum {
 
 #curriculum section.base_direita span.icon_linkedin {
 	background-image: url("../images/linkedin.png");
-	width: .7em;
-	height: .7em;
+	width: 1em;
+	height: 1em;
 	position: relative;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -755,6 +739,7 @@ body#curriculum {
 .smartphone #curriculum section.corpo {
 	display: flex;
 	flex-direction: column-reverse;
+	word-break: break-word;
 }
 
 .smartphone #curriculum .base_esquerda section#base_animacao {
@@ -855,9 +840,11 @@ body#curriculum {
 
 .smartphone #curriculum .base_esquerda section#historicos span.funcao {
 	font-size: 2vw;
+	line-height: 1em;
+	margin-top: 1em;
 	position: relative;
-	right: 0!important;
-	top: 0.8em!important;
+	min-width: fit-content;
+	display: block;
 }
 
 .smartphone #curriculum .base_esquerda section#historicos span.separacao {
@@ -904,8 +891,13 @@ body#curriculum {
 }
 
 .smartphone #curriculum section.base_direita span.icon_linkedin {
-	width: 3.2vw;
-	height: 3.2vw;
+	width: 15px;
+	height: 15px;
+}
+
+.smartphone #curriculum section.base_direita span.icon {
+	width: 15px;
+	height: 15px;
 }
 
 .smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_symfonyphp {
@@ -968,4 +960,18 @@ body#curriculum {
 
 .smartphone #curriculum section.base_direita span.icon_linkedin {
 	top: 0.05em;
+}
+
+@media screen and (max-width: 360px) {
+	#curriculum .perfil .titulo.pequeno {
+	    font-size: .4em !important;
+	}
+
+	#curriculum {
+		padding: 1em !important;
+	}
+
+	#curriculum .base_esquerda section#historicos .historicos .historico {
+	    padding: 0.5em 0.5em !important;
+	}
 }

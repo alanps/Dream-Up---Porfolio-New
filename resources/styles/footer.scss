@@ -32,6 +32,10 @@ footer {
 			span {
 				margin-left: 5px;
 				font-family: "VT323", monospace !important;
+				word-break: break-word;
+				line-height: 1em;
+				top: 0.22em;
+				position: relative;
 			}
 
 			i {
