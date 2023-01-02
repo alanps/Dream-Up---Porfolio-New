@@ -61,6 +61,13 @@ section.contato.d-block {
 			height: auto;
 		}
 
+		@media screen and (min-width: $medium-menu-screen) {
+			img {
+				max-width: 95% !important;
+				top: 5em;
+			}
+		}
+
 		@media screen and (max-width: $small-screen-large) and (min-width: $small-screen-medium) {
 			img {
 				max-width: 550px !important;
