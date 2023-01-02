@@ -801,7 +801,7 @@ if ($resultado < $topicos99)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -824,7 +824,7 @@ if ($id == 112)
 $query = mysqli_query($bd, "SELECT * FROM `artes101` ORDER BY `imagem` DESC");
 while ($row = mysqli_fetch_array($query))
 {
-echo "<a href=\"".$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos2\"></a>";
+echo "<a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos2\"></a>";
 }
 
 $query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC");
@@ -860,7 +860,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -898,7 +898,7 @@ if ($resultado < $topicos101)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -956,7 +956,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" caption=\"".$row['texto']."\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" caption=\"".$row['texto']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -994,7 +994,7 @@ if ($resultado < $topicos100)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1018,7 +1018,7 @@ $totalres = mysqli_num_rows($query);
 ?>
 <script>
 $(document).ready(function() {
-$.post( "artes4.php", { pagina: 1 }, function( data ) {
+$.post( "@asset('/views/artes4.php')", { pagina: 1 }, function( data ) {
   $( ".artes4" ).html( data );
 });
 });
@@ -1041,7 +1041,7 @@ $(window).scroll(function() {
     b++;
     if( i <= <?php echo $totalres; ?> )
     {
-    $.post( "artes4.php", { pagina: b, total: total }, function( data ) {
+    $.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
       $( ".artes4" ).append( data );
     });
     }
@@ -1071,7 +1071,7 @@ $(".load").click(function() {
     b++;
     if( i <= <?php echo $totalres; ?> )
     {
-    $.post( "artes4.php", { pagina: b, total: total }, function( data ) {
+    $.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
       $( ".artes4" ).append( data );
     });
     }
@@ -1124,7 +1124,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1161,7 +1161,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1198,7 +1198,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1235,7 +1235,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1272,7 +1272,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1309,7 +1309,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1346,7 +1346,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1383,7 +1383,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1420,7 +1420,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1457,7 +1457,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1494,7 +1494,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1531,7 +1531,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1568,7 +1568,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1605,7 +1605,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1642,7 +1642,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1679,7 +1679,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1717,7 +1717,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1754,7 +1754,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1790,7 +1790,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a class=\"fancybox-button\" rel=\"fancybox-button\" href=\"".$row['imagem']."\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a class=\"fancybox-button\" rel=\"fancybox-button\" href=\"".@asset('/images/personagem/'.$row['imagem'])."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1827,7 +1827,7 @@ if ($resultado < $topicos2)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
@@ -1885,7 +1885,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1922,7 +1922,7 @@ if ($resultado < $topicos)
 {
 echo "<br>
 
-    <img src=\"barra.png\">
+    <img src=\"@asset('/images/personagem/barra.png')\">
     <br>
     <br>";
 
