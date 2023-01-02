@@ -1,3 +1,6 @@
 /resources/styles/*.css
+/resources/scripts/libs/tipsy/*.css
+/resources/scripts/libs/source/*.css
+/resources/scripts/libs/source/helpers/*.css
 /resources/fonts/*.css
 /resources/fonts/icomoon/*.css

@@ -45,3 +45,13 @@
 	font-weight:400;
 	font-style:normal;
 }
+
+@font-face {
+	font-family: PF1;
+	src: url('./pf_tempesta_seven_extended.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: PF2;
+	src: url('./pf_easta_seven.ttf') format("truetype");
+}
