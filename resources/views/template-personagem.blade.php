@@ -487,7 +487,7 @@ while ($row = mysqli_fetch_array($query))
     
     ?>
     
-    <a href="index3.php?id=99" class="vermelho">Ver outras histórias.</a>
+    <a href="?id=99" class="vermelho">Ver outras histórias.</a>
     </span>
     
     
@@ -791,7 +791,7 @@ echo "
 <br><br><br>
     <center>
     <span id=\"titulo3\">
-    <a href=\"index3.php?id=".$row['id']."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" id=\"".$cor."\">".$inicial.$row['nome']."</a>
+    <a href=\"?id=".$row['id']."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" id=\"".$cor."\">".$inicial.$row['nome']."</a>
     </span>
     </center><br><br><br>";
     
