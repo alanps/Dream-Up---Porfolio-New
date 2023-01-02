@@ -593,6 +593,7 @@ body#curriculum {
 
 #curriculum section.base_direita .cargo_titulo {
 	font-size: 1.5em;
+	margin-left: -0.05em;
 }
 
 #curriculum section.base_direita .cargo_subtitulo {
@@ -653,8 +654,8 @@ body#curriculum {
 
 #curriculum section.base_direita span.icon {
 	background-image: url("../images/d-up.jpg");
-	width: 1em;
-	height: 1em;
+	width: 11px;
+	height: 11px;
 	position: relative;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -674,8 +675,8 @@ body#curriculum {
 
 #curriculum section.base_direita span.icon_linkedin {
 	background-image: url("../images/linkedin.png");
-	width: 1em;
-	height: 1em;
+	width: 11px;
+	height: 11px;
 	position: relative;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -733,7 +734,7 @@ body#curriculum {
 	width: auto;
 	margin: 1em;
 	height: 100%;
-	padding: 1.5em;
+	padding: 1.5em 1.7em 1.5em 1.5em;
 }
 
 .smartphone #curriculum section.corpo {
@@ -780,10 +781,15 @@ body#curriculum {
 	padding: 0;
 }
 
+.smartphone #curriculum section.base_direita .titulo.cargo {
+	padding: .5em 0.5em .5em .7em;
+	width: calc(100% - 1em);
+}
+
 .smartphone #curriculum section.base_direita .portfolio_link {
-	width: calc(100%);
+	width: calc(100% - 1.75em);
 	font-size: 1em;
-	padding: 1em .13em;
+	padding: 1em;
 }
 
 .smartphone #curriculum .titulo h2 {
@@ -968,7 +974,7 @@ body#curriculum {
 	}
 
 	#curriculum {
-		padding: 1em !important;
+		padding: 1em 1.26em 1em 1em !important;
 	}
 
 	#curriculum .base_esquerda section#historicos .historicos .historico {
