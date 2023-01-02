@@ -1015,10 +1015,14 @@ echo "";
 $query = mysqli_query($bd, "SELECT * FROM `artes4` GROUP BY `grupo`");
 $totalres = mysqli_num_rows($query);
 
+
+$artes4 = bloginfo('stylesheet_directory').'/resources/views';
+
 ?>
+
 <script>
 jQuery(document).ready(function() {
-jQuery.post( "@asset('/views/artes4.php')", { pagina: 1 }, function( data ) {
+jQuery.post( "<?php echo $artes4; ?>/artes4.php", { pagina: 1 }, function( data ) {
   jQuery( ".artes4" ).html( data );
 });
 });
@@ -1041,7 +1045,7 @@ jQuery(window).scroll(function() {
     b++;
     if( i <= <?php echo $totalres; ?> )
     {
-    jQuery.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
+    jQuery.post( "<?php echo $artes4; ?>/artes4.php", { pagina: b, total: total }, function( data ) {
       jQuery( ".artes4" ).append( data );
     });
     }
