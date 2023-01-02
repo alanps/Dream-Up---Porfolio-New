@@ -14,7 +14,7 @@ use function Roots\bundle;
  * @return void
  */
 add_action('wp_enqueue_scripts', function () {
-    if(!is_page('curriculum')){
+    if(!is_page('curriculum') && !is_page('calculadora') && !is_page('calculadora-mmc-mdc')){
         bundle('geral')->enqueue();
 
         if(is_404()){
@@ -31,6 +31,17 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script( 'curriculum', '/wp-content/themes/dreamup/resources/scripts/curriculum.js', ['jquery'], '1.0.0', true );
         wp_enqueue_style( 'curriculum_stylesheet', '/wp-content/themes/dreamup/resources/fonts/stylesheet.css' );
         wp_enqueue_style( 'curriculum', '/wp-content/themes/dreamup/resources/styles/curriculum.css' );
+    }
+
+    if(is_page('calculadora')){
+        wp_enqueue_script( 'calculadora', '/wp-content/themes/dreamup/resources/scripts/calculadora.js', ['jquery'], '1.0.0', true );
+        wp_enqueue_style( 'calculadora_stylesheet', '/wp-content/themes/dreamup/resources/fonts/stylesheet.css' );
+        wp_enqueue_style( 'calculadora_icomoon_stylesheet', '/wp-content/themes/dreamup/resources/fonts/icomoon/icomoon_style.css' );
+        wp_enqueue_style( 'calculadora', '/wp-content/themes/dreamup/resources/styles/calculadora.css' );
+    }
+
+    if(is_page('calculadora-mmc-mdc')){
+        wp_enqueue_style( 'calculadora-mmc-mdc', '/wp-content/themes/dreamup/resources/styles/calculadora-mmc-mdc.css' );
     }
 }, 100);
 

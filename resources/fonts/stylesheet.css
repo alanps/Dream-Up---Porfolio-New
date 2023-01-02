@@ -37,3 +37,11 @@
 	font-weight: 400;
 	font-style: normal;
 }
+
+@font-face {
+	font-family:"nova_squarebook";
+	src:url("./NovaSquareBook.eot");
+	src:url("./NovaSquareBook.eot?#iefix") format("embedded-opentype"), url("./NovaSquareBook.woff") format("woff"), url("./NovaSquareBook.ttf") format("truetype"), url("./NovaSquareBook.svg#nova_squarebook") format("svg");
+	font-weight:400;
+	font-style:normal;
+}

@@ -1,0 +1,82 @@
+html{overflow-x:hidden;width:100%}
+body{min-height:1200px;margin:0px;min-width:1310px}
+#topopreto{background-color:#000;height:25px}
+#topocinza{background-color:#F2F2F2;height:132px}
+#topocinza2{background-color:#CCCCCC;height:88px}
+#topocinza3{background-color:#999999;height:88px}
+#topo{position:absolute;margin-top:0px;width:1300px}
+#logo{float:left;margin-left:85px;margin-top:5px}
+#mmcexplicacao{width:490px;background-color:#666666;float:left;margin-top:60px;margin-left:70px;padding:1em}
+#mdcexplicacao{width:490px;background-color:#666666;float:left;margin-top:5px;margin-left:70px;padding:1em}
+#mmc{font-family:verdana;font-size:18px;color:#FFFF00;float:left;width:450px;text-align:left}
+#mmc2{font-family:verdana;font-size:12px;color:#FFF;float:left;margin-top:2px;width:450px;text-align:left}
+#mmc3{font-family:verdana;font-size:24px;color:#000;float:left;margin-top:32px;margin-left:110px;width:1200px;text-align:left}
+#calculadora{background-color:#F2F2F2;width:340px;height:420px;float:left;margin-left:100px;margin-top:20px}
+#respostas{background-color:#F2F2F2;width:720px;float:left;margin-left:18px;margin-top:20px;margin-bottom:40px;padding-bottom:30px;display:none}
+#numero1{font-family:courier new;font-size:14px;color:#000;float:left;margin-top:15px;margin-left:20px;width:300px;text-align:left}.numero1input{font-family:arial;font-size:24px;color:#fff;padding-right:10px;padding-left:10px;background-color:#999999;width:280px;height:40px;float:left;margin-top:0px;margin-left:20px;border:0px}
+#numero2{font-family:courier new;font-size:14px;color:#000;float:left;margin-top:10px;margin-left:20px;width:300px;text-align:left}.numero2input{font-family:arial;font-size:24px;color:#fff;padding-right:10px;padding-left:10px;background-color:#999999;width:280px;height:40px;float:left;margin-top:0px;margin-left:20px;border:0px}
+#calcular{background-color:#000;width:300px;height:40px;float:left;margin-top:10px;margin-left:20px;font-family:arial;font-size:24px;color:#fff;border:0px;cursor:pointer}
+#logo2{float:left;margin-left:170px;margin-top:10px}
+#calculadora2{float:left;width:440px;height:420px}.hr,.hr2,.hr3{width:95%;height:2px;background-color:#000;margin-top:20px;margin-left:18px;float:left}.hr3{width:100%;margin-left:-10px}.nr{margin-left:18px;margin-top:20px;float:left;font-family:verdana;font-size:14px;color:#000;width:92%;text-align:left}
+#nrresultado{float:left}
+#table1A,#table2A,#table3A,#table4A,#table5A{margin-left:1px;text-align:left}.tableborda{border-right:2px solid #000}
+#nrs{float:left}.nrpequeno{margin-top:-6px;float:left;font-family:verdana;font-size:10px;color:#000;margin-left:-10px;margin-right:1px}.nrpequeno3{margin-top:-6px;float:left;font-family:verdana;font-size:10px;color:#000;margin-left:1px;margin-right:1px}.nrgrande{margin-top:0px;float:left;font-family:verdana;font-size:14px;color:#000;margin-left:5px}.nrgrande3{margin-top:0px;float:left;font-family:verdana;font-size:14px;color:#000}.nrpequeno2{margin-top:-6px;float:left;font-family:verdana;font-size:10px;color:#FFF;margin-left:1px;margin-right:1px}.nrgrande2{margin-top:0px;float:left;font-family:verdana;font-size:14px;color:#FFF}.resultado{margin-left:18px;margin-top:10px;float:left;font-family:verdana;font-size:14px;color:#FFF;width:92%;text-align:left;background-color:#C1272D;width:665px;height:15px;padding-top:8px;padding-bottom:8px;padding-left:10px;padding-right:10px}.nrgranderesultado{margin-left:5px;margin-top:-5px;float:left;font-family:verdana;font-size:22px;color:#FCEE21}
+#fatorarA1,#fatorarA2,#fatorarA3,#fatorarA4,#fatorarA5{margin-left:29px}
+div#fatorarA3{}
+html{overflow-x:hidden}
+body{min-height:1200px;margin:0px;min-width:1310px}
+#topopreto{background-color:#000;height:25px}
+#topocinza{background-color:#F2F2F2;height:132px}
+#topocinza2{background-color:#CCCCCC;height:88px}
+#topocinza3{background-color:#999999;height:88px}
+#topo{position:absolute;margin-top:0px;width:1300px}
+#logo{float:left;margin-left:85px;margin-top:5px}
+#mmcexplicacao{width:490px;background-color:#666666;float:left;margin-top:60px;margin-left:70px;padding:1em}
+#mdcexplicacao{width:490px;background-color:#666666;float:left;margin-top:5px;margin-left:70px;padding:1em}
+#mmc{font-family:verdana;font-size:18px;color:#FFFF00;float:left;width:450px;text-align:left}
+#mmc2{font-family:verdana;font-size:12px;color:#FFF;float:left;margin-top:2px;width:450px;text-align:left}
+#mmc3{font-family:verdana;font-size:24px;color:#000;float:left;margin-top:32px;margin-left:110px;width:1200px;text-align:left}
+#calculadora{background-color:#F2F2F2;width:340px;height:420px;float:left;margin-left:100px;margin-top:20px}
+#respostas{background-color:#F2F2F2;width:720px;float:left;margin-left:18px;margin-top:20px;margin-bottom:40px;padding-bottom:30px;display:none}
+#numero1{font-family:courier new;font-size:14px;color:#000;float:left;margin-top:15px;margin-left:20px;width:300px;text-align:left}.numero1input{font-family:arial;font-size:24px;color:#fff;padding-right:10px;padding-left:10px;background-color:#999999;width:280px;height:40px;float:left;margin-top:0px;margin-left:20px;border:0px}
+#numero2{font-family:courier new;font-size:14px;color:#000;float:left;margin-top:10px;margin-left:20px;width:300px;text-align:left}.numero2input{font-family:arial;font-size:24px;color:#fff;padding-right:10px;padding-left:10px;background-color:#999999;width:280px;height:40px;float:left;margin-top:0px;margin-left:20px;border:0px}
+#calcular{background-color:#000;width:300px;height:40px;float:left;margin-top:10px;margin-left:20px;font-family:arial;font-size:24px;color:#fff;border:0px;cursor:pointer}
+#logo2{float:left;margin-left:170px;margin-top:10px}
+#calculadora2{float:left;width:440px;height:420px}.hr,.hr2,.hr3{width:95%;height:2px;background-color:#000;margin-top:20px;margin-left:18px;float:left}.hr3{width:100%;margin-left:-10px}.nr{margin-left:18px;margin-top:20px;float:left;font-family:verdana;font-size:14px;color:#000;width:92%;text-align:left}
+#nrresultado{float:left;width:100%}
+#table1,#table1A,#table2,#table2A,#table3,#table3A,#table4,#table4A,#table5,#table5A{margin-left:34px;margin-top:10px;margin-bottom:10px;float:left;font-family:verdana;font-size:12px;color:#000;text-align:right;padding:0 0.3em}
+#table1A,#table2A,#table3A,#table4A,#table5A{margin-left:1px;text-align:left}
+#nrs{float:left}.nrpequeno{margin-top:-6px;float:left;font-family:verdana;font-size:10px;color:#000;margin-left:-10px;margin-right:1px}.nrpequeno3{margin-top:-6px;float:left;font-family:verdana;font-size:10px;color:#000;margin-left:1px;margin-right:1px}.nrgrande{margin-top:0px;float:left;font-family:verdana;font-size:14px;color:#000;margin-left:5px}.nrgrande3{margin-top:0px;float:left;font-family:verdana;font-size:14px;color:#000}.nrpequeno2{margin-top:-6px;float:left;font-family:verdana;font-size:10px;color:#FFF;margin-left:1px;margin-right:1px}.nrgrande2{margin-top:0px;float:left;font-family:verdana;font-size:14px;color:#FFF}.resultado{margin-left:18px;margin-top:10px;float:left;font-family:verdana;font-size:14px;color:#FFF;width:92%;text-align:left;background-color:#C1272D;width:665px;height:15px;padding-top:8px;padding-bottom:8px;padding-left:10px;padding-right:10px}.nrgranderesultado{margin-left:5px;margin-top:-5px;float:left;font-family:verdana;font-size:22px;color:#FCEE21}
+#fatorarA1,#fatorarA2,#fatorarA3,#fatorarA4,#fatorarA5{margin-left:29px}
+div#fatorarA3{}
+@media(max-width:767px){#topo{display:flex;position:relative;flex-direction:column;width:100%;font-size:4px}.blocos{display:flex;flex-direction:column;top:5em;position:relative;margin-bottom:4em}
+div#mmcexplicacao{width:82%;margin:70px 70px 0;display:flex;flex-direction:column;padding:3em;margin:9em auto 4em}
+span#mmc{font-size:12px;width:100%;margin:0}
+span#mmc2{width:100%;font-size:9px}
+div#mdcexplicacao{width:82%;margin:70px 70px 0;display:flex;flex-direction:column;padding:3em;margin:0em auto 6em}
+span#mdc{font-size:40px;width:100%}
+span#mdc2{width:100%;font-size:25px}
+img#logo{margin:11px auto 0;width:80%;z-index:100}
+div#topocinza{position:absolute;top:1.5em;height:6em;width:100%}
+div#topocinza2{position:absolute;top:7.5em;height:3em;width:100%}
+div#topocinza3{position:absolute;top:10.4em;height:3em;width:100%}
+center{position:relative;width:100%}.tableborda{border-right:1.6px solid #000!important}
+span#mmc3{text-align:center;width:100%;margin:0 0-1em;font-size:2em}
+div#calculadora2{width:100%;height:auto;display:block;float:none;position:relative;margin-top:0em}
+div#calculadora{width:85%;display:flex;flex-direction:column;margin:0 auto;position:relative;float:none;height:fit-content;padding:4em 2em}
+img#logo2{float:initial;margin:1em 0 0;width:32em}
+#calculadora input{width:88%;height:2em!important;font-size:4em;margin:0.3em auto;padding:0 0.5em}
+#calculadora span{font-size:2em;margin-left:1.5em;margin-top:0.4em}
+div#respostas{position:relative;width:78%;margin:7em auto;float:none;height:fit-content;font-size:1em;padding:5em}
+span#fatorar3{font-size:5em}
+#respostas span{font-size:2em;margin:0;margin-left:0.4em;margin-top:0.1em}
+table{padding:0.4em 0.2em;font-size:1em!important;position:relative;margin:0 auto}
+#respostas table span{font-size:0.7em;line-height:0.5em;margin:0}.hr,.hr2,.hr3{margin:2em 0 2em;height:1px;width:100%}
+#fatorarA1,#fatorarA2,#fatorarA3,#fatorarA4,#fatorarA5{margin:3em 0 0;font-size:1em;width:100%}.resultado{display:block;width:93%;margin:1em 0 0;height:fit-content;font-size:1.1em;line-height:normal;padding:1.1em}
+body{width:100%!important;min-width:100%;font-size:15px}
+#table1,#table1A,#table2,#table2A,#table3,#table3A,#table4,#table4A,#table5,#table5A{margin-left:0;margin-top:10px;margin-bottom:6px;float:left;font-family:verdana;font-size:12px;color:#000;text-align:right}
+tr{line-height:0.9em}
+table:nth-child(odd){text-align:right}
+table:nth-child(even){text-align:left!important}
+div#table1,div#table2,div#table3,div#table4,div#table5{margin-left:3em}
+input#calcular{width:93%}}
