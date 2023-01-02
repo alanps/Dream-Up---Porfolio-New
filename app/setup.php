@@ -38,10 +38,12 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_style( 'calculadora_stylesheet', '/wp-content/themes/dreamup/resources/fonts/stylesheet.css' );
         wp_enqueue_style( 'calculadora_icomoon_stylesheet', '/wp-content/themes/dreamup/resources/fonts/icomoon/icomoon_style.css' );
         wp_enqueue_style( 'calculadora', '/wp-content/themes/dreamup/resources/styles/calculadora.css' );
+        bundle('global_bundle')->enqueue();
     }
 
     if(is_page('calculadora-mmc-mdc')){
         wp_enqueue_style( 'calculadora-mmc-mdc', '/wp-content/themes/dreamup/resources/styles/calculadora-mmc-mdc.css' );
+        bundle('global_bundle')->enqueue();
     }
 }, 100);
 
