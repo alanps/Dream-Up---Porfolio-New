@@ -27,9 +27,9 @@ footer {
 }
 
 section.contato.d-block {
+	/* background-color: #383838; */
 	margin: 1em 0 0;
-	background-color: #383838;
-	padding: 80px 35px;
+	padding: 1.5em 0;
 
 	@media screen and (max-width: $small-screen-medium) {
 		background: #fff;

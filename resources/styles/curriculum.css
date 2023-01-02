@@ -961,3 +961,11 @@ body#curriculum {
 .tablet #curriculum .base_esquerda section#base_animacao .repetir_video {
 	display: block;
 }
+
+.smartphone #curriculum section.base_direita .item.linkedin .texto {
+	margin-left: -.3em;
+}
+
+.smartphone #curriculum section.base_direita span.icon_linkedin {
+	top: 0.05em;
+}
