@@ -61,6 +61,7 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script( 'jquery.fancybox-media', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-media.js', ['jquery'], '1.0.6', true );
         wp_enqueue_style( 'jquery.fancybox-thumbs', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-thumbs.css' );
         wp_enqueue_script( 'jquery.fancybox-thumbs', '/wp-content/themes/dreamup/resources/scripts/libs/source/helpers/jquery.fancybox-thumbs.js', ['jquery'], '1.0.7', true );
+        wp_enqueue_script( 'personagem', '/wp-content/themes/dreamup/resources/scripts/personagem.js', ['jquery', 'jquery.fancybox-thumbs', 'jquery.fancybox-media', 'jquery.fancybox-buttons', 'jquery.fancybox.pack'], '1.0.0', true );
         bundle('global_bundle')->enqueue();
     }
 }, 100);

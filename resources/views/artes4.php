@@ -12,7 +12,7 @@
 
 
 $artes4 = "/wp-content/themes/dreamup/resources/views";
-$imgs = "/wp-content/themes/dreamup/resources/images/personagem";
+$imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
 
 ///////////////////////////////////////////
 // Conectando no servidor MySQL.
@@ -59,7 +59,6 @@ $query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo` ORDER BY `id`
 while ($row = mysqli_fetch_array($query))
 {
 
-$grup = $row['grupo'];
 /////////////////////////////////
 ///////////TEMPLATE 1////////////
 /////////////////////////////////
@@ -70,7 +69,7 @@ echo "<div id=\"bfotosbase\">
 		<center>
 		<div id=\"bbasefotos2\">
 		<div id=\"bbasefotos\">
-		<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
+		<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3 fancy fancybox.iframe\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
 		</div>
 		</center>
 		<br>
@@ -119,10 +118,10 @@ echo "<br>
 		<br>";
 }
 
-$query = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '$grup' ORDER BY `imagem` ASC") or die(mysql_error());
+$query = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC") or die(mysql_error());
 while ($row = mysqli_fetch_array($query))
 {
-echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
+echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3 fancy fancybox.iframe\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
 }
 
 }

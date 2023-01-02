@@ -2,52 +2,6 @@
   Template Name: Personagem
 --}}
 
-
-<script type="text/javascript">
-jQuery(document).ready(function() {
-  jQuery(".fancybox-button").fancybox({
-    playSpeed     : 500,
-    prevEffect    : 'none',
-    nextEffect    : 'none',
-    closeBtn    : false,
-    loop      : false,
-    afterShow: function() {
-        jQuery(".fancybox-title").wrapInner('<div />').show();
-        
-        jQuery(".fancybox-wrap").hover(function() {
-            jQuery(".fancybox-title").show();
-        }, function() {
-            jQuery(".fancybox-title").hide();
-        });
-    },
-    helpers : {
-        title: {
-            type: 'over'
-        }
-    },
-      buttons : {}
-    
-  });
-});
-</script>
-
-
-<script type="text/javascript">
-jQuery(document).ready(function() {
-  jQuery(".fancybox-button2").fancybox({
-    playSpeed     : 500,
-    prevEffect    : 'none',
-    nextEffect    : 'none',
-    closeBtn    : false,
-    loop      : false
-  });
-});
-</script>
-
-
-
-
-
 <center>
 <table id="Table_01" width="1025" height="1401" border="0" cellpadding="0" cellspacing="0">
   <tr>
@@ -77,7 +31,7 @@ jQuery(document).ready(function() {
   <tr>
     <td rowspan="6">
       <img src="@asset('/images/personagem/PERSONAGEM---O-Site_06.jpg')" width="9" height="320" alt=""></td>
-    <td colspan="2" rowspan="2" background="@asset('/images/personagem/PERSONAGEM---O-Site_07.jpg')" id="padding">
+    <td colspan="2" rowspan="2" background="@asset('/images/personagem/PERSONAGEM---O-Site_07.jpg')" id="padding" class="line-height-auto">
     
     <span id="titulo">
     Sobre
@@ -104,7 +58,7 @@ jQuery(document).ready(function() {
   <tr>
     <td rowspan="3">
       <img src="@asset('/images/personagem/PERSONAGEM---O-Site_09.jpg')" width="1" height="106" alt=""></td>
-    <td colspan="3" rowspan="2" background="@asset('/images/personagem/PERSONAGEM---O-Site_10.jpg')">
+    <td colspan="3" rowspan="2" background="@asset('/images/personagem/PERSONAGEM---O-Site_10.jpg')" class="line-height-auto">
     
     
 <?php 
@@ -121,7 +75,7 @@ jQuery(document).ready(function() {
 
 
 $artes4 = "/wp-content/themes/dreamup/resources/views";
-$imgs = "/wp-content/themes/dreamup/resources/images/personagem";
+$imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
 
 ///////////////////////////////////////////
 // Conectando no servidor MySQL.
@@ -705,7 +659,7 @@ while ($row = mysqli_fetch_array($query))
     <td>
       <img src="@asset('/images/personagem/spacer.gif')" width="1" height="20" alt=""></td>
   </tr>
-  <tr>
+  <tr class="content">
     <td colspan="9" background="@asset('/images/personagem/PERSONAGEM---O-Site_18.jpg')"> 
   
   
@@ -829,7 +783,7 @@ if ($id == 112)
 $query = mysqli_query($bd, "SELECT * FROM `artes101` ORDER BY `imagem` DESC");
 while ($row = mysqli_fetch_array($query))
 {
-echo "<a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos2\"></a>";
+echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
 }
 
 $query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC");
@@ -865,7 +819,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -961,7 +915,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" caption=\"".$row['texto']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" caption=\"".$row['texto']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1077,7 +1031,7 @@ jQuery(".load").click(function() {
     b++;
     if( i <= <?php echo $totalres; ?> )
     {
-    jQuery.post( "@asset('/views/artes4.php')", { pagina: b, total: total }, function( data ) {
+    jQuery.post( "<?php echo $artes4; ?>/artes4.php", { pagina: b, total: total }, function( data ) {
       jQuery( ".artes4" ).append( data );
     });
     }
@@ -1130,7 +1084,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1204,7 +1158,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1278,7 +1232,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1352,7 +1306,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1426,7 +1380,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1500,7 +1454,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1574,7 +1528,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1648,7 +1602,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1723,7 +1677,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1796,7 +1750,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a class=\"fancybox-button\" rel=\"fancybox-button\" href=\"".@asset('/images/personagem/'.$row['imagem'])."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a class=\"fancybox-button\" rel=\"fancybox-button\" href=\"".$imgs.$row['imagem']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -1891,7 +1845,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
