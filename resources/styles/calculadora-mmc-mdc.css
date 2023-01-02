@@ -56,7 +56,7 @@ span#mmc2{width:100%;font-size:9px}
 div#mdcexplicacao{width:82%;margin:70px 70px 0;display:flex;flex-direction:column;padding:3em;margin:0em auto 6em}
 span#mdc{font-size:40px;width:100%}
 span#mdc2{width:100%;font-size:25px}
-img#logo{margin:11px auto 0;width:80%;z-index:100}
+img#logo{margin:11px auto 0;width:80%;z-index:100;height:auto}
 div#topocinza{position:absolute;top:1.5em;height:6em;width:100%}
 div#topocinza2{position:absolute;top:7.5em;height:3em;width:100%}
 div#topocinza3{position:absolute;top:10.4em;height:3em;width:100%}
