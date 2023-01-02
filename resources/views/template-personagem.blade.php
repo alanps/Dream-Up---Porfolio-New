@@ -118,6 +118,11 @@ jQuery(document).ready(function() {
 
 */
 
+
+
+$artes4 = "/wp-content/themes/dreamup/resources/views";
+$imgs = "/wp-content/themes/dreamup/resources/images/personagem";
+
 ///////////////////////////////////////////
 // Conectando no servidor MySQL.
 // Criando e selecionando DB
@@ -801,7 +806,7 @@ if ($resultado < $topicos99)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -898,7 +903,7 @@ if ($resultado < $topicos101)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -994,7 +999,7 @@ if ($resultado < $topicos100)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1014,9 +1019,6 @@ echo "";
 
 $query = mysqli_query($bd, "SELECT * FROM `artes4` GROUP BY `grupo`");
 $totalres = mysqli_num_rows($query);
-
-
-$artes4 = bloginfo('stylesheet_directory').'/resources/views';
 
 ?>
 
@@ -1165,7 +1167,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1239,7 +1241,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1313,7 +1315,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1387,7 +1389,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1461,7 +1463,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1535,7 +1537,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1609,7 +1611,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1683,7 +1685,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1758,7 +1760,7 @@ if ($resultado < $topicos3)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1831,7 +1833,7 @@ if ($resultado < $topicos2)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 
@@ -1926,7 +1928,7 @@ if ($resultado < $topicos)
 {
 echo "<br>
 
-    <img src=\"@asset('/images/personagem/barra.png')\">
+    <img src=\"".$imgs."/barra.png\">
     <br>
     <br>";
 

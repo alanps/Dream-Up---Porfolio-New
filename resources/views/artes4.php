@@ -9,6 +9,11 @@
 
 */
 
+
+
+$artes4 = "/wp-content/themes/dreamup/resources/views";
+$imgs = "/wp-content/themes/dreamup/resources/images/personagem";
+
 ///////////////////////////////////////////
 // Conectando no servidor MySQL.
 // Criando e selecionando DB
@@ -50,8 +55,6 @@ $query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo`") or die(mysq
 	$pagina = max(min($paginas, $pagina), 1);
 	$inicio = ($pagina - 1) * $porpag;
 
-
-
 $query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo` ORDER BY `id` DESC LIMIT $inicio, $porpag") or die(mysql_error());
 while ($row = mysqli_fetch_array($query))
 {
@@ -67,7 +70,7 @@ echo "<div id=\"bfotosbase\">
 		<center>
 		<div id=\"bbasefotos2\">
 		<div id=\"bbasefotos\">
-		<a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos\"></a>
+		<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
 		</div>
 		</center>
 		<br>
@@ -111,7 +114,7 @@ if ($total < $totalres)
 {
 echo "<br>
 
-		<img src=\"@asset('/images/personagem/barra.png')\" id=\"bar\">
+		<img src=\"".$imgs."/barra.png\" id=\"bar\">
 		<br>
 		<br>";
 }
@@ -119,7 +122,7 @@ echo "<br>
 $query = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '$grup' ORDER BY `imagem` ASC") or die(mysql_error());
 while ($row = mysqli_fetch_array($query))
 {
-echo "<a href=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".@asset('/images/personagem/'.$row['imagem'])."\" class=\"bfotos2\"></a>";
+echo "<a href=\"".$imgs.$row['imagem'].\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
 }
 
 }
