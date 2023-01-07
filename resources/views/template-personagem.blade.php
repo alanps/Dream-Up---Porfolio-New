@@ -21,8 +21,7 @@ $imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
 ?>
 
 <center>
-  <iframe src="<?php echo $artes4; ?>/musica.php" height="20px" width="100%" style="border:none;">
-      </iframe>
+  <iframe src="<?php echo $artes4; ?>/musica.php" height="20px" width="100%" style="border:none;"></iframe>
 </center>
 
 <table id="Table_01" width="1025" height="1401" border="0" cellpadding="0" cellspacing="0">
