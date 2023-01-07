@@ -118,8 +118,8 @@ echo "<br>
 		<br>";
 }
 
-$query = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC LIMIT 18446744073709551610 OFFSET 1") or die(mysql_error());
-while ($row = mysqli_fetch_array($query))
+$query1 = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC LIMIT 18446744073709551610 OFFSET 1") or die(mysql_error());
+while ($row = mysqli_fetch_array($query1))
 {
 echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
 }

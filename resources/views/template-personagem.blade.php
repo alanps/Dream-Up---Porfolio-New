@@ -781,7 +781,7 @@ echo "<br>
 if ($id == 112)
 {
 
-$query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC LIMIT 18446744073709551610 OFFSET 0");
+$query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC");
 while ($row = mysqli_fetch_array($query))
 {
 
@@ -859,8 +859,8 @@ echo "<br>
 
 }
 
-$query = mysqli_query($bd, "SELECT * FROM `artes101` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC LIMIT 18446744073709551610 OFFSET 1");
-while ($row = mysqli_fetch_array($query))
+$query1 = mysqli_query($bd, "SELECT * FROM `artes101` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC LIMIT 18446744073709551610 OFFSET 1");
+while ($row = mysqli_fetch_array($query1))
 {
 echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
 }
