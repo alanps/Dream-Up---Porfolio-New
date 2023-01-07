@@ -990,7 +990,7 @@ var b = 1;
 var inicio = 1;
 var limite = 25;
 
-jQuery(window).scroll(function() {
+jQuery("body").scroll(function() {
   var total = b;
   if( jQuery("body").scrollTop() + 140 >= jQuery(document).height() - screen.height )
   {
