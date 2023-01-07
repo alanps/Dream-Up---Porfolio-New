@@ -991,7 +991,7 @@ var limite = 25;
 
 jQuery(window).scroll(function() {
   var total = b;
-  if( jQuery(window).scrollTop() >= jQuery(document).height() - screen.height )
+  if( jQuery("body").scrollTop() >= jQuery(document).height() - screen.height )
   {
     inicio = inicio + 25;
     limite = limite + 25;
