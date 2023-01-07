@@ -32,6 +32,14 @@
       closeBtn    : false,
       loop      : false
     });
+
+    jQuery(".fancybox-button4").fancybox({
+      playSpeed     : 500,
+      prevEffect    : 'none',
+      nextEffect    : 'none',
+      closeBtn    : false,
+      loop      : false
+    });
   });
 
 })(jQuery)
