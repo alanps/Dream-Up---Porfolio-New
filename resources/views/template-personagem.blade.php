@@ -2,7 +2,33 @@
   Template Name: Personagem
 --}}
 
+<?php 
+
+
+/*
+
+  =====================================================================
+    Script desenvolvido por Alan Pardini Sant'Ana - www.alanps.com.br
+  =====================================================================
+
+*/
+
+
+
+$artes4 = "/wp-content/themes/dreamup/resources/views";
+$imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
+
+?>
+
 <center>
+  <frameset rows="20px,*">
+    <center>
+      <frame src="<?php echo $artes4; ?>/musica.php" height="20px" frameborder="0" marginheight="0" scrolling="no" width="500px" noresize="noresize">
+      </frame>
+    </center>
+  </frameset>
+</center>
+
 <table id="Table_01" width="1025" height="1401" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td colspan="9">
@@ -62,20 +88,6 @@
     
     
 <?php 
-
-
-/*
-
-  =====================================================================
-    Script desenvolvido por Alan Pardini Sant'Ana - www.alanps.com.br
-  =====================================================================
-
-*/
-
-
-
-$artes4 = "/wp-content/themes/dreamup/resources/views";
-$imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
 
 ///////////////////////////////////////////
 // Conectando no servidor MySQL.
