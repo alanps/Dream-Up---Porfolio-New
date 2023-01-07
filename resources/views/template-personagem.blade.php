@@ -967,7 +967,14 @@ echo "";
 ?>
 
 
-<?php 
+<?php
+
+/////////////////////////////////////////////////
+/////////// PERSONAGEM Animações S/A ////////////
+/////////////////////////////////////////////////
+
+if ($id == 4)
+{
 
 $query = mysqli_query($bd, "SELECT * FROM `artes4` GROUP BY `grupo`");
 $totalres = mysqli_num_rows($query);
@@ -1045,13 +1052,6 @@ jQuery(".load").click(function() {
 </script>
 
 <?php
-
-/////////////////////////////////////////////////
-/////////// PERSONAGEM Animações S/A ////////////
-/////////////////////////////////////////////////
-
-if ($id == 4)
-{
 echo "<div class=\"artes4\"></div><center><div class=\"load\">Clique aqui para carregar mais...</div></center>";
 }
 else
