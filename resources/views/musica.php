@@ -53,7 +53,6 @@ add_action('wp_enqueue_scripts', function () {
 </style>
 
 <script src="<?php echo $scripts; ?>/libs/audio.min.js"></script>
-<script src="<?php echo $scripts; ?>/libs/audio.min.js"></script>
 <script>
       jQuery(function() { 
         // Setup the player to autoplay the next track
