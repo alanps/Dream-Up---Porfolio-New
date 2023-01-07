@@ -24,7 +24,7 @@
       buttons : {}
     });
 
-    $(".artes4").live("DOMSubtreeModified", function() { 
+    $(".artes4").on("DOMSubtreeModified", function() { 
       jQuery(".fancybox-button3").fancybox({
         playSpeed     : 500,
         prevEffect    : 'none',
