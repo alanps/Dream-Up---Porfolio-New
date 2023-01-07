@@ -984,6 +984,7 @@ jQuery.post( "<?php echo $artes4; ?>/artes4.php", { pagina: 1 }, function( data 
 </script>
 
 <script>
+jQuery(document).ready(function() {
 var i = 0;
 var b = 1;
 var inicio = 1;
@@ -1009,6 +1010,7 @@ jQuery(window).scroll(function() {
     }
   }
 
+});
 });
 </script>
 
