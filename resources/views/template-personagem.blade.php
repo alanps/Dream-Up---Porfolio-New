@@ -750,7 +750,7 @@ echo "
 <br><br><br>
     <center>
     <span id=\"titulo3\">
-    <a href=\"?id=".$row['id']."\" class=\"fancybox-button\" rel=\"fancybox-button4\" id=\"".$cor."\">".$inicial.$row['nome']."</a>
+    <a href=\"?id=".$row['id']."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" id=\"".$cor."\">".$inicial.$row['nome']."</a>
     </span>
     </center><br><br><br>";
     
@@ -783,7 +783,7 @@ if ($id == 112)
 $query = mysqli_query($bd, "SELECT * FROM `artes101` ORDER BY `imagem` DESC");
 while ($row = mysqli_fetch_array($query))
 {
-echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-button4\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
+echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
 }
 
 $query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC");
@@ -819,7 +819,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-button4\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -915,7 +915,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-button4\" caption=\"".$row['texto']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button\" rel=\"fancybox-".$row['grupo']."\" caption=\"".$row['texto']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
