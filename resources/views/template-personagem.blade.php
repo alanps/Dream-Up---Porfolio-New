@@ -781,7 +781,7 @@ echo "<br>
 if ($id == 112)
 {
 
-$query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC LIMIT 18446744073709551610");
+$query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC LIMIT 18446744073709551610 OFFSET 0");
 while ($row = mysqli_fetch_array($query))
 {
 
@@ -827,6 +827,26 @@ echo "
     </center><br><br><br>";
 }
     
+?>
+
+<script>
+jQuery( document ).ready(function() {
+
+jQuery("#btextocamiseta<?php echo $row['id']; ?>").slimScroll({
+    position: 'right',
+  color: '#ff0000',
+    height: '250px',
+  width: '310px',
+    railVisible: true,
+  alwaysVisible: false,
+  railColor: '#fff',
+      });
+
+});
+</script>
+
+<?php
+
 /////////////////////////////////
 /////////////////////////////////
 if ($resultado < $topicos101)
@@ -843,27 +863,6 @@ $query = mysqli_query($bd, "SELECT * FROM `artes101` WHERE `grupo` LIKE '".$row[
 while ($row = mysqli_fetch_array($query))
 {
 echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
-
-?>
-
-<script>
-jQuery( document ).ready(function() {
-
-jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
-    position: 'right',
-  color: '#ff0000',
-    height: '250px',
-  width: '310px',
-    railVisible: true,
-  alwaysVisible: false,
-  railColor: '#fff',
-      });
-
-});
-</script>
-
-<?php
-
 }
 
 }
