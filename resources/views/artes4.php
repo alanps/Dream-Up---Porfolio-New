@@ -69,7 +69,7 @@ echo "<div id=\"bfotosbase\">
 		<center>
 		<div id=\"bbasefotos2\">
 		<div id=\"bbasefotos\">
-		<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-button3\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
+		<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
 		</div>
 		</center>
 		<br>
@@ -121,7 +121,7 @@ echo "<br>
 $query = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC") or die(mysql_error());
 while ($row = mysqli_fetch_array($query))
 {
-echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-button3\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
+echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
 }
 
 }
