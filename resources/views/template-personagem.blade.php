@@ -18,7 +18,7 @@
 $artes4 = "/wp-content/themes/dreamup/resources/views";
 $imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
 
-include_once($artes4."/musica.php");
+include($artes4."/musica.php");
 
 ?>
 

@@ -14,6 +14,12 @@
 $musicas = "/wp-content/themes/dreamup/resources/musicas";
 $scripts = "/wp-content/themes/dreamup/resources/scripts";
 
+add_action('wp_enqueue_scripts', function () {
+    if (!is_admin()) {
+        wp_enqueue_script('jquery');
+    }
+}, 100);
+
 ?>
 
 <style>
@@ -46,6 +52,7 @@ $scripts = "/wp-content/themes/dreamup/resources/scripts";
   .track-details em { font-style: normal; color: #999; }
 </style>
 
+<script src="<?php echo $scripts; ?>/libs/audio.min.js"></script>
 <script src="<?php echo $scripts; ?>/libs/audio.min.js"></script>
 <script>
       jQuery(function() { 
