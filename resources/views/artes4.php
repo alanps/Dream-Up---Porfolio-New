@@ -118,7 +118,7 @@ echo "<br>
 		<br>";
 }
 
-$query = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC") or die(mysql_error());
+$query = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' OFFSET 1 ORDER BY `id` ASC") or die(mysql_error());
 while ($row = mysqli_fetch_array($query))
 {
 echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
