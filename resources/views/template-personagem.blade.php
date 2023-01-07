@@ -843,7 +843,6 @@ $query = mysqli_query($bd, "SELECT * FROM `artes101` WHERE `grupo` LIKE '".$row[
 while ($row = mysqli_fetch_array($query))
 {
 echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
-}
 
 ?>
 
@@ -864,6 +863,8 @@ jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
 </script>
 
 <?php
+
+}
 
 }
 
