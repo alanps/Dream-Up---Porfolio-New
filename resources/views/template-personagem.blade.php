@@ -847,12 +847,6 @@ echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fanc
 
 }
 
-}
-else
-{
-echo "";
-}
-
 ?>
 
 <script>
@@ -872,6 +866,12 @@ jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
 </script>
 
 <?php
+
+}
+else
+{
+echo "";
+}
 
 /////////////////////////////////////
 /////////// PERSONAGEM 2 ////////////
