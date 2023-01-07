@@ -25,7 +25,7 @@
       
     });
 
-    jQuery(".fancybox-button3').fancybox({
+    jQuery(".fancybox-button3").fancybox({
       playSpeed     : 500,
       prevEffect    : 'none',
       nextEffect    : 'none',
