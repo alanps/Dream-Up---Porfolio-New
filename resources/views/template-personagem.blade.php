@@ -780,35 +780,11 @@ echo "<br>
 
 if ($id == 112)
 {
-$query = mysqli_query($bd, "SELECT * FROM `artes101` ORDER BY `imagem` DESC");
-while ($row = mysqli_fetch_array($query))
-{
-echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
-}
 
 $query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC");
 while ($row = mysqli_fetch_array($query))
 {
 
-?>
-
-<script>
-jQuery( document ).ready(function() {
-
-jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
-    position: 'right',
-  color: '#ff0000',
-    height: '250px',
-  width: '310px',
-    railVisible: true,
-  alwaysVisible: false,
-  railColor: '#fff',
-      });
-
-});
-</script>
-
-<?php
 /////////////////////////////////
 ///////////TEMPLATE 1////////////
 /////////////////////////////////
@@ -819,7 +795,7 @@ echo "<div id=\"bfotosbase\">
     <center>
     <div id=\"bbasefotos2\">
     <div id=\"bbasefotos\">
-    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
+    <a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos\"></a>
     </div>
     </center>
     <br>
@@ -863,6 +839,12 @@ echo "<br>
 
 }
 
+$query = mysqli_query($bd, "SELECT * FROM `artes101` ORDER BY `imagem` DESC");
+while ($row = mysqli_fetch_array($query))
+{
+echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button2\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
+}
+
 }
 
 }
@@ -870,8 +852,24 @@ else
 {
 echo "";
 }
+
 ?>
 
+<script>
+jQuery( document ).ready(function() {
+
+jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
+    position: 'right',
+  color: '#ff0000',
+    height: '250px',
+  width: '310px',
+    railVisible: true,
+  alwaysVisible: false,
+  railColor: '#fff',
+      });
+
+});
+</script>
 
 <?php
 
