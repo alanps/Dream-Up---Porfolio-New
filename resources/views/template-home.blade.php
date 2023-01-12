@@ -28,7 +28,7 @@
     <div class="saibamais-content">
       Desenvolvedor Full Stack com mais de 7 anos de experiência em empresas e mais de 21 anos programando por prazer, programo em linguagens e banco de dados como HTML, CSS, SASS, SCSS, JavaScript, PHP, MySQL, PostgreSQL, MongoDB, DynamoDB e faço uso de algumas bibliotecas e frameworks como Bootstrap (CSS e JavaScript), React (JavaScript), Redux.JS (JavaScript), jQuery (JavaScript), WordPress (PHP), WooCommerce (WordPress), Sage (WordPress), Laravel (PHP), CakePHP (PHP), Symfony (PHP), Node.JS (JavaScript) e Express.JS (Node.JS)!
       <br><br>
-      Uso de metodologia Scrum e arquitetura MVC, ferramentas de gerenciamento de projetos (JIRA, Todoist e Trello), criação de layout web, mobile e tablet com protótipo navegável (Figma), desenvolvimento de documentação (OpenAPI e Swagger), controle de versão (GIT), ferramentas de controle de versão (GitHub e Bitbucket), gerenciador de pacotes (Composer e NPM), ferramentas de automatização (Gulp.JS e Laravel Mix), virtualização em containers (Docker), Linux (SSH) e administração de servidores pelo console da Amazon Web Services (AWS), Cpanel e WHM.
+      Uso de metodologia Ágil: Scrum e Kanban, arquitetura MVC, ferramentas de gerenciamento de projetos (JIRA, Todoist e Trello), criação de layout web, mobile e tablet com protótipo navegável (Figma), desenvolvimento de documentação (OpenAPI e Swagger), controle de versão (GIT), ferramentas de controle de versão (GitHub e Bitbucket), gerenciador de pacotes (Composer e NPM), ferramentas de automatização (Gulp.JS e Laravel Mix), virtualização em containers (Docker), Linux (SSH) e administração de servidores pelo console da Amazon Web Services (AWS), Cpanel e WHM.
     </div>
 
   </section>
