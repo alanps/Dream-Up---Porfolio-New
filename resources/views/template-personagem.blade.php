@@ -788,7 +788,7 @@ echo "<br>
 if ($id == 112)
 {
 
-$query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` DESC");
+$query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
 
