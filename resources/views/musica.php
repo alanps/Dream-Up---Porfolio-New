@@ -11,8 +11,8 @@
 
 
 
-$musicas = "/wp-content/themes/dreamup/resources/musicas";
-$scripts = "/wp-content/themes/dreamup/resources/scripts";
+$musicas = "/var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup/resources/musicas";
+$scripts = "/var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup/resources/scripts";
 
 add_action('wp_enqueue_scripts', function () {
     if (!is_admin()) {
