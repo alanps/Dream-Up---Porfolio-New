@@ -87,8 +87,8 @@ include($artes4."/musica.php");
 // Criando e selecionando DB
 ///////////////////////////////////////////
 $mysqlserver = "localhost:3306";
-$mysqluser = "perso";
-$mysqlpass = "Personagem@2022";
+$mysqluser = "personagem123";
+$mysqlpass = "*6171A9CE4C0D3F291F52BD358931A2AC911C68A2";
 $mysqldbname= "personagem";
 
 $bd = mysqli_connect($mysqlserver, $mysqluser, $mysqlpass, $mysqldbname);
