@@ -11,16 +11,16 @@
 
 
 
-$artes4 = "/wp-content/themes/dreamup/resources/views";
-$imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
+$artes4 = "//agenciadreamup.com.br/wp-content/themes/dreamup/resources/views";
+$imgs = "//agenciadreamup.com.br/wp-content/themes/dreamup/resources/images/personagem/";
 
 ///////////////////////////////////////////
 // Conectando no servidor MySQL.
 // Criando e selecionando DB
 ///////////////////////////////////////////
 $mysqlserver = "localhost:3306";
-$mysqluser = "perso";
-$mysqlpass = "Personagem@2022";
+$mysqluser = "personagem123";
+$mysqlpass = "PassAPS123";
 $mysqldbname= "personagem";
 
 $bd = mysqli_connect($mysqlserver, $mysqluser, $mysqlpass, $mysqldbname);
