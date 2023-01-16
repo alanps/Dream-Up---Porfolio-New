@@ -88,7 +88,7 @@ include($artes4."/musica.php");
 ///////////////////////////////////////////
 $mysqlserver = "localhost:3306";
 $mysqluser = "personagem123";
-$mysqlpass = "*6171A9CE4C0D3F291F52BD358931A2AC911C68A2";
+$mysqlpass = "PassAPS123";
 $mysqldbname= "personagem";
 
 $bd = mysqli_connect($mysqlserver, $mysqluser, $mysqlpass, $mysqldbname);
