@@ -15,8 +15,8 @@
 
 
 
-$artes4 = get_home_path()."/wp-content/themes/dreamup/resources/views";
-$imgs = get_home_path()."/wp-content/themes/dreamup/resources/images/personagem/";
+$artes4 = "/wp-content/themes/dreamup/resources/views";
+$imgs = "/wp-content/themes/dreamup/resources/images/personagem/";
 
 include($artes4."/musica.php");
 
