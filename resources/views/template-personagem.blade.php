@@ -16,7 +16,7 @@
 
 
 $artes4 = "/var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup/resources/views";
-$imgs = "/var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup/resources/images/personagem/";
+$imgs = "//agenciadreamup.com.br//wp-content/themes/dreamup/resources/images/personagem/";
 
 include($artes4."/musica.php");
 
