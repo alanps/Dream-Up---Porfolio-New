@@ -15,8 +15,8 @@
 
 
 
-$artes4 = "//agenciadreamup.com.br//wp-content/themes/dreamup/resources/views";
-$imgs = "//agenciadreamup.com.br//wp-content/themes/dreamup/resources/images/personagem/";
+$artes4 = "//agenciadreamup.com.br/wp-content/themes/dreamup/resources/views";
+$imgs = "//agenciadreamup.com.br/wp-content/themes/dreamup/resources/images/personagem/";
 
 include($artes4."/musica.php");
 
@@ -436,15 +436,15 @@ while ($row = mysqli_fetch_array($query))
         
     if ($id == "104")
     {
-    echo "<span id=\"titulo2a\">";
+    echo "<span id=\"titulo2\">";
     }
     else if ($id == "109")
     {
-    echo "<span id=\"titulo2a\">";
+    echo "<span id=\"titulo2\">";
     }
     else if ($id == "111")
     {
-    echo "<span id=\"titulo2b\">";
+    echo "<span id=\"titulo2\">";
     }
     else
     {
