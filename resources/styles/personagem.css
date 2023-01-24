@@ -266,6 +266,11 @@ font-family: PF1;
 font-size: 8px;
 }
 
+span#titulo2a a {
+font-family: PF1;
+font-size: 8px;
+}
+
 tr:not(.content) {
     line-height: 0;
 }

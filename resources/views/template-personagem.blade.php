@@ -436,15 +436,15 @@ while ($row = mysqli_fetch_array($query))
         
     if ($id == "104")
     {
-    echo "<span id=\"titulo2\">";
+    echo "<span id=\"titulo2a\">";
     }
     else if ($id == "109")
     {
-    echo "<span id=\"titulo2\">";
+    echo "<span id=\"titulo2a\">";
     }
     else if ($id == "111")
     {
-    echo "<span id=\"titulo2\">";
+    echo "<span id=\"titulo2b\">";
     }
     else
     {
