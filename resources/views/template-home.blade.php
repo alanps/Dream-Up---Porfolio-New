@@ -30,7 +30,7 @@
       <br><br>
       Uso de metodologia Ágil: Scrum e Kanban, arquitetura MVC, ferramentas de gerenciamento de projetos (JIRA, Todoist e Trello), criação de layout web, mobile e tablet com protótipo navegável (Figma), desenvolvimento de documentação (OpenAPI e Swagger), controle de versão (GIT), ferramentas de controle de versão (GitHub e Bitbucket), gerenciador de pacotes (Composer e NPM), ferramentas de automatização (Gulp.JS e Laravel Mix), virtualização em containers (Docker), Linux (SSH), ferramentas de instalação e configuração de ambientes (WordOps) e administração de servidores pelos consoles da Amazon Web Services (AWS), Google Cloud, Azure, Digital Ocean, Cpanel e WHM.
       <br><br>
-      Trabalho com todo processo de um time com Team Lead, Pull Requests e Code Review, Pipeline, QA, ambientes de produção e homologação, estimativa de tarefas com planos de ação, planejamento de tarefas diario, semanal e mensal baseado nas estimativas, daily e contato direto com o time por ligações, chat ou WhatsApp, contato com cliente por ligações, chat, WhatsApp.
+      Trabalho com todo processo de um time com Team Lead, Pull Requests e Code Review, Pipeline, QA, ambientes de produção e homologação, estimativa de tarefas com planos de ação, planejamento de tarefas diario, semanal e mensal baseado nas estimativas, daily e contato direto com o time por ligações, chat ou WhatsApp, contato com cliente por ligações, chat ou WhatsApp.
     </div>
 
   </section>
