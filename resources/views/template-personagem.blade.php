@@ -21,7 +21,10 @@ include($artes4."/musica.php");
 
 ?>
 
-<head><meta name="viewport" content="width=device-width, initial-scale=.4"></head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=.4">
+  <meta name="robots" content="noindex" />
+</head>
 
 <center>
 
