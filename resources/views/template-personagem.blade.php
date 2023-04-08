@@ -21,6 +21,8 @@ include($artes4."/musica.php");
 
 ?>
 
+<head><meta name="viewport" content="width=device-width, initial-scale=.4"></head>
+
 <center>
 
 <table id="Table_01" width="1025" height="1401" border="0" cellpadding="0" cellspacing="0">
