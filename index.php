@@ -2,7 +2,12 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="utf-8">
+    <?php if(is_page('personagem')){ ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.35">
+    <meta name="robots" content="noindex" />
+    <?php } else { ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php } ?>
     <?php wp_head(); ?>
   </head>
 
