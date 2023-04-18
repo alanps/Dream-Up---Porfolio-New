@@ -8,6 +8,8 @@
     <?php } else { ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php } ?>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573"
+     crossorigin="anonymous"></script>
     <?php wp_head(); ?>
   </head>
 
