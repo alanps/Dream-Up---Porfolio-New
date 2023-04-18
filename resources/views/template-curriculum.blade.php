@@ -384,6 +384,13 @@
 				<ul class="historicos">
 
 					<!-- Histórico -->
+					<li class="historico" id="2i9">
+						<span class="titulo titulo_2i9">2i9</span>
+						<span class="data data_2i9">de 04/2023 - até o momento (meio período)</span>
+						<span class="separacao">|</span>
+						<span class="funcao funcao_2i9">desenvolvedor full stack</span>
+					</li>
+
 					<li class="historico" id="studiovisual">
 						<span class="titulo titulo_studiovisual">Studio Visual</span>
 						<span class="data data_studiovisual">de 06/2021 - até 10/2022</span>
