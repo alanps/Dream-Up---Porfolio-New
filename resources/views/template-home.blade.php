@@ -59,7 +59,7 @@
           <div class="bloco-curriculum">
               <div class="linha1">Meu Curriculum</div>
               <div class="linha2">
-                <a href="https://agenciadreamup.com.br/aps" target="_blank"><img src="@asset('/images/curriculum.png')"></a>
+                <a href="https://agenciadreamup.com.br/curriculum" target="_blank"><img src="@asset('/images/curriculum.png')"></a>
               </div>
           </div>
         </div>
