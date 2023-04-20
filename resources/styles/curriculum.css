@@ -648,6 +648,27 @@ body#curriculum {
 	font-family: 'Century Gothic';
 }
 
+#curriculum section.base_direita .bio {
+    display: none;
+}
+
+#curriculum section.base_direita .bio .titulo.grande {
+    background-color: #91751a!important;
+}
+
+#curriculum section.base_direita .texto_bio {
+    background-color: #5d4905;
+    color: #fff;
+    width: 16.2em;
+    padding: 1.42em 1.2em 2em 1.2em;
+    margin: 0.3em 0;
+    position: relative;
+    font-size: .72em;
+    text-align: left;
+    font-family: 'Century Gothic';
+    line-height: 1.4em;
+}
+
 #curriculum section.base_direita span.icon {
 	background-image: url("../images/d-up.jpg");
 	width: 1em;
@@ -780,6 +801,13 @@ body#curriculum {
 	width: calc(100%);
 	font-size: 3.4vw;
 	padding: 1em .13em;
+}
+
+.smartphone #curriculum section.base_direita .texto_bio {
+    width: calc(100% - 2.3em);
+    padding: 1.4em 1.3em;
+    font-size: 0.7em;
+    text-align: left;
 }
 
 .smartphone #curriculum .titulo h2 {
