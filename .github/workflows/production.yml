@@ -6,7 +6,7 @@ on:
 
 jobs:
   release:
-    name: Deploy do ambiente de produção
+    name: Checkout e dependencias do WP
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout do repositório
@@ -33,6 +33,10 @@ jobs:
         with:
           node-version: '18'
 
+  release:
+    name: Build do Tema
+    runs-on: ubuntu-22.04
+    steps:
       - name: Executando Composer install no tema
         working-directory: wp-content/themes/agenciadreamup
         run: composer install
@@ -45,13 +49,14 @@ jobs:
         working-directory: wp-content/themes/agenciadreamup
         run: yarn build
 
-      - name: Setando permissões para diretorios e user own
-        run: sudo chown www-data:www-data -R * && sudo find . -type d -exec chmod 755 {} \; && sudo find . -type f -exec chmod 644 {} \;
-        
+  release:
+    name: Deploy em produção
+    runs-on: ubuntu-22.04
+    steps:
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
-          switches: --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
+          switches: --chmod='D755,F644' --chown='www-data:www-data' --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
           path: ./
           remote_path: /var/www/agenciadreamup.com.br/htdocs
           remote_host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
