@@ -384,11 +384,18 @@
 				<ul class="historicos">
 
 					<!-- Histórico -->
+					<li class="historico" id="coffeecode">
+						<span class="titulo titulo_coffeecode">Coffee Code</span>
+						<span class="data data_coffeecode">de 05/2023 - até o momento</span>
+						<span class="separacao">|</span>
+						<span class="funcao funcao_coffeecode">desenvolvedor backend</span>
+					</li>
+
 					<li class="historico" id="2i9">
 						<span class="titulo titulo_2i9">2i9</span>
-						<span class="data data_2i9">de 04/2023 - até o momento (meio período)</span>
+						<span class="data data_2i9">de 04/2023 - até o momento</span>
 						<span class="separacao">|</span>
-						<span class="funcao funcao_2i9">desenvolvedor full stack</span>
+						<span class="funcao funcao_2i9">desenvolvedor backend</span>
 					</li>
 
 					<li class="historico" id="studiovisual">
@@ -469,16 +476,6 @@
 				<div class="item cursando">
 					<div class="titulo pequeno">Graduação:</div>
 					<div class="texto">Tecnologia em Sistemas para Internet</div>
-				</div>
-
-				<div class="item cursando">
-					<div class="titulo pequeno">Pós-Graduação (cursando):</div>
-					<div class="texto">Projetos de Aplicativos Móveis Multiplataforma</div>
-				</div>
-
-				<div class="item cursando">
-					<div class="titulo pequeno">MBA (cursando):</div>
-					<div class="texto">Big Data e Inteligência Competitiva</div>
 				</div>
 			</div>
 
