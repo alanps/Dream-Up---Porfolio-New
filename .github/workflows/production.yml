@@ -1,4 +1,4 @@
-name: Ambiente de produção - agenciadreamup.com.br
+name: Ambiente de produção - agenciadreamup.com.br - Versão Composer Install Edition
 on:
   push:
     branches:
@@ -6,8 +6,8 @@ on:
 
 jobs:
   release:
-    name: Obtém o código-fonte e realiza a construção da aplicação.
-    runs-on: ubuntu-20.04
+    name: Deploy do ambiente de produção
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
           COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
         uses: php-actions/composer@v5
         with:
-          php_version: 7.4
+          php_version: 8.2
           version: 1
           dev: no
           args: -o --ignore-platform-reqs -d ./
@@ -33,18 +33,21 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Executando yarn install
-        run: yarn
+      - name: Executando Composer install no tema
+        run: cd /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup && composer install
 
-      - name: Executando a construção dos assets
-        run: yarn build
+      - name: Executando yarn install no tema
+        run: cd /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup && yarn install
 
-      - name: Copiando arquivos dos plugins para ambiente de testes
+      - name: Executando yarn build no tema
+        run: cd /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup && yarn build
+
+      - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
           path: ./
-          remote_path: /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup
+          remote_path: /var/www/agenciadreamup.com.br/htdocs
           remote_host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
           remote_port: 22
           remote_user: ${{ secrets.SSH_DEV_DEPLOY_USER }}

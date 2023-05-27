@@ -1,71 +1,56 @@
 {
-  "name": "roots/sage",
-  "type": "wordpress-theme",
-  "license": "MIT",
-  "description": "WordPress starter theme with a modern development workflow",
-  "homepage": "https://roots.io/sage/",
-  "authors": [
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+    "name": "agenciadreamup/alanps",
+    "description": "Portfólio Alan Pardini Sant Ana",
+    "authors": [
+        {
+            "name": "Alan PS",
+            "email": "alanps2012@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Agenciadreamup\\Alanps\\": "src/"
+        }
     },
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "roots/wordpress": "*",
+        "wpackagist-plugin/advanced-custom-fields": "*",
+        "wpackagist-plugin/all-in-one-wp-migration":"*",
+        "wpackagist-plugin/better-search-replace":"*",
+        "wpackagist-plugin/ewww-image-optimizer":"*",
+        "wpackagist-plugin/html-forms": "*",
+        "wpackagist-plugin/megamenu": "*",
+        "wpackagist-plugin/really-simple-ssl": "*",
+        "wpackagist-plugin/seo-by-rank-math":"*",
+        "wpackagist-plugin/simple-history": "*",
+        "wpackagist-plugin/wp-debugging": "*",
+        "wpackagist-plugin/wp-mail-smtp": "*"
     },
-    {
-      "name": "QWp6t",
-      "email": "hi@qwp6t.me",
-      "homepage": "https://github.com/qwp6t"
+    "scripts": {
+        "move-wordpress": [
+            "rm -rf wordpress/wp-content/plugins/*",
+            "rm -rf wordpress/wp-content/themes/*",
+            "cp -rf wordpress/* .",
+            "rm -rf wordpress"
+        ],
+        "post-install-cmd": [
+            "@move-wordpress"
+        ],
+        "post-update-cmd": [
+            "@move-wordpress"
+        ]
     },
-    {
-      "name": "Brandon Nifong",
-      "email": "brandon@tendency.me",
-      "homepage": "https://github.com/log1x"
+    "config": {
+        "allow-plugins": {
+            "roots/wordpress-core-installer": true,
+            "composer/installers": true
+        }
     }
-  ],
-  "keywords": [
-    "wordpress"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "app/"
-    }
-  },
-  "require": {
-    "php": "^7.4|^8.0",
-    "roots/acorn": "^2.0"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.6"
-  },
-  "suggest": {
-    "log1x/sage-directives": "A collection of useful Blade directives for WordPress and Sage (^1.0).",
-    "log1x/sage-svg": "A useful SVG directive for inlining SVG's within Blade views (^1.0)."
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "scripts": {
-    "lint": [
-      "phpcs --extensions=php --standard=PSR12 app"
-    ]
-  },
-  "extra": {
-    "acorn": {
-      "providers": [
-        "App\\Providers\\ThemeServiceProvider"
-      ]
-    }
-  }
 }
