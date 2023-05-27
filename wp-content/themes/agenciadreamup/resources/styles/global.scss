@@ -71,3 +71,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
 	background: #fff;
 }
+
+a.mega-menu-link:focus {
+    background: none !important;
+}
