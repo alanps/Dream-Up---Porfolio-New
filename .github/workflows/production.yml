@@ -29,10 +29,10 @@ jobs:
           args: -o --ignore-platform-reqs -d ./
 
       - name: Remove o tema
-        run: sudo rm -rf /wp-content/themes/agenciadreamup
+        run: sudo rm -rf ${{ github.workspace }}/wp-content/themes/agenciadreamup
           
       - name: Zip WP
-        run: sudo zip -r /wp.zip ./
+        run: sudo zip -r ${{ github.workspace }}/wp.zip ${{ github.workspace }}/
 
       - name: Upload do WP
         uses: actions/upload-artifact@v3
@@ -72,21 +72,21 @@ jobs:
             ${{ runner.os }}-
 
       - name: Executando yarn install no tema
-        working-directory: /wp-content/themes/agenciadreamup
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn install
         
       - name: Executando yarn build no tema
-        working-directory: /wp-content/themes/agenciadreamup
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
 
       - name: Zip Tema
-        run: sudo zip -r /wp-content/themes/agenciadreamup/agenciadreamup.zip /wp-content/themes/agenciadreamup
+        run: sudo zip -r ${{ github.workspace }}/wp-content/themes/agenciadreamup/agenciadreamup.zip ${{ github.workspace }}/wp-content/themes/agenciadreamup
 
       - name: Upload do tema
         uses: actions/upload-artifact@v3
         with:
           name: tema_files
-          path: /wp-content/themes/agenciadreamup/agenciadreamup.zip
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/agenciadreamup.zip
           if-no-files-found: error
         
   deployProd:
@@ -98,29 +98,31 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: wp_files
+          path: /tmp/agdup
         
       - name: Unzip WP
-        run: sudo unzip -o /wp.zip -d /temp
+        run: sudo unzip -o /tmp/agdup/wp.zip -d /tmp/agdup
 
       - name: Download do tema
         uses: actions/download-artifact@v3
         with:
           name: tema_files
+          path: /tmp/agdup
 
       - name: Mkdir do tema
-        run: sudo mkdir -p /temp/wp-content/themes/agenciadreamup/
+        run: sudo mkdir -p /tmp/agdup/wp-content/themes/agenciadreamup/
 
       - name: Unzip tema
-        run: sudo unzip -o /agenciadreamup.zip -d /temp/wp-content/themes/agenciadreamup/
+        run: sudo unzip -o /tmp/agdup/agenciadreamup.zip -d /tmp/agdup/wp-content/themes/agenciadreamup/
 
       - name: Test2
-        run: ls /temp
+        run: ls /tmp/agdup
         
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: --chmod='D755,F644' --chown='www-data:www-data' --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
-          path: /temp
+          path: /tmp/agdup
           remote_path: /var/www/agenciadreamup.com.br/htdocs
           remote_host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
           remote_port: 22
