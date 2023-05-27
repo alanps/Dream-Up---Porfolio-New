@@ -5,8 +5,8 @@ on:
       - main
 
 jobs:
-  checkout:
-    name: Checkout e dependencias do WP
+  wp:
+    name: Build do WP
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout do repositório
@@ -28,11 +28,6 @@ jobs:
           dev: no
           args: -o --ignore-platform-reqs -d ./
 
-      - name: Setup do NodeJS
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
   temaBuild:
     name: Build do Tema
     runs-on: ubuntu-22.04
@@ -40,27 +35,35 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
-        
-      - name: Test
-        run: |
-          ls ${{ github.workspace }}
+
+      - name: Setup do NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
       - name: Executando Composer install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: composer install
-
+        
       - name: Executando yarn install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn install
-
+        
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
-
+        
   deployProd:
     name: Deploy em produção
     runs-on: ubuntu-22.04
     needs: temaBuild
     steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+        
+      - name: Test
+        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
+          
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
