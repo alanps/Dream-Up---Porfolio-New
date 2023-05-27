@@ -110,7 +110,7 @@ section.infos {
 			}
 
 
-			@media screen and (max-width: 1163px) {
+			@media screen and (max-width: $medium-bg-screen) {
 				img {
 					height: 160px;
 				}
