@@ -48,7 +48,6 @@ jobs:
           node-version: '18'
         
       - name: Executando composer install para dependências do Wordpress
-        working-directory: $TEMA_PATH
         env:
           COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
         uses: php-actions/composer@v5
@@ -56,6 +55,7 @@ jobs:
           php_version: 8.2
           version: 2
           dev: no
+          working-dir: $TEMA_PATH
           args: -o --ignore-platform-reqs -d ./
 
       - name: Cache node modules
