@@ -89,7 +89,7 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Test
-        run: ls ${{ $TEMA_PATH }}
+        run: ls $TEMA_PATH
           
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
