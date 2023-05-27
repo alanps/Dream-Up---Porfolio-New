@@ -32,7 +32,7 @@ jobs:
           args: -o --ignore-platform-reqs -d ./
 
       - name: Test
-        run: ls ${{ $TEMA_PATH }}
+        run: ls ${{ TEMA_PATH }}
 
   temaBuild:
     name: Build do Tema
@@ -55,7 +55,7 @@ jobs:
           php_version: 8.2
           version: 2
           dev: no
-          working_dir: ${{ $TEMA_PATH }}
+          working_dir: ${{ TEMA_PATH }}
           args: -o --ignore-platform-reqs -d ./
 
       - name: Cache node modules
@@ -73,11 +73,11 @@ jobs:
             ${{ runner.os }}-
 
       - name: Executando yarn install no tema
-        working-directory: ${{ $TEMA_PATH }}
+        working-directory: ${{ TEMA_PATH }}
         run: yarn install
         
       - name: Executando yarn build no tema
-        working-directory: ${{ $TEMA_PATH }}
+        working-directory: ${{ TEMA_PATH }}
         run: yarn build
         
   deployProd:
