@@ -33,6 +33,7 @@ jobs:
         with:
           node-version: '18'
 
+jobs:
   release:
     name: Build do Tema
     runs-on: ubuntu-22.04
@@ -49,6 +50,7 @@ jobs:
         working-directory: wp-content/themes/agenciadreamup
         run: yarn build
 
+jobs:
   release:
     name: Deploy em produção
     runs-on: ubuntu-22.04
