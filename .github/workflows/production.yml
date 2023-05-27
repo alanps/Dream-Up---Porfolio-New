@@ -106,10 +106,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: tema_files
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
 
       - name: Unzip Tema
-        run: sudo unzip -o ${{ github.workspace }}/wp-content/themes/agenciadreamup/agenciadreamup.zip -d /var/temp/wp-content/themes/agenciadreamup/
+        run: sudo unzip -o ${{ github.workspace }}/agenciadreamup.zip -d /var/temp/wp-content/themes/agenciadreamup/
 
       - name: Test2
         run: ls ${{ github.workspace }}
