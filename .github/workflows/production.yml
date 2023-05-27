@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  release:
+  checkout:
     name: Checkout e dependencias do WP
     runs-on: ubuntu-22.04
     steps:
@@ -33,8 +33,7 @@ jobs:
         with:
           node-version: '18'
 
-jobs:
-  release:
+  temaBuild:
     name: Build do Tema
     runs-on: ubuntu-22.04
     steps:
@@ -50,8 +49,7 @@ jobs:
         working-directory: wp-content/themes/agenciadreamup
         run: yarn build
 
-jobs:
-  release:
+  deployProd:
     name: Deploy em produção
     runs-on: ubuntu-22.04
     steps:
