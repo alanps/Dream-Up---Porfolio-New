@@ -100,7 +100,7 @@ jobs:
           name: wp_files
         
       - name: Unzip WP
-        run: sudo unzip -o ${{ github.workspace }}/wp.zip -d /var/temp
+        run: sudo unzip -o ${{ github.workspace }}/wp.zip -d ${{ github.workspace }}/temp
 
       - name: Download do tema
         uses: actions/download-artifact@v3
@@ -108,19 +108,19 @@ jobs:
           name: tema_files
 
       - name: Mkdir do tema
-        run: sudo mkdir -p /var/temp/wp-content/themes/agenciadreamup/
+        run: sudo mkdir -p ${{ github.workspace }}/temp/wp-content/themes/agenciadreamup/
 
       - name: Unzip tema
-        run: sudo unzip -o ${{ github.workspace }}/agenciadreamup.zip -d /var/temp/wp-content/themes/agenciadreamup/
+        run: sudo unzip -o ${{ github.workspace }}/agenciadreamup.zip -d ${{ github.workspace }}/temp/wp-content/themes/agenciadreamup/
 
       - name: Test2
-        run: ls /var/temp
+        run: ls ${{ github.workspace }}/temp
         
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: --chmod='D755,F644' --chown='www-data:www-data' --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
-          path: /var/temp
+          path: ${{ github.workspace }}/temp
           remote_path: /var/www/agenciadreamup.com.br/htdocs
           remote_host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
           remote_port: 22
@@ -136,4 +136,3 @@ jobs:
         uses: Remagpie/gha-remove-artifact@v1
         with:
           only-name: 'tema_files'
-          
