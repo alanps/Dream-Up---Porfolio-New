@@ -4,9 +4,6 @@ on:
     branches:
       - main
 
-env:
-  TEMA_PATH: /wp-content/themes/agenciadreamup
-
 jobs:
   wp:
     name: Build do WP
@@ -32,7 +29,7 @@ jobs:
           args: -o --ignore-platform-reqs -d ./
 
       - name: Test
-        run: ls $TEMA_PATH
+        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
 
   temaBuild:
     name: Build do Tema
@@ -41,22 +38,18 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
+        
+      - name: Test
+        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        
+      - name: Executando composer install no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: composer install
 
       - name: Setup do NodeJS
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-        
-      - name: Executando composer install para dependências do Wordpress
-        env:
-          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
-        uses: php-actions/composer@v5
-        with:
-          php_version: 8.2
-          version: 2
-          dev: no
-          working_dir: $TEMA_PATH
-          args: -o --ignore-platform-reqs -d ./
 
       - name: Cache node modules
         id: cache-npm
@@ -73,11 +66,11 @@ jobs:
             ${{ runner.os }}-
 
       - name: Executando yarn install no tema
-        working-directory: $TEMA_PATH
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn install
         
       - name: Executando yarn build no tema
-        working-directory: $TEMA_PATH
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
         
   deployProd:
@@ -89,7 +82,7 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Test
-        run: ls ${{ $TEMA_PATH }}
+        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
           
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
