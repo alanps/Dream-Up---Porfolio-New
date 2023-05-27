@@ -288,3 +288,7 @@ div#btextocamiseta2 div {
 .line-height-auto {
     line-height: normal;
 }
+
+.fancybox-nav span {
+    visibility: visible !important;
+}
