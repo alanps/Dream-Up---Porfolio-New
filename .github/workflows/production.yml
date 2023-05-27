@@ -45,6 +45,11 @@ jobs:
         working-directory: wp-content/themes/agenciadreamup
         run: yarn build
 
+      - name: Setando permissões para diretorios e user own
+        run: su chown www-data:www-data  -R *
+        run: su find . -type d -exec chmod 755 {} \;
+        run: su find . -type f -exec chmod 644 {} \;
+
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
@@ -55,8 +60,3 @@ jobs:
           remote_port: 22
           remote_user: ${{ secrets.SSH_DEV_DEPLOY_USER }}
           remote_key: ${{ secrets.SSH_DEV_DEPLOY_KEY }}
-
-      - name: Setando permissões para diretorios e user own
-        run: su chown www-data:www-data  -R *
-        run: su find . -type d -exec chmod 755 {} \;
-        run: su find . -type f -exec chmod 644 {} \;
