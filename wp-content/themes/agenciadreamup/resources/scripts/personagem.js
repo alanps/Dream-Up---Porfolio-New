@@ -7,6 +7,7 @@
       nextEffect    : 'none',
       closeBtn    : false,
       loop      : false,
+      showNavArrows	: true,
       afterShow: function() {
           jQuery(".fancybox-title").wrapInner('<div />').show();
           
@@ -30,6 +31,7 @@
       nextEffect    : 'none',
       closeBtn    : false,
       loop      : false,
+      showNavArrows	: true,
       afterShow: function() {
           jQuery(".fancybox-title").wrapInner('<div />').show();
           
@@ -54,6 +56,7 @@
         nextEffect    : 'none',
         closeBtn    : false,
         loop      : false,
+        showNavArrows	: true,
         afterShow: function() {
             jQuery(".fancybox-title").wrapInner('<div />').show();
             
