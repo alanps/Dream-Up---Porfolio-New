@@ -108,17 +108,14 @@ jobs:
           name: tema_files
 
       - name: Mkdir do tema
-        run: sudo mkdir /var/temp/wp-content/themes/agenciadreamup/
+        run: sudo mkdir -p /var/temp/wp-content/themes/agenciadreamup/
 
       - name: Unzip tema
         run: sudo unzip -o ${{ github.workspace }}/agenciadreamup.zip -d /var/temp/wp-content/themes/agenciadreamup/
 
       - name: Test2
-        run: ls ${{ github.workspace }}
+        run: ls /var/temp
         
-      - name: Test
-        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
-          
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
@@ -129,3 +126,14 @@ jobs:
           remote_port: 22
           remote_user: ${{ secrets.SSH_DEV_DEPLOY_USER }}
           remote_key: ${{ secrets.SSH_DEV_DEPLOY_KEY }}
+          
+      - name: Remove artefato WP
+        uses: Remagpie/gha-remove-artifact@v1
+        with:
+          only-name: 'wp_files'
+
+      - name: Remove artefato tema
+        uses: Remagpie/gha-remove-artifact@v1
+        with:
+          only-name: 'tema_files'
+          
