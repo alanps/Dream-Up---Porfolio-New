@@ -22,9 +22,15 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
           
       - name: Executando composer install para dependências do Wordpress
-        working-directory: ${{ github.workspace }}
-        run: composer install
-        
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
+        uses: php-actions/composer@v5
+        with:
+          php_version: 8.2
+          version: 2
+          dev: no
+          args: -o --ignore-platform-reqs -d ./
+
       - name: Test
         run: ls $TEMA_PATH
 
@@ -40,11 +46,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Executando Composer install no tema
-        working-directory: $TEMA_PATH
-        run: composer install
         
+      - name: Executando composer install para dependências do Wordpress
+        working-directory: $TEMA_PATH
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GITHUB_TOKEN }}"}}'
+        uses: php-actions/composer@v5
+        with:
+          php_version: 8.2
+          version: 2
+          dev: no
+          args: -o --ignore-platform-reqs -d ./
+
       - name: Cache node modules
         id: cache-npm
         uses: actions/cache@v3
