@@ -31,7 +31,7 @@ jobs:
       - name: Setup do NodeJS para o tema
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '18'
 
       - name: Executando Composer install no tema
         working-directory: wp-content/themes/dreamup

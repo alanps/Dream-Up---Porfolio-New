@@ -1,0 +1,160 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| our theme. We will simply require it into the script here so that we
+| don't have to worry about manually loading any of our classes later on.
+|
+*/
+
+if (! file_exists($composer = __DIR__.'/vendor/autoload.php')) {
+    wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
+}
+
+require $composer;
+
+/*
+|--------------------------------------------------------------------------
+| Register The Bootloader
+|--------------------------------------------------------------------------
+|
+| The first thing we will do is schedule a new Acorn application container
+| to boot when WordPress is finished loading the theme. The application
+| serves as the "glue" for all the components of Laravel and is
+| the IoC container for the system binding all of the various parts.
+|
+*/
+
+if (! function_exists('\Roots\bootloader')) {
+    wp_die(
+        __('You need to install Acorn to use this theme.', 'sage'),
+        '',
+        [
+            'link_url' => 'https://roots.io/acorn/docs/installation/',
+            'link_text' => __('Acorn Docs: Installation', 'sage'),
+        ]
+    );
+}
+
+\Roots\bootloader()->boot();
+
+/*
+|--------------------------------------------------------------------------
+| Register Sage Theme Files
+|--------------------------------------------------------------------------
+|
+| Out of the box, Sage ships with categorically named theme files
+| containing common functionality and setup to be bootstrapped with your
+| theme. Simply add (or remove) files from the array below to change what
+| is registered alongside Sage.
+|
+*/
+
+collect(['setup', 'filters'])
+    ->each(function ($file) {
+        if (! locate_template($file = "app/{$file}.php", true, true)) {
+            wp_die(
+                /* translators: %s is replaced with the relative file path */
+                sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file)
+            );
+        }
+    });
+
+    
+/**
+ * Traz os posts do carrousel baseado na categoria.
+ */
+function get_carrousel_posts_artes($category)
+{
+    $args = array(
+        'category'         => $category,
+        'orderby'          => 'date',
+        'order'            => 'DESC',
+        'post_type'        => 'artes',
+        'posts_per_page  ' => -1,
+        'nopaging'         => true
+    );
+
+    $posts = get_posts($args);
+
+    return $posts;
+}
+
+
+/**
+ * Calcular diff dates.
+ */
+function calc_diff_date($date_start, $date_end)
+{
+    $date1 = date_create($date_start);
+    $date2 = date_create($date_end);
+    $diff=date_diff($date1,$date2);
+    $months = $diff->format("%m");
+    $years = $diff->format("%y");
+    $days = $diff->format("%d");
+
+    return (($years > 0) ? $years.(($years > 1) ? ' anos' : ' ano').(($months > 0 || $days > 0) ? ' e ' : '') : '').(($months > 0) ? $months.(($months > 1) ? ' meses' : ' mês').(($days > 0) ? ' e ' : '') : '').(($days > 0) ? $days.(($days > 1) ? ' dias' : ' dia') : '');
+}
+
+
+/**
+ * Traz as categorias de artes.
+ */
+function get_artes()
+{
+    $args = array(
+       'type'                     => 'artes',
+       'orderby'                  => 'name',
+       'order'                    => 'ASC',
+       'hide_empty'               => 1,
+       'hierarchical'             => 1,
+       'taxonomy'                 => 'category',
+       'exclude'                  => [1]
+    );
+
+    return get_categories($args);
+}
+
+
+/**
+ * Traz os posts de sites e empregos.
+ */
+function get_carrousel_posts_sites()
+{
+    $args = array(
+        'meta_key'         => 'sites_e_apps_group_entrada_empresa',
+        'orderby'          => 'meta_value_num date',
+        'order'            => 'DESC',
+        'post_type'        => 'sites',
+        'posts_per_page  ' => -1,
+        'nopaging'         => true,
+    );
+
+    $posts = get_posts($args);
+
+    return $posts;
+}
+
+
+/**
+ * Traz os posts de apps.
+ */
+function get_carrousel_posts_apps()
+{
+    $args = array(
+        'orderby'          => 'date',
+        'order'            => 'ASC',
+        'post_type'        => 'apps',
+        'posts_per_page  ' => -1,
+        'nopaging'         => true
+    );
+
+    $posts = get_posts($args);
+
+    return $posts;
+}
+

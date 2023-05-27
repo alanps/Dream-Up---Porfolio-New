@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.2",
         "roots/wordpress": "*",
         "wpackagist-plugin/advanced-custom-fields": "*",
         "wpackagist-plugin/all-in-one-wp-migration":"*",
@@ -34,6 +34,9 @@
         "wpackagist-plugin/wp-mail-smtp": "*"
     },
     "scripts": {
+        "theme-install": [
+            "cd wp-content/themes/agenciadreamup && composer install && yarn install && yarn build"
+        ],
         "move-wordpress": [
             "rm -rf wordpress/wp-content/plugins/*",
             "rm -rf wordpress/wp-content/themes/*",
