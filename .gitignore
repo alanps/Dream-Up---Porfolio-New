@@ -38,7 +38,7 @@ wp-content/themes/dreamup/publioc/
 
 # files to keep
 !.gitignore
-!.gitlab-ci.yml
+!.github/
 !README.md
 !composer.json
 !composer.lock
