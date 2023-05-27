@@ -38,10 +38,12 @@ jobs:
         run: composer install
 
       - name: Executando yarn install no tema
-        run: cd /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup && yarn install
+        working-directory: wp-content/themes/dreamup
+        run: yarn install
 
       - name: Executando yarn build no tema
-        run: cd /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup && yarn build
+        working-directory: wp-content/themes/dreamup
+        run: yarn build
 
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
