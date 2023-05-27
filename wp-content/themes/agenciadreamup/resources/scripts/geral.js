@@ -1,8 +1,8 @@
 // import external dependencies
-import $ from "jquery";
+import $ from 'jquery';
 // import components
 import Carrousel from './components/carrousel.js';
-Carrousel.init();
+Carrousel.init($);
 
 jQuery('body').on('click', 'a', function(e) {
 	if(jQuery(this).attr("href") == window.location.origin+"/curriculum/"){

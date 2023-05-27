@@ -1,5 +1,9 @@
 <!doctype html>
+<?php if(!is_page('curriculum') && !is_page('calculadora') && !is_page('calculadora-mmc-mdc') && !is_page('personagem') && !is_404()){ ?>
+<html <?php language_attributes(); ?> style="background-image: url(@asset('/images/bg.jpg'));">
+<?php } else { ?>
 <html <?php language_attributes(); ?>>
+<?php } ?>
   <head>
     <meta charset="utf-8">
     <?php if(is_page('personagem')){ ?>

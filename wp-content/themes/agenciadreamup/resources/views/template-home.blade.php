@@ -40,15 +40,23 @@
     <div class="row flex-column flex-md-row">
       <div class="col col-12 col-md-4">
         <div class="blocos bloco-emprego d-flex flex-column">
-          <div class="linha1">STATUS: <span>Desempregado</span></div><!--
-          <div class="linha2"><a href="https://studiovisual.com.br" target="_blank"><img src="@asset('/images/studiovisual.png')"></a></div>
-          <div class="linha3">Até Outubro de 2022 na <a href="https://studiovisual.com.br" target="_blank">Studio Visual</a></div>
-          <div class="linha4">(<?php echo calc_diff_date('2021-06-21', '2022-10-30'); ?>)</div>-->
+          <div class="linha1">STATUS: <span>EMPREGADO</span></div>
+          <div class="linha2"><img src="@asset('/images/coffeecode2i9.jpg')"></div>
+          <div class="d-flex flex-row-reverse">
+            <div class="flex-fill">
+              <div class="linha3">Desde Abril de 2022 na <a href="https://2i9.com.br" target="_blank">2i9</a></div>
+              <div class="linha4">(<?php echo calc_diff_date('2023-04-19', date('Y-m-d')); ?>)</div>
+            </div>
+            <div class="flex-fill">
+              <div class="linha5">Desde Maio de 2022 na <a href="https://coffee-code.tech" target="_blank">Coffee Code</a></div>
+              <div class="linha6">(<?php echo calc_diff_date('2023-05-08', date('Y-m-d')); ?>)</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col col-12 col-md-4">
         <div class="blocos">
-          <div class="bloco-eu">
+          <div class="bloco-eu" style="background-image: url(@asset('/images/alan-bg.jpg'));">
             <div class="linha1"><img src="@asset('/images/balao.png')"><span>Esse é meu portfólio!</span></div>
             <div class="linha2"><img src="@asset('/images/eu.png')"></div>
           </div>
@@ -56,7 +64,7 @@
       </div>
       <div class="col col-12 col-md-4">
         <div class="blocos">
-          <div class="bloco-curriculum">
+          <div class="bloco-curriculum" style="background-image: url(@asset('/images/curriculum-bg.jpg'));">
               <div class="linha1">Meu Curriculum</div>
               <div class="linha2">
                 <a href="https://agenciadreamup.com.br/curriculum" target="_blank"><img src="@asset('/images/curriculum.png')"></a>
