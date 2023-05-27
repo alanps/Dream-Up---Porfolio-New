@@ -20,7 +20,7 @@ node_modules
 wp-content/themes/dreamup/vendor/
 wp-content/themes/dreamup/.budfiles/
 wp-content/themes/dreamup/node_modules/
-wp-content/themes/dreamup/publioc/
+wp-content/themes/dreamup/public/
 
 # ignore log files and databases
 .phpintel

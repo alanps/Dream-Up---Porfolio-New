@@ -42,7 +42,7 @@ jobs:
       - name: Executando yarn build no tema
         run: cd /var/www/agenciadreamup.com.br/htdocs/wp-content/themes/dreamup && yarn build
 
-      - name: Copiando arquivos para ambiente
+      - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
