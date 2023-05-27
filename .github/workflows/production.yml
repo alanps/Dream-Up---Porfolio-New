@@ -32,7 +32,7 @@ jobs:
         run: sudo rm -rf ${{ github.workspace }}/wp-content/themes/agenciadreamup
       
       - name: Copiando arquivos para ambiente de produção
-        uses: contention/rsync-deployments@v2.0.0
+        uses: Burnett01/rsync-deployments@5.2.1
         with:
           switches: --chmod='D755,F644' --chown='www-data:www-data' --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
           remote_path: /var/www/agenciadreamup.com.br/htdocs
@@ -84,7 +84,7 @@ jobs:
         run: sudo rm -rf ${{ github.workspace }}/composer.json && sudo rm -rf ${{ github.workspace }}/composer.lock && sudo rm -rf ${{ github.workspace }}/yarn.lock && sudo rm -rf ${{ github.workspace }}/.gitignore && sudo rm -rf ${{ github.workspace }}/wp-content/ewww/ && sudo rm -rf ${{ github.workspace }}/wp-content/languages/ && sudo rm -rf ${{ github.workspace }}/wp-content/plugins/ && sudo rm -rf ${{ github.workspace }}/wp-content/uploads/ && sudo rm -rf ${{ github.workspace }}/wp-content/wp-rocket-config/ && sudo rm -rf ${{ github.workspace }}/wp-content/advanced-cache.php
 
       - name: Copiando arquivos para ambiente de produção
-        uses: contention/rsync-deployments@v2.0.0
+        uses: Burnett01/rsync-deployments@5.2.1
         with:
           switches: --chmod='D755,F644' --chown='www-data:www-data' --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
           remote_path: /var/www/agenciadreamup.com.br/htdocs
