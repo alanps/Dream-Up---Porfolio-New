@@ -119,15 +119,14 @@ jobs:
         run: ls /tmp/agdup
         
       - name: Copiando arquivos para ambiente de produção
-        uses: burnett01/rsync-deployments@4.1
+        uses: contention/rsync-deployments@v2.0.0
         with:
-          switches: --chmod='D755,F644' --chown='www-data:www-data' --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
-          path: ./tmp/agdup/wp-content/themes/agenciadreamup/home/runner/work/Dream-Up---Porfolio-New/Dream-Up---Porfolio-New/
-          remote_path: /var/www/agenciadreamup.com.br/htdocs
-          remote_host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
-          remote_port: 22
-          remote_user: ${{ secrets.SSH_DEV_DEPLOY_USER }}
-          remote_key: ${{ secrets.SSH_DEV_DEPLOY_KEY }}
+          flags: --chmod='D755,F644' --chown='www-data:www-data' --no-perms --rsync-path='/usr/bin/sudo /usr/bin/rsync' -O --exclude=.git/ --exclude=.env --delete -Prltvz
+          user: ${{ secrets.SSH_DEV_DEPLOY_USER }}
+          host: ${{ secrets.SSH_DEV_DEPLOY_HOST }}
+          localpath: ./tmp/agdup/wp-content/themes/agenciadreamup/home/runner/work/Dream-Up---Porfolio-New/Dream-Up---Porfolio-New/
+          remotepath: /var/www/agenciadreamup.com.br/htdocs
+          deploy_key: ${{ secrets.SSH_DEV_DEPLOY_KEY }}
           
       - name: Remove artefato WP
         uses: Remagpie/gha-remove-artifact@v1
