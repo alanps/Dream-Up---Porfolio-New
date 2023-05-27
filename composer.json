@@ -24,6 +24,7 @@
         "wpackagist-plugin/advanced-custom-fields": "*",
         "wpackagist-plugin/all-in-one-wp-migration":"*",
         "wpackagist-plugin/better-search-replace":"*",
+        "wpackagist-plugin/copy-delete-posts":"*",
         "wpackagist-plugin/ewww-image-optimizer":"*",
         "wpackagist-plugin/html-forms": "*",
         "wpackagist-plugin/megamenu": "*",
