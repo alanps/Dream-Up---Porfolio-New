@@ -28,11 +28,14 @@ jobs:
           dev: no
           args: -o --ignore-platform-reqs -d ./
           
+      - name: Zip WP
+        run: sudo zip -r ${{ github.workspace }}/wp.zip ${{ github.workspace }}
+
       - name: Upload do WP
         uses: actions/upload-artifact@v3
         with:
           name: wp_files
-          path: ${{ github.workspace }}
+          path: ${{ github.workspace }}/wp.zip
           if-no-files-found: error
 
       - name: Test
@@ -41,7 +44,6 @@ jobs:
   temaBuild:
     name: Build do Tema
     runs-on: ubuntu-22.04
-    needs: wp
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
@@ -83,30 +85,37 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
 
+      - name: Zip Tema
+        run: sudo zip -r ${{ github.workspace }}/wp-content/themes/agenciadreamup/agenciadreamup.zip ${{ github.workspace }}/wp-content/themes/agenciadreamup
+
       - name: Upload do tema
         uses: actions/upload-artifact@v3
         with:
           name: tema_files
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/agenciadreamup.zip
           if-no-files-found: error
         
   deployProd:
     name: Deploy em produção
     runs-on: ubuntu-22.04
-    needs: temaBuild
+    needs: [wp, temaBuild]
     steps:
-      - name: Checkout do repositório
-        uses: actions/checkout@v3
-
       - name: Download do WP
         uses: actions/download-artifact@v3
         with:
           name: wp_files
         
+      - name: Unzip WP
+        run: sudo unzip -o ${{ github.workspace }}/wp.zip -d ${{ github.workspace }}
+
       - name: Download do tema
         uses: actions/download-artifact@v3
         with:
           name: tema_files
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+
+      - name: Unzip Tema
+        run: sudo unzip -o ${{ github.workspace }}/wp-content/themes/agenciadreamup/agenciadreamup.zip -d ${{ github.workspace }}/wp-content/themes/agenciadreamup/
 
       - name: Test2
         run: ls ${{ github.workspace }}
