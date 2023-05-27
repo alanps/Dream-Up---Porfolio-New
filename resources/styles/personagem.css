@@ -244,6 +244,11 @@ background-color: #0f0f0f;
 float: left;
 }
 
+#bfotosbase_ads {
+width: 800px;
+margin-left: 113px;
+}
+
 #bfotosbase {
 width: 800px;
 height: 415px;

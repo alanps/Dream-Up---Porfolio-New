@@ -786,7 +786,8 @@ echo "<br>
 
 if ($id == 112)
 {
-
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes101` GROUP BY `grupo` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -797,6 +798,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -885,7 +913,8 @@ echo "";
 
 if ($id == 100)
 {
-
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes100` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -915,6 +944,33 @@ jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1076,6 +1132,8 @@ echo "";
 
 if ($id == 102)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes102` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1086,6 +1144,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1150,6 +1235,8 @@ echo "";
 
 if ($id == 111)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes111` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1160,6 +1247,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1224,6 +1338,8 @@ echo "";
 
 if ($id == 109)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes109` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1234,6 +1350,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1255,6 +1398,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1298,6 +1442,8 @@ echo "";
 
 if ($id == 108)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes108` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1308,6 +1454,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1329,6 +1502,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1372,6 +1546,8 @@ echo "";
 
 if ($id == 107)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes107` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1382,6 +1558,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1403,6 +1606,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1446,6 +1650,8 @@ echo "";
 
 if ($id == 106)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes106` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1456,6 +1662,34 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1477,6 +1711,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1520,6 +1755,8 @@ echo "";
 
 if ($id == 105)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes105` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1530,6 +1767,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1551,6 +1815,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1594,6 +1859,8 @@ echo "";
 
 if ($id == 104)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes104` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1604,6 +1871,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1625,6 +1919,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1669,6 +1964,8 @@ echo "";
 
 if ($id == 103)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes103` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1679,6 +1976,33 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1700,6 +2024,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1742,6 +2067,8 @@ echo "";
 
 if ($id == 2)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes2` ORDER BY `id` DESC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1752,6 +2079,31 @@ while ($row = mysqli_fetch_array($query))
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+$anuncioCount2=$anuncioCount2+5;
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
@@ -1773,6 +2125,7 @@ echo "</div></div>
 </div>
 </div>";
 }
+
 /////////////////////////////////
 ///////////TEMPLATE 2////////////
 /////////////////////////////////
@@ -1818,6 +2171,8 @@ echo "";
 
 if ($id == 1)
 {
+$anuncioCount = 0;
+$anuncioCount2 = 5;
 $query = mysqli_query($bd, "SELECT * FROM `artes` ORDER BY `id` ASC");
 while ($row = mysqli_fetch_array($query))
 {
@@ -1847,6 +2202,33 @@ jQuery('#btextocamiseta<?php echo $row['id']; ?>').slimScroll({
 if ($row['layout'] == "peq")
 {
 $resultado = $resultado + 1;
+if($anuncioCount == $anuncioCount2) {
+
+$anuncioCount2=$anuncioCount2+5;
+
+echo "<div id=\"bfotosbase_ads\"> 
+    <center>
+    <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628352659139573\"
+         crossorigin=\"anonymous\"></script>
+    <!-- PERSONAGEM Horizontal -->
+    <ins class=\"adsbygoogle\"
+         style=\"display:block\"
+         data-ad-client=\"ca-pub-0628352659139573\"
+         data-ad-slot=\"8657665087\"
+         data-ad-format=\"auto\"
+         data-full-width-responsive=\"true\"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+</div>";
+echo "<br>
+
+    <img src=\"".$imgs."/barra.png\">
+    <br>
+    <br>";
+}
+$anuncioCount++;
 echo "<div id=\"bfotosbase\"> 
     <center>
     <div id=\"bbasefotos2\">
