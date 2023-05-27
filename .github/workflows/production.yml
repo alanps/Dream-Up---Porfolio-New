@@ -11,12 +11,6 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
-
-      - name: Test
-        run: ls ${{ github.workspace }}
-
-      - name: Test2
-        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
         
       - name: Verificando o cache dos pacotes do Composer
         uses: actions/cache@v3
@@ -47,24 +41,12 @@ jobs:
           path: ${{ github.workspace }}/wp.zip
           if-no-files-found: error
 
-      - name: Test
-        run: ls ${{ github.workspace }}
-
-      - name: Test2
-        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
-
   temaBuild:
     name: Build do Tema
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
-
-      - name: Test
-        run: ls ${{ github.workspace }}
-
-      - name: Test2
-        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
         
       - name: Executando composer install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
@@ -107,12 +89,6 @@ jobs:
           path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/agenciadreamup.zip
           if-no-files-found: error
         
-      - name: Test
-        run: ls ${{ github.workspace }}
-
-      - name: Test2
-        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
-
   deployProd:
     name: Deploy em produção
     runs-on: ubuntu-22.04
