@@ -36,22 +36,24 @@ jobs:
   temaBuild:
     name: Build do Tema
     runs-on: ubuntu-22.04
+    needs: checkout
     steps:
       - name: Executando Composer install no tema
-        working-directory: ../wp-content/themes/agenciadreamup
+        working-directory: /wp-content/themes/agenciadreamup
         run: composer install
 
       - name: Executando yarn install no tema
-        working-directory: ../wp-content/themes/agenciadreamup
+        working-directory: /wp-content/themes/agenciadreamup
         run: yarn install
 
       - name: Executando yarn build no tema
-        working-directory: ../wp-content/themes/agenciadreamup
+        working-directory: /wp-content/themes/agenciadreamup
         run: yarn build
 
   deployProd:
     name: Deploy em produção
     runs-on: ubuntu-22.04
+    needs: temaBuild
     steps:
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
