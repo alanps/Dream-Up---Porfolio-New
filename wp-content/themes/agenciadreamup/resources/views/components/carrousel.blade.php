@@ -54,7 +54,7 @@
 					<span class="info-tempo">
 						<div class="info-title">Tempo no Cargo:</div>
 						@if(!get_fields($post->ID)['sites_e_apps_group']['saida_empresa'])
-						<div class="info-desc">{{ calc_diff_date(get_fields($post->ID)['sites_e_apps_group']['entrada_empresa'], get_fields($post->ID)['sites_e_apps_group']['saida_empresa']) }} até agora (de {{ strftime('%m/%Y', strtotime(get_fields($post->ID)['sites_e_apps_group']['entrada_empresa'])) }} - até agora)</div>
+						<div class="info-desc">{{ calc_diff_date(get_fields($post->ID)['sites_e_apps_group']['entrada_empresa'], get_fields($post->ID)['sites_e_apps_group']['saida_empresa']) }} (de {{ strftime('%m/%Y', strtotime(get_fields($post->ID)['sites_e_apps_group']['entrada_empresa'])) }} - até agora)</div>
 						@else
 						<div class="info-desc">{{ calc_diff_date(get_fields($post->ID)['sites_e_apps_group']['entrada_empresa'], get_fields($post->ID)['sites_e_apps_group']['saida_empresa']) }} (de {{ strftime('%m/%Y', strtotime(get_fields($post->ID)['sites_e_apps_group']['entrada_empresa'])) }} - até {{ strftime('%m/%Y', strtotime(get_fields($post->ID)['sites_e_apps_group']['saida_empresa'])) }})</div>
 						@endif
