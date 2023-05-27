@@ -8,6 +8,7 @@ wp-content/cache
 wp-content/upgrade
 wp-content/index.php
 wp-content/ai1wm-backups
+wp-content/wp-rocket-config
 
 # ignore all files in root
 /*.*
@@ -17,10 +18,10 @@ wp-content/ai1wm-backups
 node_modules
 .cache
 /vendor
-wp-content/themes/dreamup/vendor/
-wp-content/themes/dreamup/.budfiles/
-wp-content/themes/dreamup/node_modules/
-wp-content/themes/dreamup/public/
+wp-content/themes/agenciadreamup/vendor/
+wp-content/themes/agenciadreamup/.budfiles/
+wp-content/themes/agenciadreamup/node_modules/
+wp-content/themes/agenciadreamup/public/
 
 # ignore log files and databases
 .phpintel
@@ -45,7 +46,7 @@ wp-content/themes/dreamup/public/
 
 # themes to keep
 # Uncomment to keep these theme
-!wp-content/themes/dreamup
+!wp-content/themes/agenciadreamup
 
 # plugins to keep
 !wp-content/plugins/advanced-custom-fields-pro
