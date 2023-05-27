@@ -2,7 +2,7 @@ name: Ambiente de produção - agenciadreamup.com.br - Versão Composer Install 
 on:
   push:
     branches:
-      - composer-install-edition
+      - main
 
 jobs:
   release:
