@@ -46,8 +46,8 @@ jobs:
         run: yarn build
 
       - name: Setando permissões para diretorios e user own
-        run: su chown www-data:www-data  -R * && su find . -type d -exec chmod 755 {} \; && su find . -type f -exec chmod 644 {} \;
-
+        run: sudo chown www-data:www-data -R * && sudo find . -type d -exec chmod 755 {} \; && sudo find . -type f -exec chmod 644 {} \;
+        
       - name: Copiando arquivos para ambiente de produção
         uses: burnett01/rsync-deployments@4.1
         with:
