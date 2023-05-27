@@ -38,15 +38,15 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Executando Composer install no tema
-        working-directory: wp-content/themes/agenciadreamup
+        working-directory: ../wp-content/themes/agenciadreamup
         run: composer install
 
       - name: Executando yarn install no tema
-        working-directory: wp-content/themes/agenciadreamup
+        working-directory: ../wp-content/themes/agenciadreamup
         run: yarn install
 
       - name: Executando yarn build no tema
-        working-directory: wp-content/themes/agenciadreamup
+        working-directory: ../wp-content/themes/agenciadreamup
         run: yarn build
 
   deployProd:
