@@ -38,11 +38,9 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
-
-      - name: Setup do NodeJS
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+        
+      - name: Test
+        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
         
       - name: Executando composer install para dependências do Wordpress
         env:
@@ -54,6 +52,11 @@ jobs:
           dev: no
           working_dir: ${{ github.workspace }}/wp-content/themes/agenciadreamup
           args: -o --ignore-platform-reqs -d ./
+
+      - name: Setup do NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
       - name: Cache node modules
         id: cache-npm
@@ -69,9 +72,6 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Test
-        run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        
       - name: Executando yarn install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn install
