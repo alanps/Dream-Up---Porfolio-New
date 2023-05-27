@@ -107,7 +107,10 @@ jobs:
         with:
           name: tema_files
 
-      - name: Unzip Tema
+      - name: Mkdir do tema
+        run: sudo mkdir /var/temp/wp-content/themes/agenciadreamup/
+
+      - name: Unzip tema
         run: sudo unzip -o ${{ github.workspace }}/agenciadreamup.zip -d /var/temp/wp-content/themes/agenciadreamup/
 
       - name: Test2
