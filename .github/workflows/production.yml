@@ -27,6 +27,13 @@ jobs:
           version: 2
           dev: no
           args: -o --ignore-platform-reqs -d ./
+          
+      - name: Upload do WP
+        uses: actions/upload-artifact@v3
+        with:
+          name: wp_files
+          path: ${{ github.workspace }}
+          if-no-files-found: error
 
       - name: Test
         run: ls ${{ github.workspace }}/wp-content/themes/agenciadreamup
@@ -38,7 +45,7 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
-        
+
       - name: Test
         run: ls ${{ github.workspace }}
 
@@ -75,6 +82,13 @@ jobs:
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
+
+      - name: Upload do tema
+        uses: actions/upload-artifact@v3
+        with:
+          name: tema_files
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+          if-no-files-found: error
         
   deployProd:
     name: Deploy em produção
@@ -83,6 +97,16 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
+
+      - name: Download do WP
+        uses: actions/download-artifact@v3
+        with:
+          name: wp_files
+        
+      - name: Download do tema
+        uses: actions/download-artifact@v3
+        with:
+          name: tema_files
 
       - name: Test2
         run: ls ${{ github.workspace }}
