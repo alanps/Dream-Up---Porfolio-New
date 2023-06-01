@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df85029bfc129b904e0ee99507d7f02f",
+    "content-hash": "9ca5f1cf797fbea9b43b7c4bdf72192e",
     "packages": [
         {
             "name": "composer/installers",
@@ -354,6 +354,24 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
+            "name": "wpackagist-plugin/advanced-google-recaptcha",
+            "version": "1.0.15",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-google-recaptcha/",
+                "reference": "tags/1.0.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-google-recaptcha.1.0.15.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-google-recaptcha/"
+        },
+        {
             "name": "wpackagist-plugin/all-in-one-wp-migration",
             "version": "7.75",
             "source": {
@@ -481,15 +499,15 @@
         },
         {
             "name": "wpackagist-plugin/seo-by-rank-math",
-            "version": "1.0.115",
+            "version": "1.0.116",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/seo-by-rank-math/",
-                "reference": "tags/1.0.115"
+                "reference": "tags/1.0.116"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/seo-by-rank-math.1.0.115.zip"
+                "url": "https://downloads.wordpress.org/plugin/seo-by-rank-math.1.0.116.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -517,15 +535,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-debugging",
-            "version": "2.11.21",
+            "version": "2.11.22",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-debugging/",
-                "reference": "tags/2.11.21"
+                "reference": "tags/2.11.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-debugging.2.11.21.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-debugging.2.11.22.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
