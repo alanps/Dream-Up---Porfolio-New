@@ -386,14 +386,14 @@
 					<!-- Histórico -->
 					<li class="historico" id="coffeecode">
 						<span class="titulo titulo_coffeecode">Coffee Code</span>
-						<span class="data data_coffeecode">de 05/2023 - até o momento</span>
+						<span class="data data_coffeecode">de 05/2023 - até agora</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_coffeecode">desenvolvedor backend</span>
 					</li>
 
 					<li class="historico" id="2i9">
 						<span class="titulo titulo_2i9">2i9</span>
-						<span class="data data_2i9">de 04/2023 - até o momento</span>
+						<span class="data data_2i9">de 04/2023 - até agora</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_2i9">desenvolvedor backend</span>
 					</li>
