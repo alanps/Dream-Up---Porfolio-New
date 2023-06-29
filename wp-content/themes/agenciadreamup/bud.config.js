@@ -68,4 +68,18 @@ export default async (app) => {
     .useTailwindFontFamily()
     .useTailwindFontSize()
     .enable();
+
+  app.hooks.on(`build.module.rules.oneOf`, (rules = []) => {
+    rules.push({
+      test: /\.s[ac]ss$/i,
+      use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader',
+      ],
+    });
+
+    return rules
+  });
+  
 };
