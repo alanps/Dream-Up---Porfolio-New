@@ -386,7 +386,7 @@
 					<!-- Histórico -->
 					<li class="historico" id="2i9">
 						<span class="titulo titulo_2i9">2i9</span>
-						<span class="data data_2i9">de 04/2023 - até o momento (meio período)</span>
+						<span class="data data_2i9">de 04/2023 - até agora (meio período)</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_2i9">desenvolvedor full stack</span>
 					</li>
