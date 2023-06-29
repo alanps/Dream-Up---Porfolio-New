@@ -33,7 +33,8 @@
         "wpackagist-plugin/seo-by-rank-math":"*",
         "wpackagist-plugin/simple-history": "*",
         "wpackagist-plugin/wp-debugging": "*",
-        "wpackagist-plugin/wp-mail-smtp": "*"
+        "wpackagist-plugin/wp-mail-smtp": "*",
+        "wpackagist-plugin/wordfence": "*"
     },
     "scripts": {
         "theme-install": [
