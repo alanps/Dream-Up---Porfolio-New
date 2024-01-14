@@ -457,7 +457,7 @@
 				</div>
 
 				<div class="item nascido">
-					<div class="titulo pequeno">Nascido em:</div>
+					<div class="titulo pequeno">Cidade:</div>
 					<div class="texto">São Paulo</div>
 				</div>
 
