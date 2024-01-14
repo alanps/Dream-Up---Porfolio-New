@@ -10,7 +10,8 @@
   "type": "module",
   "scripts": {
     "dev": "bud dev",
-    "build": "bud doctor bud build --debug --log --verbose --ci --notify --editor",
+    "doctor": "bud doctor",
+    "build": "bud build --debug --log --verbose --ci --notify --editor",
     "translate": "yarn translate:pot && yarn translate:update",
     "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"app,resources\"",
     "translate:update": "wp i18n update-po ./resources/lang/sage.pot ./resources/lang/*.po",

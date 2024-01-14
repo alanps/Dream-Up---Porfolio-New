@@ -88,6 +88,10 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: npm install
         
+      - name: Executando yarn doctor no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: yarn doctor
+        
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
