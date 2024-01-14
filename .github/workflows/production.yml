@@ -59,14 +59,8 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
-      - name: Removendo node_modules do tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash/sh
-        run: rm -rf node_modules
-
       - name: Executando yarn cache clean no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash/sh
         run: yarn cache clean
 
       - name: Executando yarn install no tema
