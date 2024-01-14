@@ -56,7 +56,7 @@ jobs:
       - name: Setup do NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '16'
 
       - name: Cache node modules
         id: cache-npm
