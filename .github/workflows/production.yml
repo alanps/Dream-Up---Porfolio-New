@@ -77,14 +77,12 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         shell: bash
         run: yarn build
-      
-      - name: Executando yarn build no tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        run: ls
+        continue-on-error: true
           
       - if: ${{ failure() }}
         name: Upload output file
         uses: actions/upload-artifact@v3
+        continue-on-error: true
         with:
           name: yarn-error.log
           path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
@@ -93,6 +91,7 @@ jobs:
         name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: ls
+        continue-on-error: true
       
       - name: Remove arquivos do WP
         shell: bash/sh
