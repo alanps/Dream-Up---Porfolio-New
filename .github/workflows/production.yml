@@ -74,43 +74,17 @@ jobs:
       - name: Executando npm install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: npm install
-    
-      - name: Executando yarn repl no tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        run: yarn repl
-        
-      - if: ${{ failure() }}
-        name: Upload output file
-        uses: actions/upload-artifact@v3
-        with:
-          name: yarn-error.log
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
-  
-      - name: Executando yarn view no tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        run: yarn view
-        
-      - if: ${{ failure() }}
-        name: Upload output file
-        uses: actions/upload-artifact@v3
-        with:
-          name: yarn-error.log
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
-        
-      - name: Executando yarn doctor no tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        run: yarn doctor
-        
-      - if: ${{ failure() }}
-        name: Upload output file
-        uses: actions/upload-artifact@v3
-        with:
-          name: yarn-error.log
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
         
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
+          
+      - if: ${{ failure() }}
+        name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: yarn-error.log
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
 
       - name: Remove arquivos do WP
         run: sudo rm -rf ${{ github.workspace }}/composer.json && sudo rm -rf ${{ github.workspace }}/composer.lock && sudo rm -rf ${{ github.workspace }}/yarn.lock && sudo rm -rf ${{ github.workspace }}/.gitignore && sudo rm -rf ${{ github.workspace }}/wp-content/ewww/ && sudo rm -rf ${{ github.workspace }}/wp-content/languages/ && sudo rm -rf ${{ github.workspace }}/wp-content/plugins/ && sudo rm -rf ${{ github.workspace }}/wp-content/uploads/ && sudo rm -rf ${{ github.workspace }}/wp-content/wp-rocket-config/ && sudo rm -rf ${{ github.workspace }}/wp-content/advanced-cache.php
