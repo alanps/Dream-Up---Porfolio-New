@@ -64,11 +64,6 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn cache clean
 
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-
       - name: Executando yarn install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         shell: bash
@@ -78,13 +73,13 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         shell: bash
         run: npm install
-        
+      
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         shell: bash
         run: yarn build
         continue-on-error: true
-          
+      
       - if: ${{ failure() }}
         name: Upload output file
         uses: actions/upload-artifact@v3
@@ -96,7 +91,8 @@ jobs:
       - if: ${{ failure() }}
         name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        run: ls
+        shell: bash
+        run: npm run build
         continue-on-error: true
       
       - name: Remove arquivos do WP
