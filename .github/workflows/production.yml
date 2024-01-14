@@ -1,4 +1,4 @@
-name: Ambiente de produção do repositório ${{ github.repository }}- agenciadreamup.com.br - Versão Composer Install Edition - ${{ github.workflow }} push by ${{ github.actor }}
+name: Ambiente de produção do repositório ${{ github.repository }} - agenciadreamup.com.br - Versão Composer Install Edition - ${{ github.workflow }} push by ${{ github.actor }}
 on:
   push:
     branches:
@@ -62,6 +62,11 @@ jobs:
       - name: Executando yarn cache clean no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn cache clean
+
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
 
       - name: Executando yarn install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
