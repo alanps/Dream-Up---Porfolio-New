@@ -57,20 +57,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-
-      - name: Cache node modules
-        id: cache-npm
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-node-modules
-        with:
-          # npm cache files are stored in `~/.npm` on Linux/macOS
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+          cache: 'npm'
 
       - name: Removendo node_modules do tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
@@ -91,14 +78,32 @@ jobs:
       - name: Executando yarn repl no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn repl
+        
+      - name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: yarn-error.log
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
   
       - name: Executando yarn view no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn view
         
+      - name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: yarn-error.log
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        
       - name: Executando yarn doctor no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn doctor
+        
+      - name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: yarn-error.log
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
