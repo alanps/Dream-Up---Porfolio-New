@@ -13,7 +13,7 @@
     "doctor": "bud doctor --debug --log --verbose --notify",
     "repl": "bud repl --debug --log --verbose --notify",
     "view": "bud view --debug --log --verbose --notify",
-    "build": "bud build --debug --log --verbose --notify --editor",
+    "build": "bud build",
     "translate": "yarn translate:pot && yarn translate:update",
     "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"app,resources\"",
     "translate:update": "wp i18n update-po ./resources/lang/sage.pot ./resources/lang/*.po",
