@@ -1,5 +1,5 @@
-name: Ambiente de produção do repositório - agenciadreamup.com.br - Versão Composer Install Edition
-run-name: Ambiente de produção do repositório - ${{ github.repository }} - agenciadreamup.com.br - Versão Composer Install Edition - ${{ github.event.commits.message }} push by ${{ github.actor }}
+name: "Ambiente de produção do repositório: agenciadreamup.com.br - Versão Composer Install Edition"
+run-name: "Ambiente de produção do repositório: ${{ github.repository }} - agenciadreamup.com.br - Versão Composer Install Edition - ${{ github.event.commits.message }} push by ${{ github.actor }}"
 on:
   push:
     branches:
