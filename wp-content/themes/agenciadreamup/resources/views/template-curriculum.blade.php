@@ -453,7 +453,7 @@
 
 				<div class="item idade">
 					<div class="titulo pequeno">Idade:</div>
-					<div class="texto">35 Anos</div>
+					<div class="texto">36 Anos</div>
 				</div>
 
 				<div class="item nascido">
@@ -486,8 +486,8 @@
 				<div class="titulo grande">Contato</div>
 
 				<div class="item celular">
-					<div class="titulo pequeno">Celular:</div>
-					<a href="tel:5511969034802"><div class="texto">(11) 96903-4802</div></a>
+					<div class="titulo pequeno">WhatsApp:</div>
+					<a href="tel:5511969034802"><div class="texto">(11) 96489-2871</div></a>
 				</div>
 
 				<div class="item email">
