@@ -91,6 +91,22 @@ jobs:
       - name: Executando yarn doctor no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn doctor
+      
+      - name: Executando yarn env no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: yarn env
+    
+      - name: Executando yarn repl no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: yarn repl
+  
+      - name: Executando yarn view no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: yarn view
+
+      - name: Executando yarn config no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: yarn config
         
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup

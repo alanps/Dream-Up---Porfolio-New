@@ -10,7 +10,11 @@
   "type": "module",
   "scripts": {
     "dev": "bud dev",
-    "doctor": "bud doctor",
+    "doctor": "bud doctor --debug --log --verbose --ci --notify --editor",
+    "env": "bud env --debug --log --verbose --ci --notify --editor",
+    "repl": "bud repl --debug --log --verbose --ci --notify --editor",
+    "view": "bud view --debug --log --verbose --ci --notify --editor",
+    "config": "bud config --debug --log --verbose --ci --notify --editor",
     "build": "bud build --debug --log --verbose --ci --notify --editor",
     "translate": "yarn translate:pot && yarn translate:update",
     "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"app,resources\"",
