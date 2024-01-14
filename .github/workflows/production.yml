@@ -87,10 +87,6 @@ jobs:
       - name: Executando npm install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: npm install
-        
-      - name: Executando yarn doctor no tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        run: yarn doctor
       
       - name: Executando yarn env no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
@@ -107,6 +103,10 @@ jobs:
       - name: Executando yarn config no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn config
+        
+      - name: Executando yarn doctor no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: yarn doctor
         
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
