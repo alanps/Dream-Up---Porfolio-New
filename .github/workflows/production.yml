@@ -84,7 +84,7 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn install
 
-      - name: Executando yarn install no tema
+      - name: Executando npm install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: npm install
         
