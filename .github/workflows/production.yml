@@ -78,6 +78,10 @@ jobs:
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn build
+      
+      - name: Executando yarn build no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: ls
           
       - if: ${{ failure() }}
         name: Upload output file
