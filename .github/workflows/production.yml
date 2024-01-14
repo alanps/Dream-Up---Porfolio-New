@@ -89,7 +89,12 @@ jobs:
         with:
           name: yarn-error.log
           path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
-
+      
+      - if: ${{ failure() }}
+        name: Executando yarn build no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: ls
+      
       - name: Remove arquivos do WP
         run: sudo rm -rf ${{ github.workspace }}/composer.json && sudo rm -rf ${{ github.workspace }}/composer.lock && sudo rm -rf ${{ github.workspace }}/yarn.lock && sudo rm -rf ${{ github.workspace }}/.gitignore && sudo rm -rf ${{ github.workspace }}/wp-content/ewww/ && sudo rm -rf ${{ github.workspace }}/wp-content/languages/ && sudo rm -rf ${{ github.workspace }}/wp-content/plugins/ && sudo rm -rf ${{ github.workspace }}/wp-content/uploads/ && sudo rm -rf ${{ github.workspace }}/wp-content/wp-rocket-config/ && sudo rm -rf ${{ github.workspace }}/wp-content/advanced-cache.php
 
