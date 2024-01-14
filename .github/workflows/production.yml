@@ -61,27 +61,27 @@ jobs:
 
       - name: Removendo node_modules do tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash {0}
+        shell: bash/sh
         run: rm -rf node_modules
 
       - name: Executando yarn cache clean no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash {0}
+        shell: bash/sh
         run: yarn cache clean
 
       - name: Executando yarn install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash {0}
+        shell: bash/sh
         run: yarn install
 
       - name: Executando npm install no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash {0}
+        shell: bash/sh
         run: npm install
         
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash {0}
+        shell: bash/sh
         run: yarn build
       
       - name: Executando yarn build no tema
@@ -101,7 +101,7 @@ jobs:
         run: ls
       
       - name: Remove arquivos do WP
-        shell: bash {0}
+        shell: bash/sh
         run: sudo rm -rf ${{ github.workspace }}/composer.json && sudo rm -rf ${{ github.workspace }}/composer.lock && sudo rm -rf ${{ github.workspace }}/yarn.lock && sudo rm -rf ${{ github.workspace }}/.gitignore && sudo rm -rf ${{ github.workspace }}/wp-content/ewww/ && sudo rm -rf ${{ github.workspace }}/wp-content/languages/ && sudo rm -rf ${{ github.workspace }}/wp-content/plugins/ && sudo rm -rf ${{ github.workspace }}/wp-content/uploads/ && sudo rm -rf ${{ github.workspace }}/wp-content/wp-rocket-config/ && sudo rm -rf ${{ github.workspace }}/wp-content/advanced-cache.php
 
       - name: Copiando arquivos para ambiente de produção
