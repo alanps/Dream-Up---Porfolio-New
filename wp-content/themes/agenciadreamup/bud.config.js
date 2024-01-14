@@ -39,7 +39,7 @@ export default async (app) => {
   
   app
     .setUrl('http://localhost:3001')
-    .setProxyUrl('http://agenciadreamup.ddev.site')
+    .setProxyUrl('http://agenciadreamup.com.br')
     .watch(['resources/views', 'app']);
 
   /**
