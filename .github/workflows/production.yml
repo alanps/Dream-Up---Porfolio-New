@@ -84,7 +84,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: yarn-error.log
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
   
       - name: Executando yarn view no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
@@ -95,7 +95,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: yarn-error.log
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
         
       - name: Executando yarn doctor no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
@@ -106,7 +106,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: yarn-error.log
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
         
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
