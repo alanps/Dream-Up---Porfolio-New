@@ -79,7 +79,8 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn repl
         
-      - name: Upload output file
+      - if: ${{ failure() }}
+        name: Upload output file
         uses: actions/upload-artifact@v3
         with:
           name: yarn-error.log
@@ -89,7 +90,8 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn view
         
-      - name: Upload output file
+      - if: ${{ failure() }}
+        name: Upload output file
         uses: actions/upload-artifact@v3
         with:
           name: yarn-error.log
@@ -99,7 +101,8 @@ jobs:
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         run: yarn doctor
         
-      - name: Upload output file
+      - if: ${{ failure() }}
+        name: Upload output file
         uses: actions/upload-artifact@v3
         with:
           name: yarn-error.log
