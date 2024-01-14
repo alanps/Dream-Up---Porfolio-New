@@ -1,4 +1,4 @@
-name: Ambiente de produção - agenciadreamup.com.br - Versão Composer Install Edition
+name: Ambiente de produção do repositório @${{ github.repository }}- agenciadreamup.com.br - Versão Composer Install Edition - @${{ github.workflow }} push by @${{ github.actor }}
 on:
   push:
     branches:
