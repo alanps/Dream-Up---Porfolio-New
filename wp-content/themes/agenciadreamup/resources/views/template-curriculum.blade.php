@@ -275,7 +275,7 @@
 							<div class="fundobranco">
 								<div class="porcentagem">70%</div>
 								<div class="barra_porcentagem gulp"></div>
-							</div
+							</div>
 						</div>
 					</li>
 					<!-- Perfil Skill -->
@@ -285,7 +285,7 @@
 							<div class="fundobranco">
 								<div class="porcentagem">90%</div>
 								<div class="barra_porcentagem laravelmix"></div>
-							</div
+							</div>
 						</div>
 					</li>
 					<!-- Perfil Skill -->
@@ -393,7 +393,7 @@
 
 					<li class="historico" id="2i9">
 						<span class="titulo titulo_2i9">2i9</span>
-						<span class="data data_2i9">de 04/2023 - até agora</span>
+						<span class="data data_2i9">de 04/2023 - 11/2023</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_2i9">desenvolvedor backend</span>
 					</li>
