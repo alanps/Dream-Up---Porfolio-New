@@ -1,4 +1,4 @@
-name: Ambiente de produção do repositório 
+name: Ambiente de produção do repositório ${{ repository }} - agenciadreamup.com.br - Versão Composer Install Edition - ${{ event.commits.message }} push by ${{ event.commits.author.name }}
 on:
   push:
     branches:
