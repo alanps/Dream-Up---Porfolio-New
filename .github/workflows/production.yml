@@ -21,12 +21,12 @@ jobs:
           
       - name: Remove o tema
         run: sudo composer install
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        working-directory: ${{ github.workspace }}
         shell: bash
 
       - name: Remove o tema
         run: sudo yarn
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        working-directory: ${{ github.workspace }}
         shell: bash
       
       - name: Copiando arquivos para ambiente de produção
