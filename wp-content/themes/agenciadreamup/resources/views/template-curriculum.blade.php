@@ -275,7 +275,7 @@
 							<div class="fundobranco">
 								<div class="porcentagem">70%</div>
 								<div class="barra_porcentagem gulp"></div>
-							</div>
+							</div
 						</div>
 					</li>
 					<!-- Perfil Skill -->
@@ -285,7 +285,7 @@
 							<div class="fundobranco">
 								<div class="porcentagem">90%</div>
 								<div class="barra_porcentagem laravelmix"></div>
-							</div>
+							</div
 						</div>
 					</li>
 					<!-- Perfil Skill -->
@@ -386,14 +386,14 @@
 					<!-- Histórico -->
 					<li class="historico" id="coffeecode">
 						<span class="titulo titulo_coffeecode">Coffee Code</span>
-						<span class="data data_coffeecode">de 05/2023 - até agora</span>
+						<span class="data data_coffeecode">de 05/2023 - até o momento</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_coffeecode">desenvolvedor backend</span>
 					</li>
 
 					<li class="historico" id="2i9">
 						<span class="titulo titulo_2i9">2i9</span>
-						<span class="data data_2i9">de 04/2023 - 11/2023</span>
+						<span class="data data_2i9">de 04/2023 - até o momento</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_2i9">desenvolvedor backend</span>
 					</li>
@@ -453,11 +453,11 @@
 
 				<div class="item idade">
 					<div class="titulo pequeno">Idade:</div>
-					<div class="texto">36 Anos</div>
+					<div class="texto">35 Anos</div>
 				</div>
 
 				<div class="item nascido">
-					<div class="titulo pequeno">Cidade:</div>
+					<div class="titulo pequeno">Nascido em:</div>
 					<div class="texto">São Paulo</div>
 				</div>
 
@@ -486,8 +486,8 @@
 				<div class="titulo grande">Contato</div>
 
 				<div class="item celular">
-					<div class="titulo pequeno">WhatsApp:</div>
-					<a href="tel:5511969034802"><div class="texto">(11) 96489-2871</div></a>
+					<div class="titulo pequeno">Celular:</div>
+					<a href="tel:5511969034802"><div class="texto">(11) 96903-4802</div></a>
 				</div>
 
 				<div class="item email">

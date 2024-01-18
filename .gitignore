@@ -15,13 +15,13 @@ wp-content/wp-rocket-config
 !sonar-project.properties
 
 # npm e composer
-node_modules
+# node_modules
 .cache
 /vendor
-wp-content/themes/agenciadreamup/vendor/
-wp-content/themes/agenciadreamup/.budfiles/
-wp-content/themes/agenciadreamup/node_modules/
-wp-content/themes/agenciadreamup/public/
+#wp-content/themes/agenciadreamup/vendor/
+#wp-content/themes/agenciadreamup/.budfiles/
+#wp-content/themes/agenciadreamup/node_modules/
+#wp-content/themes/agenciadreamup/public/
 
 # ignore log files and databases
 .phpintel
@@ -36,6 +36,7 @@ wp-content/themes/agenciadreamup/public/
 *.tar
 *.tar.gz
 *.lock
+!yarn.lock
 
 # files to keep
 !.gitignore

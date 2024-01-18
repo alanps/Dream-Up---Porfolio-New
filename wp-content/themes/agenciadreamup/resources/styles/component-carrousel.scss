@@ -224,10 +224,10 @@ ul.carrousel {
 
 					img {
 						/* border-radius: 10px; */
-						height: 242px;
+						height: 100%;
 						margin: 0 auto;
 						object-fit: fill;
-						width: 274px;
+						width: 100%;
 
 						@media screen and (max-width: $small-screen) {
 							width: 100%;

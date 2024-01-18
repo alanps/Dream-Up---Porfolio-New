@@ -809,7 +809,7 @@ body#curriculum {
 
 .smartphone #curriculum section.base_direita .portfolio_link {
 	width: calc(100% - 1.75em);
-	font-size: 0.8em;
+	font-size: 1em;
 	padding: 1em;
 }
 
@@ -921,7 +921,7 @@ body#curriculum {
 }
 
 .smartphone #curriculum section.base_direita .item.linkedin .texto {
-	font-size: 0.8em !important;
+	font-size: 1em !important;
 }
 
 .smartphone #curriculum section.base_direita span.icon_linkedin {

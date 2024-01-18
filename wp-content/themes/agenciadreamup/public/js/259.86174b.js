@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_roots_bud_sage_agenciadreamup=self.webpackChunk_roots_bud_sage_agenciadreamup||[]).push([[259],{"../node_modules/@roots/sage/lib/client/dom-ready.js":(e,a,n)=>{n.d(a,{Z:()=>o});const o=e=>{window.requestAnimationFrame((async function a(){document.body?await e():window.requestAnimationFrame(a)}))}}}]);

@@ -25,7 +25,6 @@
         "wpackagist-plugin/advanced-google-recaptcha": "*",
         "wpackagist-plugin/all-in-one-wp-migration":"*",	
         "wpackagist-plugin/better-search-replace":"*",
-        "wpackagist-plugin/copy-delete-posts":"*",
         "wpackagist-plugin/ewww-image-optimizer":"*",
         "wpackagist-plugin/html-forms": "*",
         "wpackagist-plugin/megamenu": "*",
@@ -47,10 +46,12 @@
             "rm -rf wordpress"
         ],
         "post-install-cmd": [
-            "@move-wordpress"
+            "@move-wordpress",
+            "@theme-install"
         ],
         "post-update-cmd": [
-            "@move-wordpress"
+            "@move-wordpress",
+            "@theme-install"
         ]
     },
     "config": {

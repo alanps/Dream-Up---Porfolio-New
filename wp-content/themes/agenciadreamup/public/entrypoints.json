@@ -1,0 +1,67 @@
+{
+  "app": {
+    "js": [
+      "js/runtime.444ebf.js",
+      "js/259.86174b.js",
+      "js/app.7729cf.js"
+    ],
+    "css": [
+      "css/app.31d6cf.css"
+    ],
+    "dependencies": []
+  },
+  "editor": {
+    "js": [
+      "js/runtime.444ebf.js",
+      "js/515.1c4e43.js",
+      "js/editor.a550f2.js"
+    ],
+    "css": [
+      "css/editor.31d6cf.css"
+    ],
+    "dependencies": [
+      "wp-data",
+      "wp-hooks"
+    ]
+  },
+  "geral": {
+    "js": [
+      "js/runtime.444ebf.js",
+      "js/geral.e2002c.js"
+    ],
+    "css": [
+      "css/geral.6a845c.css"
+    ],
+    "dependencies": [
+      "jquery"
+    ]
+  },
+  "error404": {
+    "js": [
+      "js/runtime.444ebf.js"
+    ],
+    "css": [
+      "css/error404.63703e.css"
+    ],
+    "dependencies": []
+  },
+  "contato": {
+    "js": [
+      "js/runtime.444ebf.js",
+      "js/contato.c4e490.js"
+    ],
+    "css": [
+      "css/contato.8243e2.css"
+    ],
+    "dependencies": []
+  },
+  "global_bundle": {
+    "js": [
+      "js/runtime.444ebf.js"
+    ],
+    "css": [
+      "css/global_bundle.eedcae.css"
+    ],
+    "dependencies": []
+  }
+}
