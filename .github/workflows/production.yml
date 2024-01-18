@@ -21,9 +21,13 @@ jobs:
           
       - name: Remove o tema
         run: sudo composer install
-      
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        shell: bash
+
       - name: Remove o tema
-        run: sudo yarn 
+        run: sudo yarn
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        shell: bash
       
       - name: Copiando arquivos para ambiente de produção
         uses: Burnett01/rsync-deployments@5.2.1
