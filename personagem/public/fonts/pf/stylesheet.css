@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'PF1';
+    src: url('PFTempestaSevenExtended.eot');
+    src: url('PFTempestaSevenExtended.eot?#iefix') format('embedded-opentype'),
+        url('PFTempestaSevenExtended.woff2') format('woff2'),
+        url('PFTempestaSevenExtended.woff') format('woff'),
+        url('PFTempestaSevenExtended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF2';
+    src: url('PFEastaSeven.eot');
+    src: url('PFEastaSeven.eot?#iefix') format('embedded-opentype'),
+        url('PFEastaSeven.woff2') format('woff2'),
+        url('PFEastaSeven.woff') format('woff'),
+        url('PFEastaSeven.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

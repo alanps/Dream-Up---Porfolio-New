@@ -1,0 +1,50 @@
+#personagem .corpo .conteudo .item {
+    padding: 3em 2em;
+    display: flex;
+}
+
+#personagem .corpo .conteudo .item .imagemContainer {
+    max-width: 500px;
+    max-height: 400px;
+    flex: 0 500px;
+}
+
+#personagem .corpo .conteudo .item .imagemContainer figure {
+    max-width: 500px;
+    max-height: 400px;
+    margin: 0;
+}
+
+#personagem .corpo .conteudo .item .imagemContainer .imagem {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+#personagem .corpo .conteudo .item .descricaoContainer {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 0.5em;
+    position: relative;
+    flex: 1;
+    background: #0f0f0f;
+    padding: 2em;
+}
+
+#personagem .corpo .conteudo .item .descricaoContainer .criacao {
+    color: #edbb16;
+}
+
+#personagem .corpo .conteudo .item .descricaoContainer .descricao {
+    margin-bottom: 3em;
+}
+
+#personagem .corpo .conteudo .controle .tituloSecao {
+    font-size: 1.3em !important;
+    margin: 0.4em 0 !important;
+    line-height: 1.3em;
+    height: 100%;
+}
+
+#personagem .corpo .conteudo .citacaoContainer .citacao {
+    font-size: 1em !important;
+}
