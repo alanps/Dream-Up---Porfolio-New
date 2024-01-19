@@ -1,0 +1,107 @@
+#personagem .corpo {
+    width: 100%;
+    margin: 0;
+}
+
+#personagem .corpo .dreamupContainer {
+    width: 200px;
+    right: -15em;
+    top: 4.9em;
+}
+
+#personagem .corpo img.logo_assistente {
+    width: 100%;
+}
+
+#personagem .corpo .dreamup_logo img {
+    width: 100%;
+}
+
+#personagem .corpo .fundo img.underground {
+    width: 190px;
+    height: 40px;
+}
+
+#personagem .corpo .conteudo {
+}
+
+#personagem .corpo .fundo {
+    padding-top: 12.8em;
+}
+
+#personagem .corpo .conteudo .info {
+    top: -6em;
+    width: 120%;
+    left: -2em;
+}
+
+#personagem .corpo .conteudo .info .titulo {
+    font-size: 11px;
+}
+
+#personagem .corpo .conteudo .info .texto {
+    font-size: 7px;
+}
+
+#personagem .corpo .conteudo .controle {
+    width: 100%;
+}
+
+#personagem .corpo .conteudo .controle .tituloSecao {
+    width: 100%;
+}
+
+#personagem .corpo .conteudo .total {
+    right: 1.3em;
+}
+
+#personagem img.barra {
+    width: 95%;
+    left: 2.5%;
+}
+
+#personagem .corpo .conteudo .citacaoContainer .aspas.aspasAbre {
+    top: 0.7em;
+    left: 0.1em;
+}
+
+#personagem .corpo .conteudo .citacaoContainer .aspas.aspasFecha {
+    bottom: 0.4em;
+    top: unset;
+    right: 0.1em;
+}
+
+#personagem .corpo .conteudo .citacaoContainer .citacao {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8em !important;
+    padding: 0 2em;
+}
+
+#personagem .corpo .conteudo .item .imagemContainer .imagem {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#personagem .corpo .conteudo .item {
+    flex-direction: column;
+    padding: 1em 0.4em;
+}
+
+#personagem .corpo .conteudo .item .imagemContainer {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    margin-bottom: 0.4em;
+}
+
+#personagem .corpo .conteudo .item .imagemContainer figure {
+    height: auto;
+    width: 100%;
+}
+
+#personagem .corpo .conteudo .item .descricaoContainer {
+    width: 100%;
+    margin: 0;
+}

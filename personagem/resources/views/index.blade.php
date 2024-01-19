@@ -1,6 +1,7 @@
 @section('secao_titulo', 'PERSONAGEM é um mundo de imagens, uma aventura por histórias e viagens, músicas e poemas, comédia e drama.')
 @include('head')
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+<link rel="stylesheet" href="{{ asset('css/mobile.css') }}">
 
 <div class="corpo">
 	

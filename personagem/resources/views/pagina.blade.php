@@ -3,6 +3,7 @@
 
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 <link rel="stylesheet" href="{{ asset('css/pagina.css') }}">
+<link rel="stylesheet" href="{{ asset('css/mobile.css') }}">
 <link href="{{ asset('css/slabtext.css') }}" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="{{ asset('js/fancybox/jquery.fancybox.css?v=2.1.7') }}" type="text/css" media="screen" />
 <script type="text/javascript" src="{{ asset('js/fancybox/jquery.mousewheel.pack.js') }}"></script>
