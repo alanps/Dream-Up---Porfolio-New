@@ -393,7 +393,7 @@
 
 					<li class="historico" id="2i9">
 						<span class="titulo titulo_2i9">2i9</span>
-						<span class="data data_2i9">de 04/2023 - até o momento</span>
+						<span class="data data_2i9">de 04/2023 - até 12/2023</span>
 						<span class="separacao">|</span>
 						<span class="funcao funcao_2i9">desenvolvedor backend</span>
 					</li>
@@ -453,7 +453,7 @@
 
 				<div class="item idade">
 					<div class="titulo pequeno">Idade:</div>
-					<div class="texto">35 Anos</div>
+					<div class="texto">36 Anos</div>
 				</div>
 
 				<div class="item nascido">
@@ -487,7 +487,7 @@
 
 				<div class="item celular">
 					<div class="titulo pequeno">Celular:</div>
-					<a href="tel:5511969034802"><div class="texto">(11) 96903-4802</div></a>
+					<a href="https://api.whatsapp.com/send?phone=5511964892871" target="_blank" rel="noopener"><div class="texto">(11) 96489-2871</div></a>
 				</div>
 
 				<div class="item email">
@@ -530,11 +530,11 @@
 				<div class="titulo grande">Saiba Mais</div>
 
 				<div class="texto_bio">
-		      Desenvolvedor Full Stack com mais de 7 anos de experiência em empresas e mais de 21 anos programando por prazer, programo em linguagens e banco de dados como HTML, CSS, SASS, SCSS, JavaScript, PHP, MySQL, PostgreSQL, MongoDB, DynamoDB e faço uso de algumas bibliotecas e frameworks como Bootstrap (CSS e JavaScript), React (JavaScript), Redux.JS (JavaScript), jQuery (JavaScript), WordPress (PHP), WooCommerce (WordPress), Sage (WordPress), Laravel (PHP), CakePHP (PHP), Symfony (PHP), Node.JS (JavaScript) e Express.JS (Node.JS)!.
-		      <br><br>
-		      Uso de metodologia ágil (Scrum e Kanban), ferramentas de gerenciamento de projetos (JIRA, Todoist e Trello), uso de arquiteturas/design patterns (MVC (Model-View-Controller) e OOP (Object-Oriented Programming)), criação de layout web, mobile e tablet com protótipo navegável (Figma), desenvolvimento de APIs (Rest e SOAP com retornos em JSON e XML), serialização de dados (YAML), leitura de documentações, desenvolvimento de documentação (I/O Docs e Swagger), solicitações assíncronas (AJAX), controle de versão (GIT), ferramentas de controle de versão (GitHub e Bitbucket), gerenciador de pacotes (Composer e NPM), ferramentas de automatização (Gulp.JS e Laravel Mix), virtualização em containers (Docker), criação e modelo de deploy (GIT e Pipeline (GitHub)), Linux (SSH e cURL), ferramentas de instalação e configuração de ambientes (WordOps) e administração de servidores pelos consoles da Amazon Web Services (AWS), Google Cloud, Azure, Digital Ocean, Cpanel e WHM.
-		      <br><br>
-		      Trabalho com todo processo de um time com Team Leads, Pull Requests e Code Review, Pipeline (criação e modelo de deploy), QA, ambientes de produção e homologação, estimativa de tarefas com planos de ação, planejamento de tarefas diario, semanal e mensal baseado nas estimativas, daily e contato direto com o time por ligações, chat ou WhatsApp, contato com cliente por ligações, chat ou WhatsApp.
+				Desenvolvedor Full Stack com mais de 8 anos de experiência em empresas e mais de 23 anos programando por prazer, programo em linguagens e banco de dados como HTML, CSS, SASS, SCSS, JavaScript, PHP, MySQL, PostgreSQL, MongoDB, DynamoDB e faço uso de algumas bibliotecas, frameworks e CMS como Bootstrap (CSS e JavaScript), Tailwind (CSS e JavaScript), Materialize (CSS e JavaScript), React (JavaScript), Redux.JS (JavaScript), jQuery (JavaScript), WordPress (PHP), WooCommerce (WordPress), Sage (WordPress), WP Emerge (WordPress), Laravel (PHP), CakePHP (PHP), Symfony (PHP), Node.JS (JavaScript) e Express.JS (Node.JS).
+				<br><br>
+				Uso de metodologia ágil (Scrum e Kanban), ferramentas de gerenciamento de projetos (JIRA, Todoist, Trello, Planner e Notion), uso de arquiteturas/design patterns (MVC (Model-View-Controller) e OOP (Object-Oriented Programming)), criação de layout web, mobile e tablet com protótipo navegável (Figma), debugging de código, desenvolvimento e integração de APIs e WebServices (Rest e SOAP com retornos em JSON e XML), serialização de dados (YAML), leitura de documentações, desenvolvimento de documentação (I/O Docs e Swagger), otimização em mecanismos de busca (SEO), solicitações assíncronas (AJAX), controle de versão (GIT), ferramentas de controle de versão (GitHub, GitLab e Bitbucket), gerenciadores de pacotes (Composer, NPM e Yarn), gerenciador de temas e plugins WordPress usando Composer (WP Packagist), ferramentas de automatização (Webpack, Gulp.JS, Grunt e Laravel Mix), virtualização em containers (Docker), ferramenta de desenvolvimento PHP para servidores (DDEV e WordOps), integração contínua e entrega contínua (CI/CD), Linux (SSH e cURL) e administração de servidores pelos consoles da Amazon Web Services (AWS EC2, RDS, S3, Route 53, SQS, SNS e DynamoDB), Google Cloud (VMs), Azure (VMs), Digital Ocean, Cpanel e WHM.
+				<br><br>
+				Trabalho com todo processo de um time com Team Lead, Pull Request e Code Review, QA, ambientes de produção e homologação, estimativa de tarefas com planos de ação, planejamento de tarefas diario, semanal e mensal baseado nas estimativas, daily e contato direto com o time e clientes por ligações, chat e WhatsApp.
 				</div>
 			</div>
 
