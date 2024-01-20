@@ -25,12 +25,11 @@
         top: 2.5em;
         left: 3em;
     }
-
-    #personagem .corpo .conteudo {
-    }
-
+    
     #personagem .corpo .fundo {
         padding-top: 12.8em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
     }
 
     #personagem .corpo .conteudo .info {
@@ -38,9 +37,6 @@
         width: calc(100% + 4em);
         left: -2em;
         padding: 0.2em 0.5em 0.3em;
-    }
-
-    .info {
     }
 
     #personagem .corpo .conteudo .info .titulo {
@@ -179,4 +175,47 @@
         height: 100%;
     }
 
+}
+
+@media (max-width: 320px)  {
+    #personagem .corpo .fundo {
+        padding-top: 14.8em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    #personagem .corpo .conteudo .info {
+        top: -7.3em;
+    }
+
+    #personagem .corpo .dreamupContainer {
+        right: -9em;
+    }
+
+    #personagem .corpo .fundo img.underground {
+        left: 1em;
+        width: 102px;
+        height: 30px;
+        top: 3em;
+    }
+
+    #personagem .corpo .conteudo .total {
+        font-size: 0.42em;
+        top: 3.5em;
+    }
+    
+    .page-index#personagem .corpo .conteudo .controle .tituloSecao {
+        font-size: 28px !important;
+    }
+    
+    #personagem .corpo .conteudo .item.historia a {
+        width: 100% !important;
+        display: block;
+        word-wrap: break-word;
+    }
+    
+    #personagem .corpo .conteudo .copyright {
+        font-size: 0.3em;
+        text-align: center;
+    }
 }
