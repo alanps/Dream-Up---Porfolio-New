@@ -31,7 +31,7 @@
 
 			<div class="controle">
 				<a href="{{ url('/') }}" class="total">Ver outras histórias.</a>
-				<div class="tipo">Seção</div>
+				<div class="tipo">21:00</div>
 				<div class="tituloSecao">Escolha de Histórias</div>
 			</div>
 

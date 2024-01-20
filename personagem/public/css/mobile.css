@@ -1,107 +1,182 @@
-#personagem .corpo {
-    width: 100%;
-    margin: 0;
-}
+@media (max-width: 640px)  {
 
-#personagem .corpo .dreamupContainer {
-    width: 200px;
-    right: -15em;
-    top: 4.9em;
-}
+    #personagem .corpo {
+        width: 100%;
+        margin: 0;
+    }
 
-#personagem .corpo img.logo_assistente {
-    width: 100%;
-}
+    #personagem .corpo .dreamupContainer {
+        width: 200px;
+        right: -15em;
+        top: 4.9em;
+    }
 
-#personagem .corpo .dreamup_logo img {
-    width: 100%;
-}
+    #personagem .corpo img.logo_assistente {
+        width: 100%;
+    }
 
-#personagem .corpo .fundo img.underground {
-    width: 190px;
-    height: 40px;
-}
+    #personagem .corpo .dreamup_logo img {
+        width: 100%;
+    }
 
-#personagem .corpo .conteudo {
-}
+    #personagem .corpo .fundo img.underground {
+        width: 155px;
+        height: 35px;
+        top: 2.5em;
+        left: 3em;
+    }
 
-#personagem .corpo .fundo {
-    padding-top: 12.8em;
-}
+    #personagem .corpo .conteudo {
+    }
 
-#personagem .corpo .conteudo .info {
-    top: -6em;
-    width: 120%;
-    left: -2em;
-}
+    #personagem .corpo .fundo {
+        padding-top: 12.8em;
+    }
 
-#personagem .corpo .conteudo .info .titulo {
-    font-size: 11px;
-}
+    #personagem .corpo .conteudo .info {
+        top: -6em;
+        width: calc(100% + 4em);
+        left: -2em;
+        padding: 0.2em 0.5em 0.3em;
+    }
 
-#personagem .corpo .conteudo .info .texto {
-    font-size: 7px;
-}
+    .info {
+    }
 
-#personagem .corpo .conteudo .controle {
-    width: 100%;
-}
+    #personagem .corpo .conteudo .info .titulo {
+        font-size: 10px;
+    }
 
-#personagem .corpo .conteudo .controle .tituloSecao {
-    width: 100%;
-}
+    #personagem .corpo .conteudo .info .texto {
+        font-size: 6.6px;
+        margin-top: 1px;
+    }
 
-#personagem .corpo .conteudo .total {
-    right: 1.3em;
-}
+    #personagem .corpo .conteudo .controle {
+        width: 100%;
+        height: auto;
+    }
 
-#personagem img.barra {
-    width: 95%;
-    left: 2.5%;
-}
+    .page-index#personagem .corpo .conteudo .controle .tituloSecao {
+        font-size: 32px !important;
+        text-align: center;
+        line-height: 40px;
+    }
 
-#personagem .corpo .conteudo .citacaoContainer .aspas.aspasAbre {
-    top: 0.7em;
-    left: 0.1em;
-}
+    #personagem .corpo .conteudo .controle .tituloSecao {
+        width: 100%;
+        font-size: 23px !important;
+        margin: 0.4em 0 !important;
+        line-height: 32px;
+    }
 
-#personagem .corpo .conteudo .citacaoContainer .aspas.aspasFecha {
-    bottom: 0.4em;
-    top: unset;
-    right: 0.1em;
-}
+    #personagem .corpo .conteudo .total {
+        right: 1.3em;
+    }
 
-#personagem .corpo .conteudo .citacaoContainer .citacao {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 0.8em !important;
-    padding: 0 2em;
-}
+    #personagem img.barra {
+        width: 100%;
+        padding: 0 0.5em !important;
+        left: 0;
+    }
 
-#personagem .corpo .conteudo .item .imagemContainer .imagem {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+    #personagem .corpo .conteudo .citacaoContainer .aspas.aspasAbre {
+        top: 0.7em;
+        left: 0.1em;
+    }
 
-#personagem .corpo .conteudo .item {
-    flex-direction: column;
-    padding: 1em 0.4em;
-}
+    #personagem .corpo .conteudo .citacaoContainer .aspas.aspasFecha {
+        bottom: 0.4em;
+        top: unset;
+        right: 0.1em;
+    }
 
-#personagem .corpo .conteudo .item .imagemContainer {
-    max-width: 100%;
-    height: auto;
-    flex: 1;
-    margin-bottom: 0.4em;
-}
+    #personagem .corpo .conteudo .citacaoContainer .citacao {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 0.8em !important;
+        padding: 4.5em 2em 4em;
+        top: 0 !important;
+        margin-top: 0 !important;
+        transform: none;
+    }
 
-#personagem .corpo .conteudo .item .imagemContainer figure {
-    height: auto;
-    width: 100%;
-}
+    #personagem .corpo .conteudo .item .imagemContainer .imagem {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
 
-#personagem .corpo .conteudo .item .descricaoContainer {
-    width: 100%;
-    margin: 0;
+    #personagem .corpo .conteudo .item {
+        flex-direction: column;
+        padding: 1em 0.4em;
+    }
+
+    .page-index#personagem .corpo .conteudo .item {
+        padding: 3em 1.2em 3.3em !important;
+    }
+
+    #personagem .corpo .conteudo .item .imagemContainer {
+        max-width: 100%;
+        height: auto;
+        flex: 1;
+        margin-bottom: 0.4em;
+        max-height: 100%;
+    }
+
+    #personagem .corpo .conteudo .item .imagemContainer figure {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100% !important;
+    }
+
+    #personagem .corpo .conteudo .item .descricaoContainer {
+        width: 100%;
+        margin: 0;
+    }
+
+    #personagem .corpo .conteudo .citacaoContainer {
+        height: auto !important;
+    }
+
+    #personagem .corpo .conteudo .info .osite {
+        padding: 1px 0 0;
+    }
+
+    #personagem .fancybox-opened .fancybox-skin {
+        padding: 4px !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        height: 100% !important;
+        max-height: 100% !important;
+    }
+
+    #personagem .fancybox-image {
+        width: 100%;
+        height: 68%;
+        object-fit: fill;
+    }
+
+    #personagem .fancybox-inner {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #personagem .fancybox-opened {
+        width: calc(100% - 40px) !important;
+        margin-left: 0px;
+        border-radius: 0 !important;
+        max-width: 1200px;
+        top: 50% !important;
+        transform: translateY(-50%);
+        max-height: calc(100% - 40px) !important;
+        height: auto;
+    }
+
+    #personagem  .fancybox-outer {
+        height: 100%;
+    }
+
 }
