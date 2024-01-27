@@ -14,6 +14,12 @@ html {
 		padding: 30px 0;
 	}
 
+	@media screen and (min-width: $medium-menu-screen) {
+		div#app {
+			padding: 4.5em 0;
+		}
+	}
+
 	body {
 		overflow-y: scroll;
 		height: 100% !important;

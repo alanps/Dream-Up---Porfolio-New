@@ -6,14 +6,6 @@
         
         <div class="logo">
           <?php echo get_custom_logo(); ?>
-
-          <a class="home" href="<?php echo get_home_url(); ?>">
-            <div class="sublogo">
-              <div class="sublogo-portfolio">Portfólio</div>
-              <h1 class="sublogo-nome">Alan Pardini Sant'Ana</h1>
-              <div class="sublogo-desenvolvedor">Desenvolvedor Full Stack</div>
-            </div>
-          </a>
         </div>
 
         @if (has_nav_menu('primary_navigation'))
