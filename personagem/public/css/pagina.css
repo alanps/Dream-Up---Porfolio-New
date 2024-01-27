@@ -31,20 +31,63 @@
 }
 
 #personagem .corpo .conteudo .item .descricaoContainer .criacao {
-    color: #edbb16;
+    color: #0f0f0f;
+    background: white;
+    padding: 5px 14px;
+    margin-left: -15px;
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% + 30px);
+    margin-top: 12px;
 }
 
 #personagem .corpo .conteudo .item .descricaoContainer .descricao {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 #personagem .corpo .conteudo .controle .tituloSecao {
-    font-size: 1.3em !important;
-    margin: 0.4em 0 !important;
+    font-size: 2.4em !important;
+    margin: 0.1em 0 !important;
     line-height: 1.3em;
     height: 100%;
 }
 
 #personagem .corpo .conteudo .citacaoContainer .citacao {
     font-size: 1em !important;
+    max-width: 440px;
+    margin: 0 auto;
 }
+
+#personagem .corpo .conteudo .item .descricaoContainer .foto {
+    color: white;
+    background: red;
+    padding: 14px;
+    margin-left: -15px;
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% + 30px);
+    margin-top: 10px;
+}
+
+#personagem .corpo .conteudo .item .descricaoContainer .titulo {
+    font-size: 1.3em;
+    color: #0f0f0f;
+    background-color: #FFEB3B;
+    padding: 2px 8px;
+    line-height: 2em;
+    position: relative;
+    display: block;
+    margin-left: -8px;
+    margin-bottom: -5px;
+}
+
+#personagem .corpo .conteudo .item .descricaoContainer b.autor {
+    color: #ffffff;
+    background: #000000;
+    padding: 2px 10px 8px;
+    display: block;
+    margin: 10px -10px;
+    width: fit-content;
+}
+
+

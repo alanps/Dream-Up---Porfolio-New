@@ -89,7 +89,7 @@
     font-family: PF2;
     margin-left: auto;
     padding: 0.8em;
-    height: 6.4em;
+    height: auto;
 }
 
 #personagem .corpo .conteudo .controle .tipo {text-transform: capitalize;}
@@ -110,7 +110,7 @@
 #personagem .corpo .conteudo .citacaoContainer {
     padding: 4em;
     position: relative;
-    height: 10em;
+    height: 15em;
     padding: 0;
 }
 
@@ -145,7 +145,7 @@
 }
 
 #personagem .corpo .conteudo .citacaoContainer .aspas.aspasAbre {
-    top: 2.5em;
+    top: 4.5em;
     left: 2em;
 }
 
