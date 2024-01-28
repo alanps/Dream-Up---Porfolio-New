@@ -332,27 +332,6 @@ body#curriculum {
 	grid-template-columns: max-content max-content max-content auto;
 }
 
-#curriculum .base_esquerda section#historicos span.titulo.titulo_2i9 {
-}
-
-#curriculum .base_esquerda section#historicos span.titulo.titulo_studiovisual {
-}
-
-#curriculum .base_esquerda section#historicos span.titulo.titulo_beholder {
-}
-
-#curriculum .base_esquerda section#historicos span.titulo.titulo_deevo {
-}
-
-#curriculum .base_esquerda section#historicos span.data.data_2i9 {
-}
-
-#curriculum .base_esquerda section#historicos span.data.data_studiovisual {
-}
-
-#curriculum .base_esquerda section#historicos span.data.data_beholder {
-}
-
 #curriculum .base_esquerda section#historicos span.titulo {
 	font-size: 1.1em;
 	position: relative;
@@ -365,26 +344,11 @@ body#curriculum {
 	line-height: 2.4em;
 }
 
-#curriculum .base_esquerda section#historicos span.data.data_deevo {
-}
-
 #curriculum .base_esquerda section#historicos span.funcao {
 	font-size: .7em;
 	display: block;
 	position: relative;
 	line-height: 2.4em;
-}
-
-#curriculum .base_esquerda section#historicos span.funcao.funcao_deevo {
-}
-
-#curriculum .base_esquerda section#historicos span.funcao.funcao_2i9 {
-}
-
-#curriculum .base_esquerda section#historicos span.funcao.funcao_studiovisual {
-}
-
-#curriculum .base_esquerda section#historicos span.funcao.funcao_deevo2 {
 }
 
 #curriculum .base_esquerda section#historicos span.separacao {
@@ -520,9 +484,6 @@ body#curriculum {
     padding: 1.1em 0.9em 1.1em 0.8em;
 }
 
-#curriculum .base_esquerda .perfil_skills .titulo.titulo_sage{
-}
-
 #curriculum .base_esquerda .perfil_skills .titulo.titulo_symfonyphp {
     font-size: .8em;
     width: 6.28em;
@@ -545,9 +506,6 @@ body#curriculum {
 	font-size: .6em;
 	width: 9.3em;
 	padding: 1.9em .7em;
-}
-
-#curriculum .base_esquerda section#historicos #beholder span.funcao {
 }
 
 #curriculum .base_esquerda div#animation_container {
@@ -889,18 +847,6 @@ body#curriculum {
 	margin: -0.15em .3em;
 }
 
-.smartphone #curriculum .base_esquerda section#historicos span.funcao.funcao_2i9 {
-}
-
-.smartphone #curriculum .base_esquerda section#historicos span.funcao.funcao_studiovisual {
-}
-
-.smartphone #curriculum .base_esquerda section#historicos #beholder span.funcao {
-}
-
-.smartphone #curriculum .base_esquerda section#historicos span.funcao.funcao_deevo {
-}
-
 .smartphone #curriculum section.base_direita .item .texto {
 	font-size: 1em;
 }
@@ -966,9 +912,6 @@ body#curriculum {
 .smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_wordpress {
     font-size: .71em;
     padding: 1.5em 0.7em 1.5em;
-}
-
-.smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_sage {
 }
 
 .smartphone #curriculum .base_esquerda .perfil_skills .titulo.titulo_composer {

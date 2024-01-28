@@ -41,7 +41,7 @@ $bd->set_charset("utf8");
 $total = ((isset($_POST['total'])) ? $_POST['total'] : 0);
 $resultado = 0;
 
-$query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo`") or die(mysql_error());
+$query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo`") or die();
 
 	$porpag = 1;
 	$totalres = mysqli_num_rows($query);
@@ -55,7 +55,7 @@ $query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo`") or die(mysq
 	$pagina = max(min($paginas, $pagina), 1);
 	$inicio = ($pagina - 1) * $porpag;
 
-$query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo` ORDER BY `id` DESC LIMIT $inicio, $porpag") or die(mysql_error());
+$query = mysqli_query($bd,"SELECT * FROM `artes4` GROUP BY `grupo` ORDER BY `id` DESC LIMIT $inicio, $porpag") or die();
 while ($row = mysqli_fetch_array($query))
 {
 
@@ -118,7 +118,7 @@ echo "<br>
 		<br>";
 }
 
-$query1 = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC LIMIT 18446744073709551610 OFFSET 1") or die(mysql_error());
+$query1 = mysqli_query($bd,"SELECT * FROM `artes4` WHERE `grupo` LIKE '".$row['grupo']."' ORDER BY `id` ASC LIMIT 18446744073709551610 OFFSET 1") or die();
 while ($row = mysqli_fetch_array($query1))
 {
 echo "<a href=\"".$imgs.$row['imagem']."\" class=\"fancybox-button3\" rel=\"fancybox-".$row['grupo']."\"><img border=\"0\" src=\"".$imgs.$row['imagem']."\" class=\"bfotos2\"></a>";
