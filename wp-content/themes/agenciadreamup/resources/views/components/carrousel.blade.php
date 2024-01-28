@@ -70,7 +70,13 @@
 		<li class="slide-site-apps slide slide{{$key}} {{($key==0) ? 'active' : ''}}">
 			<div class="post-thumbs-container">
 				<div class="post-thumb">
+				@if(get_fields($post->ID)['sites_e_apps_group']['video'])
+					<video width="100%" height="320" controls loop poster="{{ get_the_post_thumbnail_url($post) }}">
+						<source src="{{ get_fields($post->ID)['sites_e_apps_group']['video'] }}" type="video/mp4">
+					</video>
+				@else
 					<img src="{{ get_the_post_thumbnail_url($post) }}">
+				@endif
 				</div>
 			</div>
 			<div class="post">

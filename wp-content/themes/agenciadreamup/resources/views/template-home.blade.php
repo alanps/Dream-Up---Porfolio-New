@@ -41,15 +41,11 @@
       <div class="col col-12 col-md-4">
         <div class="blocos bloco-emprego d-flex flex-column">
           <div class="linha1">STATUS: <span>EMPREGADO</span></div>
-          <div class="linha2"><img src="@asset('/images/coffeecode2i9.jpg')"></div>
+          <div class="linha2"><img src="@asset('/images/coffeecode.jpg')"></div>
           <div class="d-flex flex-row-reverse">
-            <div class="flex-fill ms-3">
-              <div class="linha3">Desde Abril de 2022 na <a href="https://2i9.com.br" target="_blank">2i9</a></div>
-              <div class="linha4">(<?php echo calc_diff_date('2023-04-19', date('Y-m-d')); ?>)</div>
-            </div>
-            <div class="flex-fill me-3">
-              <div class="linha5">Desde Maio de 2022 na <a href="https://coffee-code.tech" target="_blank">Coffee Code</a></div>
-              <div class="linha6">(<?php echo calc_diff_date('2023-05-08', date('Y-m-d')); ?>)</div>
+            <div class="flex-fill">
+              <div class="linha3">Desde Maio de 2022 na <a href="https://coffee-code.tech" target="_blank">Coffee Code</a></div>
+              <div class="linha4">(<?php echo calc_diff_date('2023-05-08', date('Y-m-d')); ?>)</div>
             </div>
           </div>
         </div>

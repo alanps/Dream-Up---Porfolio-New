@@ -453,6 +453,14 @@ add_action( 'acf/init', function () {
                                 'required' => false
                             ),
                             array (
+                                'key' => 'video',
+                                'label' => 'Vídeo',
+                                'instructions' => 'Envie seu vídeo.',
+                                'name' => 'video',
+                                'type' => 'file',
+                                'required' => false
+                            ),
+                            array (
                                 'key' => 'cargo',
                                 'label' => 'Cargo',
                                 'instructions' => 'Escreva o cargo na empresa.',
