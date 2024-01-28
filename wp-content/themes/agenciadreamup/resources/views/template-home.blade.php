@@ -41,7 +41,11 @@
       <div class="col col-12 col-md-4">
         <div class="blocos bloco-emprego d-flex flex-column">
           <div class="linha1">STATUS: <span>EMPREGADO</span></div>
-          <div class="linha2"><img src="@asset('/images/coffeecode.jpg')"></div>
+          <div class="linha2">
+            <a href="https://coffee-code.tech" target="_blank">
+              <img src="@asset('/images/coffeecode.jpg')">
+            </a>
+          </div>
           <div class="d-flex flex-row-reverse">
             <div class="flex-fill">
               <div class="linha3">Desde Maio de 2023 na <a href="https://coffee-code.tech" target="_blank">Coffee Code</a></div>
