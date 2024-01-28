@@ -44,7 +44,7 @@
           <div class="linha2"><img src="@asset('/images/coffeecode.jpg')"></div>
           <div class="d-flex flex-row-reverse">
             <div class="flex-fill">
-              <div class="linha3">Desde Maio de 2022 na <a href="https://coffee-code.tech" target="_blank">Coffee Code</a></div>
+              <div class="linha3">Desde Maio de 2023 na <a href="https://coffee-code.tech" target="_blank">Coffee Code</a></div>
               <div class="linha4">(<?php echo calc_diff_date('2023-05-08', date('Y-m-d')); ?>)</div>
             </div>
           </div>
