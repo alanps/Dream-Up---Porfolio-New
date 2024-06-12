@@ -40,10 +40,10 @@
             
         ],
         "move-wordpress": [
-            "rm -rf /var/www/agenciadreamup.com.br/htdocs/wordpress/wp-content/plugins/*",
-            "rm -rf /var/www/agenciadreamup.com.br/htdocs/wordpress/wp-content/themes/*",
-            "cp -rf /var/www/agenciadreamup.com.br/htdocs/wordpress/* .",
-            "rm -rf /var/www/agenciadreamup.com.br/htdocs/wordpress"
+            "rm -rf wordpress/wp-content/plugins/*",
+            "rm -rf wordpress/wp-content/themes/*",
+            "cp -rf wordpress/* .",
+            "rm -rf wordpress"
         ],
         "post-install-cmd": [
             "@move-wordpress"
