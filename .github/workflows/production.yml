@@ -25,7 +25,7 @@ jobs:
         shell: bash
       
       - name: Remove o tema
-        run: sudo rm -rf ${{ github.workspace }}/wp-content/plugins/* && sudo rm -rf ${{ github.workspace }}/wp-content/themes/*
+        run: sudo rm -rf ${{ github.workspace }}/wp-content/themes/*
 
       - name: Copiando arquivos para ambiente de produção
         uses: Burnett01/rsync-deployments@5.2.1
