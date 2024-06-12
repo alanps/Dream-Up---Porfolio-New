@@ -1,13 +1,15 @@
 export default {
-	init($) {
+	init() {
+
+		var $ = require('jquery');
 
 		$( document ).ready(function() {
 			console.log( "ready!" );
 
-			var el = $(".carrousel");
+      var el = $(".carrousel");
 
-			var slide_first = 0;
-			var slide_visible = 1;
+      var slide_first = 0;
+      var slide_visible = 1;
 
 
 			//////////////////////////////////////////////
@@ -20,8 +22,8 @@ export default {
 					slide_visible = slide_visible + 1;
 					if(jQuery('html').width() <= 565 && !jQuery('body').hasClass('home')){
 						var section = jQuery("#main .sobrincadeira, #main .siteseempregos, #main .aplicativos");
-					jQuery('body').animate({scrollTop: section[0].offsetTop-30},'slow');
-				}
+	    			jQuery('body').animate({scrollTop: section[0].offsetTop-30},'slow');
+	    		}
 				}
 			});
 
@@ -33,32 +35,32 @@ export default {
 					el.find(".slide" + slide_first).addClass("active");
 					if(jQuery('html').width() <= 565 && !jQuery('body').hasClass('home')){
 						var section = jQuery("#main .sobrincadeira, #main .siteseempregos, #main .aplicativos");
-					jQuery('body').animate({scrollTop: section[0].offsetTop-30},'slow');
-				}
+	    			jQuery('body').animate({scrollTop: section[0].offsetTop-30},'slow');
+	    		}
 				}
 			});
 
 
 
-			//////////////////////////////////////////////
-			//lightbox
-			el.find(".lightbox").on("click", function(e) {
-				$("body").append("<div class='lightbox-div'><div class='lightbox-imgs'></div><div class='setas-lightbox'><i class='fa-solid fa-arrow-left seta-esquerda setas'></i><i class='fa-solid fa-arrow-right seta-direita setas'></i></div></div>");
-				var click_lightbox = $(this).find(".box img").data("key");
-				$(this).parents('.thumbs').find('.lightbox').each(function(index){
-					var lightbox_active = "";
-					if(index == click_lightbox){
-						lightbox_active = "active";
-					}
-					$(".lightbox-div .lightbox-imgs").append("<img class='lightbox-img no-lazy "+index+" "+lightbox_active+"' data-id='"+index+"' src='"+$(this).find(".box img").attr("src")+"'>");
-				});
-				$("body").css("overflow", "hidden");
-				let viewportmeta = document.querySelector('meta[name="viewport"]');
-				viewportmeta.setAttribute('content', "initial-scale=1.0, user-scalable=yes");
-				e.stopPropagation();
-				e.preventDefault();
-				return false;
-			});
+      //////////////////////////////////////////////
+      //lightbox
+      el.find(".lightbox").on("click", function(e) {
+        $("body").append("<div class='lightbox-div'><div class='lightbox-imgs'></div><div class='setas-lightbox'><i class='fa-solid fa-arrow-left seta-esquerda setas'></i><i class='fa-solid fa-arrow-right seta-direita setas'></i></div></div>");
+        var click_lightbox = $(this).find(".box img").data("key");
+        $(this).parents('.thumbs').find('.lightbox').each(function(index){
+        	var lightbox_active = "";
+        	if(index == click_lightbox){
+        		lightbox_active = "active";
+        	}
+        	$(".lightbox-div .lightbox-imgs").append("<img class='lightbox-img no-lazy "+index+" "+lightbox_active+"' data-id='"+index+"' src='"+$(this).find(".box img").attr("src")+"'>");
+        });
+        $("body").css("overflow", "hidden");
+        let viewportmeta = document.querySelector('meta[name="viewport"]');
+        viewportmeta.setAttribute('content', "initial-scale=1.0, user-scalable=yes");
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+      });
 
 			//////////////////////////////////////////////
 			//troca de paginas no carousel

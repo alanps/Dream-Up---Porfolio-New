@@ -1,85 +1,43 @@
 /**
- * Compiler configuration
+ * @typedef {import('@roots/bud').Bud} bud
  *
- * @see {@link https://roots.io/docs/sage sage documentation}
- * @see {@link https://bud.js.org/guides/configure bud.js configuration guide}
- *
- * @param {import('@roots/bud').Bud} app
+ * @param {bud} app
  */
-export default async (app) => {
-  /**
-   * Application assets & entrypoints
-   *
-   * @see {@link https://bud.js.org/docs/bud.entry}
-   * @see {@link https://bud.js.org/docs/bud.assets}
-   */
+module.exports = async (app) => {
   app
-    .entry('app', ['@scripts/app', '@styles/app'])
-    .entry('editor', ['@scripts/editor', '@styles/editor'])
-    .entry('geral', ['@scripts/geral.js', '@styles/geral.scss'])
-    .entry('error404', ['@styles/error404.scss'])
-    .entry('contato', ['@scripts/contato.js', '@styles/contato.scss'])
-    .entry('global_bundle', ['@styles/global_bundle.scss'])
-    .assets(['images']);
+    /**
+     * Application entrypoints
+     *
+     * Paths are relative to your resources directory
+     */
+    .entry({
+      geral: ['@scripts/geral', '@styles/geral'],
+      error404: ['@styles/error404'],
+      contato: ['@scripts/contato', '@styles/contato'],
+      global_bundle: ['@styles/global_bundle']
+    })
 
-  /**
-   * Set public path
-   *
-   * @see {@link https://bud.js.org/docs/bud.setPublicPath}
-   */
-  app.setPublicPath('/wp-content/themes/agenciadreamup/resources/');
+    /**
+     * These files should be processed as part of the build
+     * even if they are not explicitly imported in application assets.
+     */
+    .assets('images')
 
-  /**
-   * Development server settings
-   *
-   * @see {@link https://bud.js.org/docs/bud.setUrl}
-   * @see {@link https://bud.js.org/docs/bud.setProxyUrl}
-   * @see {@link https://bud.js.org/docs/bud.watch}
-   */
-  
-  app
-    .setUrl('http://localhost:3001')
-    .setProxyUrl('http://agenciadreamup.com.br')
-    .watch(['resources/views', 'app']);
+    /**
+     * These files will trigger a full page reload
+     * when modified.
+     */
+    .watch('resources/views/**/*', 'app/**/*')
 
-  /**
-   * Generate WordPress `theme.json`
-   *
-   * @note This overwrites `theme.json` on every build.
-   *
-   * @see {@link https://bud.js.org/extensions/sage/theme.json}
-   * @see {@link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json}
-   */
-  app.wpjson
-    .set('settings.color.custom', false)
-    .set('settings.color.customDuotone', false)
-    .set('settings.color.customGradient', false)
-    .set('settings.color.defaultDuotone', false)
-    .set('settings.color.defaultGradients', false)
-    .set('settings.color.defaultPalette', false)
-    .set('settings.color.duotone', [])
-    .set('settings.custom.spacing', {})
-    .set('settings.custom.typography.font-size', {})
-    .set('settings.custom.typography.line-height', {})
-    .set('settings.spacing.padding', true)
-    .set('settings.spacing.units', ['px', '%', 'em', 'rem', 'vw', 'vh'])
-    .set('settings.typography.customFontSize', false)
-    .useTailwindColors()
-    .useTailwindFontFamily()
-    .useTailwindFontSize()
-    .enable();
+    /**
+     * Target URL to be proxied by the dev server.
+     *
+     * This should be the URL you use to visit your local development server.
+     */
+    .proxy('http://localhost')
 
-    app.hooks.on(`build.module.rules.oneOf`, (rules = []) => {
-      rules.push({
-        test: /\.s[ac]ss$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
-      });
-  
-      return rules
-    });
-
+    /**
+     * Development URL to be used in the browser.
+     */
+    .serve('http://localhost');
 };

@@ -47,7 +47,7 @@ add_action('wp_enqueue_scripts', function () {
     }
 
     if(is_page('personagem')){
-        wp_enqueue_style( 'personagem_stylesheet', '/wp-content/themes/agenciadreamup/resources/fonts/stylesheet.css' );
+        wp_enqueue_style( 'calculadora_stylesheet', '/wp-content/themes/agenciadreamup/resources/fonts/stylesheet.css' );
         wp_enqueue_style( 'personagem', '/wp-content/themes/agenciadreamup/resources/styles/personagem.css' );
         wp_enqueue_style( 'tipsy', '/wp-content/themes/agenciadreamup/resources/scripts/libs/tipsy/tipsy.css' );
         wp_enqueue_script( 'jquery.tipsy', '/wp-content/themes/agenciadreamup/resources/scripts/libs/tipsy/jquery.tipsy.js', ['jquery'], '1.0.0', true );

@@ -40,7 +40,11 @@ class RegisterConsole
             $command = implode(' ', $args);
 
             foreach ($assoc_args as $key => $value) {
-                $command .= " {$this->formatOption($key, $value)}";
+                $command .= " --{$key}";
+
+                if ($value !== true) {
+                    $command .= "='{$value}'";
+                }
             }
 
             $command = str_replace('\\', '\\\\', $command);
@@ -51,21 +55,5 @@ class RegisterConsole
 
             WP_CLI::halt($status);
         });
-    }
-
-    /**
-     * Formats and escapes argument for StringInput.
-     *
-     * @param string $key
-     * @param string $value
-     * @return string
-     */
-    protected function formatOption($key, $value)
-    {
-        if (is_bool($value)) {
-            return $value ? "--{$key}" : "--no-{$key}";
-        }
-
-        return "--{$key}='{$value}'";
     }
 }

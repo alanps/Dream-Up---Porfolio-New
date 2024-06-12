@@ -54,3 +54,4 @@ wp-content/wp-rocket-config
 !wp-content/plugins/advanced-custom-fields-pro
 !wp-content/plugins/all-in-one-wp-migration-unlimited-extension
 !wp-content/plugins/wp-rocket
+node_modules
