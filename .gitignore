@@ -44,7 +44,6 @@ wp-content/wp-rocket-config
 !README.md
 !composer.json
 !composer.lock
-!personagem/
 
 # themes to keep
 # Uncomment to keep these theme
@@ -54,4 +53,6 @@ wp-content/wp-rocket-config
 !wp-content/plugins/advanced-custom-fields-pro
 !wp-content/plugins/all-in-one-wp-migration-unlimited-extension
 !wp-content/plugins/wp-rocket
-node_modules
+
+personagem1
+wp-content/themes/agenciadreamup/resources/images/personagem1
