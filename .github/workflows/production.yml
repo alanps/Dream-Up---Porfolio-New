@@ -64,30 +64,10 @@ jobs:
         shell: bash
         run: yarn install
 
-      - name: Executando npm install no tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash
-        run: npm install
-
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         shell: bash
         run: yarn build
-        continue-on-error: true
-        
-      - if: ${{ failure() }}
-        name: Upload output file
-        uses: actions/upload-artifact@v3
-        continue-on-error: true
-        with:
-          name: yarn-error.log
-          path: ${{ github.workspace }}/wp-content/themes/agenciadreamup/yarn-error.log
-
-      - if: ${{ failure() }}
-        name: Executando yarn build no tema
-        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
-        shell: bash
-        run: npm run build
         continue-on-error: true
 
       - name: Remove arquivos do WP
