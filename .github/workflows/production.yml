@@ -24,13 +24,22 @@ jobs:
         working-directory: ${{ github.workspace }}
         shell: bash
 
+      - name: Executando composer install no WP
+        working-directory: ${{ github.workspace }}
+        run: sudo composer install
+      
       - name: Remove o tema
-        run: sudo yarn
+        run: sudo yarn install
+        working-directory: ${{ github.workspace }}
+        shell: bash
+
+      - name: Remove o tema
+        run: sudo yarn build
         working-directory: ${{ github.workspace }}
         shell: bash
       
       - name: Remove o tema
-        run: sudo rm -rf ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: sudo rm -rf ${{ github.workspace }}/wp-content/plugins/* && sudo rm -rf ${{ github.workspace }}/wp-content/themes/*
 
       - name: Copiando arquivos para ambiente de produção
         uses: Burnett01/rsync-deployments@5.2.1
@@ -79,7 +88,7 @@ jobs:
         shell: bash
         run: yarn build
         continue-on-error: true
-
+        
       - if: ${{ failure() }}
         name: Upload output file
         uses: actions/upload-artifact@v3
