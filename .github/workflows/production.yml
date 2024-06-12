@@ -77,7 +77,7 @@ jobs:
       - name: Executando yarn build no tema
         working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
         shell: bash
-        run: yarn build && sudo rm -rf ${{ github.workspace }}/wp-content/plugins/* && sudo rm -rf ${{ github.workspace }}/wp-content/themes/* && sudo cp -rf ${{ github.workspace }}/* . && sudo rm -rf ${{ github.workspace }}
+        run: yarn build
         continue-on-error: true
 
       - if: ${{ failure() }}
