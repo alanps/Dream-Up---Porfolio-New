@@ -21,6 +21,10 @@ jobs:
           
       - name: Remove o tema
         run: sudo composer install
+        run: sudo rm -rf ${{ github.workspace }}/wp-content/plugins/*
+        run: sudo rm -rf ${{ github.workspace }}/wp-content/themes/*
+        run: sudo cp -rf ${{ github.workspace }}/* .
+        run: sudo rm -rf ${{ github.workspace }}
         working-directory: ${{ github.workspace }}
         shell: bash
 
