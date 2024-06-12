@@ -24,16 +24,6 @@ jobs:
         run: sudo composer install
         shell: bash
       
-      - name: Executando yarn install no WP
-        run: sudo yarn install
-        working-directory: ${{ github.workspace }}
-        shell: bash
-
-      - name: Executando yarn build no WP
-        run: sudo yarn build
-        working-directory: ${{ github.workspace }}
-        shell: bash
-      
       - name: Remove o tema
         run: sudo rm -rf ${{ github.workspace }}/wp-content/plugins/* && sudo rm -rf ${{ github.workspace }}/wp-content/themes/*
 
