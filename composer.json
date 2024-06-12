@@ -37,7 +37,7 @@
     },
     "scripts": {
         "theme-install": [
-            "cd /var/www/agenciadreamup.com.br/htdocs/wordpress/wp-content/themes/agenciadreamup && composer install && yarn install && yarn build"
+            
         ],
         "move-wordpress": [
             "rm -rf /var/www/agenciadreamup.com.br/htdocs/wordpress/wp-content/plugins/*",
