@@ -1,15 +1,7 @@
 header {
 	background-color: #f0f0f0;
 	display: flex;
-	position: relative;
-	
-	@media screen and (min-width: $medium-menu-screen) {
-		top: 0;
-		position: fixed;
-		z-index: 10000000;
-		left: 0 !important;
-		right: 0 !important;
-	}
+	padding: 1.5em 1.8em;
 
 	@media screen and (max-width: $medium-menu-screen) {
 		flex-wrap: wrap;
@@ -17,43 +9,75 @@ header {
 		margin-bottom: 20px;
 	}
 
+	@media screen and (min-width: $small-screen) and (max-width: $medium-menu-screen) {
+		padding-bottom: 0;
+	}
+
 	.custom-logo-link {
 		img {
-			max-width: 300px !important;
-			height: auto;
-			margin: 1.2em 0;
+			max-width: 190px;
+			max-height: 65px;
 
 			@media screen and (max-width: $medium-menu-screen) {
-				height: auto;
+				width: 100% !important ;
+				max-width: 230px !important ;
 				max-height: inherit;
-				max-width: 350px!important;
-				width: 100% !important;
+				height: auto;
 			}
 		}
 	}
 
 	.logo {
 		display: flex;
-		flex-direction: column;
-		margin-left: 1.3em;
-		position: relative;
 
 		@media screen and (max-width: $medium-menu-screen) {
 			flex-direction: column;
 			margin: 0 auto;
-			height: auto;
-			position: relative !important;
 		}
 
 		.home {
 			@media screen and (max-width: $medium-menu-screen) {
 				width: 100%;
 			}
+
+			.sublogo {
+				width: 165px;
+				margin-top: 2px;
+
+				@media screen and (max-width: $medium-menu-screen) {
+					width: 100% !important;
+				}
+
+				.sublogo-portfolio,
+				.sublogo-desenvolvedor {
+					font-size: 8.2px;
+					text-transform: uppercase;
+					background-color: #d7d7d7;
+					text-align: right;
+					padding: 4.5px 6px 2.5px;
+					width: 100%;
+				}
+
+				.sublogo-nome {
+					background-color: #383838;
+					color: #fff;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 12.5px;
+					line-height: 17px;
+					text-transform: capitalize;
+					padding: 4px 6px 2px;
+					width: 100%;
+					text-align: right;
+					margin: 0;
+				}
+			}
 		}
 	}
 
 	.mega-menu {
 		li {
+			background-color: #ffffff !important;
 			border: 0 !important;
 			border-radius: 15px !important;
 			box-shadow: none !important;
@@ -62,91 +86,6 @@ header {
 			margin: 0 5px !important;
 			padding: 7px 0 !important;
 			width: 8.2em !important;
-			background-color: black;
-
-			&:last-of-type {
-				margin-bottom: 0 !important;
-			}
-
-			&.mega-menu-item-160 {
-				&:hover {
-					background: #3F51B5 !important;
-
-					.mega-menu-link {
-						.mega-title-below {
-							color: pink !important;
-						}
-
-						&:before {
-							color: pink !important;
-						}
-					}
-				}	
-			}
-
-			&.mega-menu-item-167 {
-				&:hover {
-					background: #198754 !important;
-
-					.mega-menu-link {
-						.mega-title-below {
-							color: burlywood !important;
-						}
-
-						&:before {
-							color: burlywood !important;
-						}
-					}
-				}	
-			}
-
-			&.mega-menu-item-101 {
-				&:hover {
-					background: #ea580c !important;
-
-					.mega-menu-link {
-						.mega-title-below {
-							color: #ffd82e !important;
-						}
-
-						&:before {
-							color: #ffd82e !important;
-						}
-					}
-				}	
-			}
-
-			&.mega-menu-item-72 {
-				&:hover {
-					background: #E91E63 !important;
-
-					.mega-menu-link {
-						.mega-title-below {
-							color: skyblue !important;
-						}
-
-						&:before {
-							color: skyblue !important;
-						}
-					}
-				}	
-			}
-
-			&.mega-menu-item-160 {
-				&:hover {
-					background: #F44336 !important;
-
-					.mega-menu-link {
-						.mega-title-below {
-							color: darkseagreen !important;
-						}
-
-						&:before {
-							color: darkseagreen !important;
-						}
-					}
-				}	
-			}
 
 			.mega-menu-link {
 				color: #383838 !important;
@@ -163,57 +102,6 @@ header {
 				&:hover {
 					background: none !important;
 				}
-
-				&.dashicons-heart {
-					&:before {
-						color: pink !important;
-					}
-
-					.mega-title-below {
-    					color: pink !important;
-					}
-				}
-
-				&.dashicons-welcome-widgets-menus {
-					&:before {
-						color: darkseagreen !important;
-					}
-
-					.mega-title-below {
-    					color: darkseagreen !important;
-					}
-				}
-
-				&.dashicons-analytics {
-					&:before {
-						color: skyblue !important;
-					}
-
-					.mega-title-below {
-    					color: skyblue !important;
-					}
-				}
-
-				&.dashicons-lightbulb {
-					&:before {
-						color: #ffd82e !important;
-					}
-
-					.mega-title-below {
-    					color: #ffd82e !important;
-					}
-				}
-
-				&.dashicons-testimonial {
-					&:before {
-						color: burlywood !important;
-					}
-
-					.mega-title-below {
-    					color: burlywood !important;
-					}
-				}
-				
 			}
 
 			&:hover,

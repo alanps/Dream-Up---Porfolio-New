@@ -83,11 +83,13 @@ section.infos {
 		}
 
 		&.bloco-emprego {
+			/* background-attachment: fixed; */
 			background-color: #2d2d2d;
+
+			/* background-image: url("~/resources/images/studio-bg.webp"); */
 			background-position: bottom;
 			background-repeat: no-repeat;
-			background-size: 100%;
-			background-position-y: -80px;
+			background-size: cover;
 
 			@media screen and (max-width: $medium-screen) {
 				/* background-attachment: scroll; */
@@ -95,10 +97,10 @@ section.infos {
 
 			.linha1 {
 				font-size: 14px;
-				margin: 5px auto;
+				margin: auto;
 
 				span {
-					color: #00ff2a;
+					color: #f5737f;
 				}
 			}
 
@@ -109,17 +111,8 @@ section.infos {
 				object-fit: cover;
 			}
 
-
-			@media screen and (max-width: $medium-bg-screen) {
-				img {
-					height: 160px;
-				}
-			}
-
 			.linha3 {
-				font-size: 10.5px;
-				margin-top: 5px;
-				text-align: right;
+				font-size: 11px;
 			}
 
 			@media screen and (max-width: $medium-screen) {
@@ -129,37 +122,12 @@ section.infos {
 			}
 
 			.linha4 {
-				font-size: 10.5px;
-				color: #00ff2a;
-				text-align: right;
+				font-size: 11px;
+				color: #f5737f;
 			}
 
 			@media screen and (max-width: $medium-screen) {
 				.linha4 {
-					font-size: 9px;
-				}
-			}
-
-			.linha5 {
-				font-size: 10.5px;
-				margin-top: 5px;
-				text-align: left;
-			}
-			
-			@media screen and (max-width: $medium-screen) {
-				.linha5 {
-					font-size: 9px;
-				}
-			}
-
-			.linha6 {
-				color: #00ff2a;
-				font-size: 10.5px;
-				text-align: left;
-			}
-
-			@media screen and (max-width: $medium-screen) {
-				.linha6 {
 					font-size: 9px;
 				}
 			}
