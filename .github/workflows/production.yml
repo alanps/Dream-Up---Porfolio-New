@@ -19,9 +19,6 @@ jobs:
           path: /tmp/composer-cache
           key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
           
-      - name: Remove o tema
-        run: sudo rm -rf ${{ github.workspace }}/wp-content/themes/* && cp -rf ${{ github.workspace }}/vendor/roots/wordpress-no-content/* ${{ github.workspace }} && cp -rf ${{ github.workspace }}/vendor/wpackagist-plugin/* ${{ github.workspace }}/wp-content/plugins
-
       - name: Copiando arquivos para ambiente de produção
         uses: Burnett01/rsync-deployments@5.2.1
         with:
