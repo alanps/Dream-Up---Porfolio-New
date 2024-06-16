@@ -18,7 +18,12 @@ jobs:
         with:
           path: /tmp/composer-cache
           key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
-          
+           
+      - name: Executando composer install no WP
+        working-directory: ${{ github.workspace }}
+        run: sudo composer install
+        shell: bash
+
       - name: Remove o tema
         run: sudo rm -rf ${{ github.workspace }}/wp-content/themes/* && cp -rf ${{ github.workspace }}/vendor/roots/wordpress-no-content/* ${{ github.workspace }} && cp -rf ${{ github.workspace }}/vendor/wpackagist-plugin/* ${{ github.workspace }}/wp-content/plugins
 
@@ -37,8 +42,34 @@ jobs:
     runs-on: ubuntu-22.04
     needs: wp
     steps:
+
       - name: Checkout do repositório
         uses: actions/checkout@v3
+        
+      - name: Executando composer install no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: composer install && composer dump-autoload
+
+      - name: Setup do NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Executando yarn cache clean no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        run: yarn cache clean
+
+      - name: Executando yarn install no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        shell: bash
+        run: yarn install
+
+      - name: Executando yarn build no tema
+        working-directory: ${{ github.workspace }}/wp-content/themes/agenciadreamup
+        shell: bash
+        run: yarn build
+        continue-on-error: true
 
       - name: Remove arquivos do WP
         shell: bash
