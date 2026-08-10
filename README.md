@@ -1,1 +1,1 @@
-Automação da instalação e configuração do WordPress por meio do GitHub Actions, utilizando o Composer e o WP Packagist para gerenciar o core, temas e plugins como dependências versionadas. Essa abordagem torna o ambiente mais padronizado, reproduzível e seguro, além de simplificar atualizações e processos de deploy.
+Meu Portfólio Antigo
